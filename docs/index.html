@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Biblioteca Somos Uno</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #5f6c77;
+      --line: #d8dee5;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --accent: #165b45;
+      --accent-2: #8f3d2e;
+      --soft: #eef4f1;
+      --shadow: 0 18px 45px rgba(23, 32, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      background: rgba(251, 250, 247, 0.92);
+      backdrop-filter: blur(14px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .topbar .shell {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: 0;
+      flex: 0 0 auto;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 1rem;
+      line-height: 1.1;
+    }
+
+    .brand span {
+      color: var(--muted);
+      display: block;
+      font-size: 0.86rem;
+      margin-top: 2px;
+    }
+
+    .notice {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-2);
+      font-size: 0.92rem;
+      font-weight: 650;
+      text-align: right;
+    }
+
+    .notice svg { flex: 0 0 auto; }
+
+    main {
+      padding: 34px 0 52px;
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 28px;
+      align-items: end;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 4rem;
+      line-height: 0.96;
+      max-width: 760px;
+      letter-spacing: 0;
+    }
+
+    .intro p {
+      margin: 18px 0 0;
+      color: var(--muted);
+      line-height: 1.65;
+      max-width: 680px;
+      font-size: 1.02rem;
+    }
+    
+    .verse {
+      margin: 18px 0 0;
+      color: var(--muted);
+      line-height: 1.45;
+      max-width: 680px;
+      font-size: 1.02rem;
+      font-style: italic;
+      border-left: 3px solid rgba(22,91,69,0.12);
+      padding-left: 12px;
+      background: rgba(22,91,69,0.02);
+      border-radius: 6px;
+    }
+    .policy {
+      border: 1px solid #d7cbc4;
+      background: #fff8f3;
+      border-radius: 8px;
+      padding: 16px;
+      color: #57362f;
+      line-height: 1.55;
+      box-shadow: 0 12px 28px rgba(143, 61, 46, 0.06);
+    }
+
+    .policy strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #3d2823;
+    }
+
+    .tools {
+      display: grid;
+      grid-template-columns: minmax(220px, 1fr) 190px 160px;
+      gap: 12px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      margin-bottom: 22px;
+    }
+
+    .field {
+      position: relative;
+      min-width: 0;
+    }
+
+    .field svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+    }
+
+    input, select {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      padding: 0 12px;
+      outline: none;
+    }
+
+    input { padding-left: 40px; }
+
+    input:focus, select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(22, 91, 69, 0.14);
+    }
+
+    .summary {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0 0 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      min-height: 314px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 12px 26px rgba(23, 32, 42, 0.05);
+    }
+
+    .cover {
+      height: 300px;
+      display: grid;
+      place-items: center;
+      background: #efe9df;
+      color: #23463c;
+      padding: 12px;
+      text-align: center;
+      font-weight: 800;
+      line-height: 1.08;
+      overflow: hidden;
+    }
+
+    .cover img {
+      width: auto;
+      height: 276px;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+      flex: 1;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: #23463c;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    .author {
+      margin: -4px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .description {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 0.92rem;
+      flex: 1;
+    }
+
+    .read {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 7px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      margin-top: 4px;
+    }
+
+    .read:hover { background: #104b39; }
+
+    .empty {
+      display: none;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 28px;
+      text-align: center;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .empty.is-visible { display: block; }
+
+    .site-footer {
+      margin-top: 42px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      padding: 24px 0 8px;
+      text-align: center;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .site-footer strong {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .footer-heart {
+      color: var(--accent-2);
+      font-weight: 900;
+    }
+
+    @media (max-width: 980px) {
+      h1 {
+        font-size: 3rem;
+        max-width: 620px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .topbar .shell {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      .notice { text-align: left; }
+
+      .intro {
+        grid-template-columns: 1fr;
+      }
+
+      .tools {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2rem;
+        line-height: 1.05;
+        max-width: 20rem;
+      }
+
+      .intro p,
+      .policy {
+        overflow-wrap: break-word;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <div class="brand" aria-label="Biblioteca Somos Uno">
+        <div class="mark">SU</div>
+        <div>
+          <strong>Misión Reformada "Somos Uno"</strong>
+          <span>Biblioteca bautista reformada</span>
+        </div>
+      </div>
+      <div class="notice">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 3 6v6c0 5 3.8 9.7 9 10 5.2-.3 9-5 9-10V6l-9-4Zm0 2.2 7 3.1V12c0 4-2.9 7.5-7 8-4.1-.5-7-4-7-8V7.3l7-3.1Zm-1 5.3h2V15h-2V9.5Zm0 7h2v2h-2v-2Z"/></svg>
+        Lectura comunitaria, no reproducción
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">Repositorio de lectura para la iglesia</h1>
+        <p class="verse">Todos los que habían creído estaban juntos y tenían en común todas las cosas.<br><small>Hechos 2:44</small></p>
+      </div>
+      <aside class="policy">
+        <strong>Uso responsable</strong>
+        Publica solo material de dominio público, con licencia abierta o con permiso escrito. El visor reduce descargas casuales, pero ningún sitio web puede impedir completamente la copia.
+      </aside>
+    </section>
+
+    <section class="gallery-preview" aria-label="Galería de la Misión Bautista Reformada Somos Uno" style="margin:18px 0 28px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;">
+        <div style="font-weight:800;font-size:1.05rem;color:var(--ink);">Galería — Misión Bautista Reformada "Somos Uno"</div>
+        <a href="gallery.html" class="read" style="background:transparent;color:var(--accent);border:0;padding:0;">Ver galería</a>
+      </div>
+    </section>
+
+    <section class="tools" aria-label="Filtros de biblioteca">
+      <label class="field">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m20.7 19.3-4-4A7.6 7.6 0 1 0 15.3 17l4 4 1.4-1.7ZM5 10.5a5.5 5.5 0 1 1 11 0 5.5 5.5 0 0 1-11 0Z"/></svg>
+        <input id="search" type="search" autocomplete="off" placeholder="Buscar por título, autor o tema" />
+      </label>
+      <label>
+        <select id="category">
+          <option value="">Todas las categorías</option>
+        </select>
+      </label>
+      <label>
+        <select id="sort">
+          <option value="title">Título</option>
+          <option value="author">Autor</option>
+          <option value="year">Año</option>
+        </select>
+      </label>
+    </section>
+
+    <p id="summary" class="summary"></p>
+    <div id="list" class="grid" aria-live="polite"></div>
+    <div id="empty" class="empty">No se encontraron recursos con esos filtros.</div>
+  </main>
+
+  <footer class="shell site-footer">
+    Para la gloria de Dios y la edificación de su iglesia.
+    <br />
+    Hecho con <span class="footer-heart" aria-label="amor">♥</span> por <strong>D.R</strong>
+  </footer>
+
+  <script>
+    const state = {
+      books: [],
+      query: '',
+      category: '',
+      sort: 'title'
+    };
+
+    const list = document.getElementById('list');
+    const empty = document.getElementById('empty');
+    const summary = document.getElementById('summary');
+    const search = document.getElementById('search');
+    const category = document.getElementById('category');
+    const sort = document.getElementById('sort');
+
+    function normalize(value) {
+      return String(value || '').toLocaleLowerCase('es').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function initials(title) {
+      return String(title || 'Libro')
+        .split(/\s+/)
+        .filter(Boolean)
+        .slice(0, 5)
+        .join(' ');
+    }
+
+    function bookMatches(book) {
+      const haystack = normalize([
+        book.title,
+        book.author,
+        book.category,
+        book.year,
+        book.description,
+        ...(book.tags || [])
+      ].join(' '));
+
+      return (!state.query || haystack.includes(normalize(state.query))) &&
+        (!state.category || book.category === state.category);
+    }
+
+    function sortBooks(a, b) {
+      if (state.sort === 'year') {
+        return Number(b.year || 0) - Number(a.year || 0) || String(a.title).localeCompare(String(b.title), 'es');
+      }
+
+      return String(a[state.sort] || '').localeCompare(String(b[state.sort] || ''), 'es');
+    }
+
+    function createCard(book) {
+      const card = document.createElement('article');
+      card.className = 'card';
+
+      const cover = document.createElement('div');
+      cover.className = 'cover';
+      if (book.cover) {
+        const img = document.createElement('img');
+        img.src = book.cover;
+        img.alt = '';
+        img.loading = 'lazy';
+        img.onerror = () => {
+          cover.textContent = initials(book.title);
+        };
+        cover.appendChild(img);
+      } else {
+        cover.textContent = initials(book.title);
+      }
+
+      const content = document.createElement('div');
+      content.className = 'content';
+
+      const meta = document.createElement('div');
+      meta.className = 'meta';
+      for (const label of [book.category, book.year].filter(Boolean)) {
+        const tag = document.createElement('span');
+        tag.className = 'tag';
+        tag.textContent = label;
+        meta.appendChild(tag);
+      }
+
+      const title = document.createElement('h2');
+      title.className = 'title';
+      title.textContent = book.title;
+
+      const author = document.createElement('p');
+      author.className = 'author';
+      author.textContent = book.author || 'Autor no registrado';
+
+      const description = document.createElement('p');
+      description.className = 'description';
+      description.textContent = book.description || 'Recurso disponible para lectura.';
+
+      const link = document.createElement('a');
+      link.href = `viewer.html?id=${encodeURIComponent(book.id)}`;
+      link.className = 'read';
+      link.innerHTML = '<span>Leer</span><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 4.5A2.5 2.5 0 0 1 7.5 2H20v17H7.5A2.5 2.5 0 0 0 5 21.5v-17Zm2.5-.5a.5.5 0 0 0-.5.5v13c.2 0 .3-.5.5-.5H18V4H7.5Z"/></svg>';
+
+      content.append(meta, title, author, description, link);
+      card.append(cover, content);
+      return card;
+    }
+
+    function render() {
+      const books = state.books.filter(bookMatches).sort(sortBooks);
+      list.replaceChildren(...books.map(createCard));
+      empty.classList.toggle('is-visible', books.length === 0);
+      summary.textContent = `${books.length} recurso${books.length === 1 ? '' : 's'} disponible${books.length === 1 ? '' : 's'}`;
+    }
+
+    function hydrateCategories() {
+      const categories = [...new Set(state.books.map(book => book.category).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'es'));
+      for (const item of categories) {
+        const option = document.createElement('option');
+        option.value = item;
+        option.textContent = item;
+        category.appendChild(option);
+      }
+    }
+    
+    // Gallery preview removed on homepage; users should visit the gallery page to see photos.
+
+    async function load() {
+      try {
+        const response = await fetch('books.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('No se pudo cargar el catálogo.');
+        state.books = await response.json();
+        hydrateCategories();
+        render();
+      } catch (error) {
+        list.replaceChildren();
+        empty.textContent = error.message;
+        empty.classList.add('is-visible');
+      }
+    }
+
+    search.addEventListener('input', event => {
+      state.query = event.target.value.trim();
+      render();
+    });
+
+    category.addEventListener('change', event => {
+      state.category = event.target.value;
+      render();
+    });
+
+    sort.addEventListener('change', event => {
+      state.sort = event.target.value;
+      render();
+    });
+
+    load();
+  </script>
+</body>
+</html>

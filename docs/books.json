@@ -1,0 +1,511 @@
+[
+  {
+    "id": "herramientas-para-confesiones-de-fe",
+    "title": "Herramientas para confesiones de fe",
+    "file": "books/herramientas-para-confesiones-de-fe.pdf",
+    "cover": "covers/herramientas-para-confesiones-de-fe.png",
+    "author": "James M. Renihan",
+    "category": "Confesiones",
+    "tags": ["confesiones", "puritanos", "herencia confesional", "Richard C. Barcellos", "James M. Renihan"],
+    "description": "Ayudas para el estudio de las confesiones de fe puritanas inglesas. Editores: James M. Renihan y Richard C. Barcellos."
+  },
+  {
+    "id": "fundamentos-teologia-pacto-bautista",
+    "title": "Fundamentos de la Teología del Pacto Bautista",
+    "file": "books/fundamentos-teologia-pacto-bautista.pdf",
+    "cover": "covers/fundamentos-teologia-pacto-bautista.png",
+    "author": "Samuel Renihan",
+    "category": "Teología del pacto",
+    "tags": ["teología del pacto", "pacto bautista", "federalismo 1689", "Samuel Renihan", "Micah Renihan"],
+    "description": "Transcripción de ponencias sobre teología del pacto bautista reformada, con edición y revisión de Luis J. Torrealba."
+  },
+  {
+    "id": "ministerio-de-mujeres",
+    "title": "El ministerio de mujeres",
+    "file": "books/ministerio-de-mujeres.pdf",
+    "cover": "covers/ministerio-de-mujeres.png",
+    "author": "Cathy Scheraldi de Núñez",
+    "category": "Ministerio",
+    "tags": ["mujeres", "iglesia local", "discipulado", "ministerio", "Cathy Scheraldi de Núñez"],
+    "description": "Para bendecir la iglesia local: una guía sobre el ministerio de mujeres en la vida congregacional."
+  },
+  {
+    "id": "gloria-verdadera-iglesia-benjamin-keach",
+    "title": "La gloria de una verdadera iglesia",
+    "file": "books/gloria-verdadera-iglesia-benjamin-keach.pdf",
+    "cover": "covers/gloria-verdadera-iglesia-benjamin-keach.png",
+    "author": "Benjamin Keach",
+    "year": 1697,
+    "category": "Eclesiología",
+    "tags": ["iglesia", "disciplina", "eclesiología", "Benjamin Keach", "pacto de iglesia"],
+    "description": "Obra clásica sobre una iglesia evangélica verdadera, su orden, membresía, disciplina y cuidado pastoral."
+  },
+  {
+    "id": "un-festin-pactual",
+    "title": "Un Festín Pactual",
+    "file": "books/un-festin-pactual.pdf",
+    "cover": "covers/un-festin-pactual.png",
+    "author": "J. Ryan Davidson",
+    "category": "Cena del Señor",
+    "tags": ["cena del señor", "pacto", "sacramentos", "ordenanzas", "J. Ryan Davidson"],
+    "description": "Reflexiones sobre la Cena del Señor desde una perspectiva pactual."
+  },
+  {
+    "id": "se-prefiere-culto-publico-antes-privado",
+    "title": "Se prefiere el culto público antes que el privado",
+    "file": "books/se-prefiere-culto-publico-antes-privado.pdf",
+    "cover": "covers/se-prefiere-culto-publico-antes-privado.png",
+    "author": "David Clarkson",
+    "category": "Culto público",
+    "tags": ["culto público", "adoración", "iglesia reunida", "Salmo 87", "David Clarkson"],
+    "description": "Tratado sobre la prioridad bíblica del culto público en la vida del pueblo de Dios."
+  },
+  {
+    "id": "los-estandares-de-westminster",
+    "title": "Los estándares de Westminster",
+    "file": "books/los-estandares-de-westminster.pdf",
+    "cover": "covers/los-estandares-de-westminster.png",
+    "author": "Asamblea de Westminster",
+    "year": 2010,
+    "category": "Confesiones",
+    "tags": ["Westminster", "confesión de fe", "catecismo menor", "catecismo mayor", "forma de gobierno", "Alonzo Ramírez"],
+    "description": "La confesión de fe, catecismos menor y mayor, y la forma de gobierno de Westminster con citas bíblicas completas."
+  },
+  {
+    "id": "vida-asociativa-de-la-iglesia",
+    "title": "La vida asociativa de la Iglesia",
+    "file": "books/vida-asociativa-de-la-iglesia.pdf",
+    "cover": "covers/vida-asociativa-de-la-iglesia.png",
+    "author": "James M. Renihan",
+    "category": "Eclesiología",
+    "tags": ["iglesia", "vida asociativa", "Segunda Confesión de Londres", "confesional", "James M. Renihan", "Richard C. Barcellos"],
+    "description": "Estudio sobre la vida asociativa de la iglesia a la luz de la Segunda Confesión de Fe de Londres 26.12-15."
+  },
+  {
+    "id": "el-pacto-de-obras-barcellos",
+    "title": "El pacto de obras",
+    "file": "books/el-pacto-de-obras-barcellos.pdf",
+    "cover": "covers/el-pacto-de-obras-barcellos.png",
+    "author": "Richard C. Barcellos",
+    "category": "Teología del pacto",
+    "tags": ["pacto de obras", "teología del pacto", "federalismo 1689", "confesional", "Richard C. Barcellos"],
+    "description": "Su fundamento confesional y bíblico dentro de la teología reformada y bautista confesional."
+  },
+  {
+    "id": "teologia-del-pacto-barcellos-parte-1",
+    "title": "Teología del pacto: conceptos básicos",
+    "file": "books/teologia-del-pacto-barcellos-parte-1.pdf",
+    "cover": "covers/teologia-del-pacto-barcellos-parte-1.png",
+    "author": "Richard C. Barcellos",
+    "category": "Teología del pacto",
+    "tags": ["teología del pacto", "pacto bautista", "federalismo 1689", "antiguo pacto", "nuevo pacto", "Richard C. Barcellos"],
+    "description": "Transcripción y traducción de una conferencia de Richard C. Barcellos: A Brief Survey of Covenant Theology, Part 1."
+  },
+  {
+    "id": "edificacion-y-belleza-renihan",
+    "title": "Edificación y belleza",
+    "file": "books/edificacion-y-belleza-renihan.pdf",
+    "cover": "covers/edificacion-y-belleza-renihan.png",
+    "author": "James M. Renihan",
+    "year": 2020,
+    "category": "Eclesiología",
+    "tags": ["eclesiología", "bautistas particulares", "iglesia", "1675-1705", "James M. Renihan"],
+    "description": "La eclesiología práctica de los bautistas particulares ingleses entre 1675 y 1705."
+  },
+  {
+    "id": "teologia-sistematica-reformada-beeke",
+    "title": "Teología Sistemática Reformada",
+    "file": "books/teologia-sistematica-reformada-beeke.pdf",
+    "cover": "covers/teologia-sistematica-reformada-beeke.png",
+    "author": "Joel R. Beeke",
+    "category": "Teología sistemática",
+    "tags": ["teología sistemática", "reformada", "doctrina", "prolegómenos", "revelación", "Dios", "Joel R. Beeke"],
+    "description": "Obra amplia de teología sistemática reformada organizada por doctrinas bíblicas y confesionales."
+  },
+  {
+    "id": "martin-lutero-reforma-protestante",
+    "title": "Martín Lutero: La Reforma Protestante y el nacimiento de las sociedades modernas",
+    "file": "books/martin-lutero-reforma-protestante.pdf",
+    "cover": "covers/martin-lutero-reforma-protestante.png",
+    "author": "Mario Miegge",
+    "category": "Historia de la iglesia",
+    "tags": ["Martín Lutero", "Reforma Protestante", "historia", "biografía", "sociedad moderna", "Mario Miegge"],
+    "description": "Estudio histórico sobre Martín Lutero, la Reforma Protestante y su relación con el nacimiento de la sociedad moderna."
+  },
+  {
+    "id": "la-familia-en-la-iglesia-beeke",
+    "title": "La familia en la iglesia",
+    "file": "books/la-familia-en-la-iglesia-beeke.pdf",
+    "cover": "covers/la-familia-en-la-iglesia-beeke.png",
+    "author": "Joel R. Beeke",
+    "category": "Familia cristiana",
+    "tags": ["familia", "iglesia", "hogar cristiano", "crianza", "Joel R. Beeke"],
+    "description": "Recurso pastoral sobre el lugar de la familia cristiana dentro de la vida de la iglesia."
+  },
+  {
+    "id": "evangelizar-a-los-hijos-del-pacto-beeke",
+    "title": "Cómo evangelizar a los hijos del pacto",
+    "file": "books/evangelizar-a-los-hijos-del-pacto-beeke.pdf",
+    "cover": "covers/evangelizar-a-los-hijos-del-pacto-beeke.png",
+    "author": "Joel R. Beeke",
+    "category": "Familia cristiana",
+    "tags": ["hijos del pacto", "evangelización", "familia", "crianza", "pacto", "Joel R. Beeke"],
+    "description": "Guía para padres y la iglesia sobre la evangelización de los hijos del pacto."
+  },
+  {
+    "id": "el-culto-familiar-beeke",
+    "title": "El culto familiar",
+    "file": "books/el-culto-familiar-beeke.pdf",
+    "cover": "covers/el-culto-familiar-beeke.png",
+    "author": "Joel R. Beeke",
+    "category": "Familia cristiana",
+    "tags": ["culto familiar", "devocional familiar", "hogar cristiano", "familia", "Joel R. Beeke"],
+    "description": "Recurso práctico sobre la adoración familiar y la piedad cotidiana en el hogar cristiano."
+  },
+  {
+    "id": "dogmatica-reformada-en-el-principio-bavinck",
+    "title": "Dogmática Reformada: En el principio",
+    "file": "books/dogmatica-reformada-en-el-principio-bavinck.pdf",
+    "cover": "covers/dogmatica-reformada-en-el-principio-bavinck.png",
+    "author": "Herman Bavinck",
+    "category": "Teología sistemática",
+    "tags": ["dogmática reformada", "creación", "providencia", "teología de la creación", "Herman Bavinck"],
+    "description": "Fundamentos de la teología de la creación, sección de la Dogmática Reformada de Herman Bavinck."
+  },
+  {
+    "id": "manual-de-doctrina-reformada-berkhof",
+    "title": "Manual de doctrina reformada",
+    "file": "books/manual-de-doctrina-reformada-berkhof.pdf",
+    "cover": "covers/manual-de-doctrina-reformada-berkhof.png",
+    "author": "Louis Berkhof",
+    "category": "Teología sistemática",
+    "tags": ["doctrina reformada", "teología sistemática", "catecismo", "dogmática", "Louis Berkhof"],
+    "description": "Manual doctrinal reformado organizado para instrucción teológica clara y pastoral."
+  },
+  {
+    "id": "500-anos-reformas-protestantes",
+    "title": "500 años de las Reformas Protestantes",
+    "file": "books/500-anos-reformas-protestantes.pdf",
+    "cover": "covers/500-anos-reformas-protestantes.png",
+    "author": "Varios autores",
+    "year": 2017,
+    "category": "Historia de la iglesia",
+    "tags": ["Reforma Protestante", "historia", "1517", "2017", "500 años", "Atahualpa Hernández", "Fernando Sanmiguel"],
+    "description": "Discusiones interdisciplinarias sobre los 500 años de las Reformas Protestantes. Editores: Atahualpa Hernández M. y Fernando A. Sanmiguel M."
+  },
+  {
+    "id": "declaracion-chicago-inerrancia-biblica",
+    "title": "Declaración de Chicago sobre la inerrancia bíblica",
+    "file": "books/declaracion-chicago-inerrancia-biblica.pdf",
+    "cover": "covers/declaracion-chicago-inerrancia-biblica.png",
+    "author": "Consejo Internacional de la Inerrancia Bíblica",
+    "year": 1978,
+    "category": "Bibliología",
+    "tags": ["inerrancia bíblica", "Biblia", "Escritura", "autoridad bíblica", "R. C. Sproul", "J. I. Packer", "Chicago"],
+    "description": "Declaración y comentario sobre la autoridad, inspiración, verdad e inerrancia de la Escritura."
+  },
+  {
+    "id": "teologia-sistematica-berkhof",
+    "title": "Teología Sistemática",
+    "file": "books/teologia-sistematica-berkhof.pdf",
+    "cover": "covers/teologia-sistematica-berkhof.png",
+    "author": "Louis Berkhof",
+    "category": "Teología sistemática",
+    "tags": ["teología sistemática", "dogmática", "doctrina de Dios", "Cristología", "eclesiología", "escatología", "Louis Berkhof"],
+    "description": "Obra clásica de teología sistemática reformada, ampliamente usada en seminarios e iglesias."
+  },
+  {
+    "id": "contra-los-herejes-ireneo",
+    "title": "Contra los herejes",
+    "file": "books/contra-los-herejes-ireneo.pdf",
+    "cover": "covers/contra-los-herejes-ireneo.png",
+    "author": "San Ireneo de Lyon",
+    "category": "Patrística",
+    "tags": ["Ireneo de Lyon", "patrística", "gnosticismo", "herejías", "iglesia antigua", "apologética"],
+    "description": "Exposición y refutación de la falsa gnosis, una obra clásica de la iglesia antigua contra el gnosticismo."
+  },
+  {
+    "id": "historia-abreviada-pensamiento-cristiano-gonzalez",
+    "title": "Historia abreviada del pensamiento cristiano",
+    "file": "books/historia-abreviada-pensamiento-cristiano-gonzalez.pdf",
+    "cover": "covers/historia-abreviada-pensamiento-cristiano-gonzalez.png",
+    "author": "Justo L. González",
+    "category": "Historia de la iglesia",
+    "tags": ["historia", "pensamiento cristiano", "teología histórica", "patrística", "Reforma", "Justo L. González"],
+    "description": "Recorrido histórico por el desarrollo del pensamiento cristiano desde la iglesia antigua hasta la era contemporánea."
+  },
+  {
+    "id": "teologia-del-pacto-de-adan-a-cristo-coxe-owen",
+    "title": "Teología del pacto: De Adán a Cristo",
+    "file": "books/teologia-del-pacto-de-adan-a-cristo-coxe-owen.pdf",
+    "cover": "covers/teologia-del-pacto-de-adan-a-cristo-coxe-owen.png",
+    "author": "Nehemiah Coxe y John Owen",
+    "category": "Teología del pacto",
+    "tags": ["teología del pacto", "Adán", "Cristo", "pacto de circuncisión", "nuevo pacto", "Nehemiah Coxe", "John Owen"],
+    "description": "Incluye un discurso de Nehemiah Coxe sobre los pactos antes de la ley y una exposición de John Owen sobre Hebreos 8:6-13."
+  },
+  {
+    "id": "rasgos-distintivos-iglesia-bautista-reformada",
+    "title": "Rasgos distintivos de la Iglesia Bautista Reformada",
+    "file": "books/rasgos-distintivos-iglesia-bautista-reformada.pdf",
+    "cover": "covers/rasgos-distintivos-iglesia-bautista-reformada.png",
+    "author": "Carlos Goya",
+    "category": "Bautistas reformados",
+    "tags": ["bautista reformada", "cinco solas", "identidad bautista", "iglesia", "doctrina reformada", "Carlos Goya"],
+    "description": "Presentación sobre los rasgos doctrinales e históricos distintivos de una iglesia bautista reformada."
+  },
+  {
+    "id": "hombre-sacerdote-hogar-waldron",
+    "title": "El hombre como sacerdote en su hogar",
+    "file": "books/hombre-sacerdote-hogar-waldron.pdf",
+    "cover": "covers/hombre-sacerdote-hogar-waldron.png",
+    "author": "Samuel E. Waldron y Benjamin Hoak",
+    "category": "Familia cristiana",
+    "tags": ["hogar cristiano", "familia", "hombre", "sacerdote del hogar", "liderazgo espiritual", "Samuel E. Waldron", "Benjamin Hoak"],
+    "description": "Recurso de teología práctica sobre el liderazgo espiritual del hombre en el hogar cristiano."
+  },
+  {
+    "id": "historia-del-cristianismo-justo-gonzalez",
+    "title": "Historia del cristianismo",
+    "file": "books/historia-del-cristianismo-justo-gonzalez.pdf",
+    "cover": "covers/historia-del-cristianismo-justo-gonzalez.png",
+    "author": "Justo L. González",
+    "category": "Historia de la iglesia",
+    "tags": ["historia del cristianismo", "iglesia primitiva", "patrística", "Reforma", "historia de la iglesia", "Justo L. González"],
+    "description": "Historia amplia del cristianismo, publicada originalmente en tomos, desde la iglesia antigua en adelante."
+  },
+  {
+    "id": "breve-historia-doctrinas-cristianas-gonzalez",
+    "title": "Breve historia de las doctrinas cristianas",
+    "file": "books/breve-historia-doctrinas-cristianas-gonzalez.pdf",
+    "cover": "covers/breve-historia-doctrinas-cristianas-gonzalez.png",
+    "author": "Justo L. González",
+    "category": "Teología histórica",
+    "tags": ["doctrinas cristianas", "historia doctrinal", "teología histórica", "iglesia", "sacramentos", "salvación", "Justo L. González"],
+    "description": "Resumen histórico del desarrollo de las doctrinas cristianas y su relación con la vida y culto de la iglesia."
+  },
+  {
+    "id": "confesion-fe-londres-1644",
+    "title": "La Confesión de Fe de Londres de 1644",
+    "file": "books/confesion-fe-londres-1644.pdf",
+    "cover": "covers/confesion-fe-londres-1644.png",
+    "author": "Bautistas Particulares de Londres",
+    "year": 1644,
+    "category": "Confesiones",
+    "tags": ["Confesión de Londres 1644", "bautistas particulares", "confesión de fe", "anabaptistas", "iglesias de Londres"],
+    "description": "Confesión de fe de siete congregaciones bautistas particulares de Londres, publicada originalmente en el siglo XVII."
+  },
+  {
+    "id": "confesion-catecismo-bautistas-particulares",
+    "title": "Confesión y catecismo de los Bautistas Particulares",
+    "file": "books/confesion-catecismo-bautistas-particulares.pdf",
+    "cover": "covers/confesion-catecismo-bautistas-particulares.png",
+    "author": "Bautistas Particulares",
+    "category": "Confesiones",
+    "tags": ["Confesión Bautista de 1689", "Catecismo Bautista", "bautistas particulares", "credobautismo", "congregacionalismo"],
+    "description": "Compilación de la Confesión Bautista de Fe de Londres de 1689, el Catecismo Bautista y apéndices doctrinales."
+  },
+  {
+    "id": "necesidad-reformar-iglesia-calvino",
+    "title": "La necesidad de reformar la Iglesia",
+    "file": "books/necesidad-reformar-iglesia-calvino.pdf",
+    "cover": "covers/necesidad-reformar-iglesia-calvino.png",
+    "author": "Juan Calvino",
+    "category": "Reforma",
+    "tags": ["Reforma", "iglesia", "Juan Calvino", "adoración", "doctrina", "disciplina", "reformar la iglesia"],
+    "description": "Tratado de Juan Calvino sobre los males de la iglesia y la necesidad de una reforma conforme a la Escritura."
+  },
+  {
+    "id": "vida-de-dios-en-el-alma-del-hombre-scougal",
+    "title": "La vida de Dios en el alma del hombre",
+    "file": "books/vida-de-dios-en-el-alma-del-hombre-scougal.pdf",
+    "cover": "covers/vida-de-dios-en-el-alma-del-hombre-scougal.png",
+    "author": "Henry Scougal",
+    "category": "Espiritualidad",
+    "tags": ["vida espiritual", "piedad", "religión verdadera", "puritanos", "Henry Scougal"],
+    "description": "Obra devocional clásica sobre la verdadera religión como vida divina en el alma."
+  },
+  {
+    "id": "confesion-fe-westminster-catecismo-menor",
+    "title": "Confesión de Fe de Westminster y Catecismo Menor",
+    "file": "books/confesion-fe-westminster-catecismo-menor.pdf",
+    "cover": "covers/confesion-fe-westminster-catecismo-menor.png",
+    "author": "Asamblea de Westminster",
+    "category": "Confesiones",
+    "tags": ["Westminster", "confesión de fe", "catecismo menor", "presbiterianos", "Fraternidad Reformada Argentina"],
+    "description": "Texto de la Confesión de Fe de Westminster y el Catecismo Menor en español."
+  },
+  {
+    "id": "sobre-nombre-bautista-reformado",
+    "title": "¿Bautista Reformado?",
+    "file": "books/sobre-nombre-bautista-reformado.pdf",
+    "cover": "covers/sobre-nombre-bautista-reformado.png",
+    "author": "Stuart Villalobos T., compilador",
+    "category": "Bautistas reformados",
+    "tags": ["bautista reformado", "identidad bautista", "credobautismo", "historia bautista", "Pedro Issa", "Tom Hicks", "Matthew Bingham"],
+    "description": "Compilación de artículos sobre el término bautista reformado, su historia y su uso."
+  },
+  {
+    "id": "comentarios-timoteo-filemon-calvino",
+    "title": "Comentarios bíblicos: 1 y 2 Timoteo, Filemón y respuesta a Sadoleto",
+    "file": "books/comentarios-timoteo-filemon-calvino.pdf",
+    "cover": "covers/comentarios-timoteo-filemon-calvino.png",
+    "author": "Juan Calvino",
+    "category": "Comentarios bíblicos",
+    "tags": ["Juan Calvino", "1 Timoteo", "2 Timoteo", "Filemón", "Sadoleto", "comentario bíblico", "epístolas pastorales"],
+    "description": "Comentarios de Juan Calvino sobre 1 y 2 Timoteo y Filemón, junto con su respuesta al Cardenal Sadoleto."
+  },
+  {
+    "id": "fe-economia-iglesia-antigua-gonzalez",
+    "title": "Fe y economía en la Iglesia antigua",
+    "file": "books/fe-economia-iglesia-antigua-gonzalez.pdf",
+    "cover": "covers/fe-economia-iglesia-antigua-gonzalez.png",
+    "author": "Justo L. González",
+    "category": "Historia de la iglesia",
+    "tags": ["iglesia antigua", "economía", "fe", "koinonía", "patrística", "Justo L. González"],
+    "description": "Estudio sobre la relación entre fe, vida económica y comunidad cristiana en la iglesia antigua."
+  },
+  {
+    "id": "medula-divina-teologia-ames",
+    "title": "La médula de la divina teología",
+    "file": "books/medula-divina-teologia-ames.pdf",
+    "cover": "covers/medula-divina-teologia-ames.png",
+    "author": "William Ames",
+    "category": "Teología sistemática",
+    "tags": ["teología", "divinidad sagrada", "puritanos", "William Ames", "dogmática", "teología práctica"],
+    "description": "Obra clásica de William Ames sobre la teología sagrada, extraída de las Escrituras y organizada para edificación."
+  },
+  {
+    "id": "el-bautismo-peter-masters",
+    "title": "El bautismo: lo que representa y su propósito",
+    "file": "books/el-bautismo-peter-masters.pdf",
+    "cover": "covers/el-bautismo-peter-masters.png",
+    "author": "Peter M. Masters",
+    "category": "Bautismo",
+    "tags": ["bautismo", "credobautismo", "inmersión", "bautismo de creyentes", "ordenanzas", "Peter M. Masters"],
+    "description": "Explicación bíblica del bautismo, su significado, propósito, modo y relación con la fe del creyente."
+  },
+  {
+    "id": "manifiesto-bautista-reformado-waldron",
+    "title": "Un Manifiesto Bautista Reformado",
+    "file": "books/manifiesto-bautista-reformado-waldron.pdf",
+    "cover": "covers/manifiesto-bautista-reformado-waldron.png",
+    "author": "Samuel E. Waldron",
+    "category": "Bautistas reformados",
+    "tags": ["bautista reformado", "nuevo pacto", "constitución de la iglesia", "teología pactual", "Samuel E. Waldron"],
+    "description": "El Nuevo Pacto como la constitución de la iglesia, presentado desde una perspectiva bautista reformada."
+  },
+  {
+    "id": "evangelizacion-puritana-beeke",
+    "title": "Evangelización puritana",
+    "file": "books/evangelizacion-puritana-beeke.pdf",
+    "cover": "covers/evangelizacion-puritana-beeke.png",
+    "author": "Joel R. Beeke",
+    "category": "Evangelización",
+    "tags": ["evangelización", "puritanos", "predicación", "catequesis", "oración", "Joel R. Beeke"],
+    "description": "Un enfoque bíblico de la evangelización puritana, sus características, método y disposición espiritual."
+  },
+  {
+    "id": "josefo-obras-esenciales",
+    "title": "Josefo: Las obras esenciales",
+    "file": "books/josefo-obras-esenciales.pdf",
+    "cover": "covers/josefo-obras-esenciales.png",
+    "author": "Flavio Josefo; edición de Paul L. Maier",
+    "category": "Historia antigua",
+    "tags": ["Josefo", "Flavio Josefo", "Antigüedades de los judíos", "Las guerras de los judíos", "historia judía", "Paul L. Maier"],
+    "description": "Condensación de Antigüedades de los judíos y Las guerras de los judíos, editada por Paul L. Maier."
+  },
+  {
+    "id": "en-hombros-de-gigantes-vol-19-1",
+    "title": "En hombros de gigantes, vol. 19 n.º 1",
+    "file": "books/en-hombros-de-gigantes-vol-19-1.pdf",
+    "cover": "covers/en-hombros-de-gigantes-vol-19-1.png",
+    "author": "Reforma Siglo XXI",
+    "year": 2017,
+    "category": "Historia de la iglesia",
+    "tags": ["Reforma", "gigantes de la fe", "John Wycliffe", "Martín Lutero", "William Tyndale", "Cipriano de Valera", "Juan Calvino", "CLIR"],
+    "description": "Boletín teológico Reforma Siglo XXI, abril de 2017, dedicado a figuras clave de la Reforma."
+  },
+  {
+    "id": "canones-de-dort",
+    "title": "Los Cánones de Dort",
+    "file": "books/canones-de-dort.pdf",
+    "cover": "covers/canones-de-dort.png",
+    "author": "Sínodo de Dort",
+    "year": 1619,
+    "category": "Confesiones",
+    "tags": ["Dort", "Cánones de Dort", "calvinismo", "elección", "reprobación", "sínodo", "doctrina reformada"],
+    "description": "Documento confesional reformado sobre la elección, la expiación, la corrupción humana, la gracia y la perseverancia."
+  },
+  {
+    "id": "en-hombros-de-gigantes-vol-19-2",
+    "title": "En hombros de gigantes, vol. 19 n.º 2",
+    "file": "books/en-hombros-de-gigantes-vol-19-2.pdf",
+    "cover": "covers/en-hombros-de-gigantes-vol-19-2.png",
+    "author": "Reforma Siglo XXI",
+    "year": 2017,
+    "category": "Historia de la iglesia",
+    "tags": ["Reforma", "gigantes de la fe", "Juan Huss", "Savonarola", "Guillermo Farel", "Teodoro de Beza", "Casiodoro de Reina", "CLIR"],
+    "description": "Boletín teológico Reforma Siglo XXI, octubre de 2017, dedicado a figuras clave de la Reforma."
+  },
+  {
+    "id": "servicio-razonable-vol-1-brakel",
+    "title": "El servicio razonable del cristiano, vol. 1",
+    "file": "books/servicio-razonable-vol-1-brakel.pdf",
+    "cover": "covers/servicio-razonable-vol-1-brakel.png",
+    "author": "Wilhelmus à Brakel",
+    "category": "Teología sistemática",
+    "tags": ["servicio razonable", "teología reformada", "pacto de gracia", "doctrina de Dios", "antropología", "cristología", "Wilhelmus à Brakel"],
+    "description": "Primer volumen de The Christian's Reasonable Service, sobre Dios, el hombre, el pacto y la persona y obra de Cristo."
+  },
+  {
+    "id": "una-teologia-de-la-familia",
+    "title": "Una teología de la familia",
+    "file": "books/una-teologia-de-la-familia.pdf",
+    "cover": "covers/una-teologia-de-la-familia.png",
+    "author": "Jeff Pollard y Scott T. Brown, editores",
+    "category": "Familia cristiana",
+    "tags": ["familia", "teología de la familia", "adoración familiar", "matrimonio", "paternidad", "maternidad", "Chapel Library", "Scott T. Brown"],
+    "description": "Compilación de sabiduría bíblica para la vida familiar, editada por Jeff Pollard y Scott T. Brown."
+  },
+  {
+    "id": "didache-doctrina-doce-apostoles",
+    "title": "La doctrina de los doce apóstoles: Didaché",
+    "file": "books/didache-doctrina-doce-apostoles.pdf",
+    "cover": "covers/didache-doctrina-doce-apostoles.png",
+    "author": "Autor anónimo; introducción de Cándido Casal",
+    "category": "Patrística",
+    "tags": ["Didaché", "doctrina de los doce apóstoles", "padres apostólicos", "iglesia primitiva", "liturgia", "bautismo", "eucaristía"],
+    "description": "Texto cristiano antiguo no canónico, con introducción sobre su valor para comprender la vida y culto de la iglesia primitiva."
+  },
+  {
+    "id": "servicio-razonable-vol-2-brakel",
+    "title": "El servicio razonable del cristiano, vol. 2",
+    "file": "books/servicio-razonable-vol-2-brakel.pdf",
+    "cover": "covers/servicio-razonable-vol-2-brakel.png",
+    "author": "Wilhelmus à Brakel",
+    "category": "Teología sistemática",
+    "tags": ["servicio razonable", "teología reformada", "eclesiología", "iglesia", "soteriología", "regeneración", "fe", "Wilhelmus à Brakel"],
+    "description": "Segundo volumen de The Christian's Reasonable Service, sobre la iglesia y la doctrina de la salvación."
+  },
+  {
+    "id": "servicio-razonable-vol-3-brakel",
+    "title": "El servicio razonable del cristiano, vol. 3",
+    "file": "books/servicio-razonable-vol-3-brakel.pdf",
+    "cover": "covers/servicio-razonable-vol-3-brakel.png",
+    "author": "Wilhelmus à Brakel",
+    "category": "Teología sistemática",
+    "tags": ["servicio razonable", "teología reformada", "santificación", "ley de Dios", "diez mandamientos", "vida cristiana", "Wilhelmus à Brakel"],
+    "description": "Tercer volumen de The Christian's Reasonable Service, sobre santificación, la ley de Dios y la vida cristiana."
+  },
+  {
+    "id": "servicio-razonable-vol-4-brakel",
+    "title": "El servicio razonable del cristiano, vol. 4",
+    "file": "books/servicio-razonable-vol-4-brakel.pdf",
+    "cover": "covers/servicio-razonable-vol-4-brakel.png",
+    "author": "Wilhelmus à Brakel",
+    "category": "Teología sistemática",
+    "tags": ["servicio razonable", "teología reformada", "ayuno", "meditación", "humildad", "crecimiento espiritual", "vida cristiana", "Wilhelmus à Brakel"],
+    "description": "Cuarto volumen de The Christian's Reasonable Service, con temas de piedad práctica y crecimiento espiritual."
+  }
+]

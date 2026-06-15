@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galería — Biblioteca Somos Uno</title>
+  <style>
+    :root{--accent:#165b45;--panel:#fff;--muted:#66727c;--ink:#17202a}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,Helvetica,sans-serif;background:#fbfaf7;color:var(--ink);-webkit-font-smoothing:antialiased}
+    .shell{width:min(1100px,calc(100% - 32px));margin:0 auto;padding:22px}
+    .header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    h1{margin:0;font-size:1.4rem}
+    .desc{color:var(--muted);margin-top:6px;font-size:0.95rem}
+
+    .viewer{margin-top:18px;display:grid;grid-template-columns:1fr 300px;gap:18px;align-items:start}
+    .carousel{background:var(--panel);padding:18px;border-radius:12px;box-shadow:0 12px 30px rgba(23,32,42,0.06);display:flex;flex-direction:column;align-items:center}
+    .slide{width:100%;max-height:72vh;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:8px;position:relative;min-height:260px}
+    .slide img{max-width:100%;max-height:72vh;object-fit:contain;border-radius:6px;display:block;transition:opacity .28s ease,transform .28s ease}
+
+    .controls{display:flex;gap:8px;margin-top:12px;align-items:center}
+    .thumbs{display:grid;gap:10px;grid-auto-rows:80px}
+    .thumbs div{width:100%;height:100%}
+    .thumbs img{width:100%;height:100%;object-fit:cover;border-radius:8px;cursor:pointer;opacity:0.95;transition:transform .18s ease,opacity .18s ease}
+    .thumbs img.active{outline:3px solid var(--accent);opacity:1;transform:scale(1.02)}
+
+    .btn{border:0;background:#fff;padding:10px 12px;border-radius:10px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,0.06);font-size:16px}
+    .btn:active{transform:translateY(1px)}
+    .nav{display:flex;gap:8px}
+
+    .message{padding:20px;color:var(--muted);text-align:center}
+
+    @media (max-width:1000px){
+      .shell{padding:16px}
+      .viewer{grid-template-columns:1fr 220px;gap:12px}
+      .thumbs{grid-auto-rows:68px}
+      .btn{padding:9px 10px}
+    }
+
+    @media (max-width:760px){
+      .viewer{grid-template-columns:1fr;gap:12px}
+      .carousel{order:1}
+      .thumbs{order:2;display:flex;gap:10px;overflow:auto;padding:8px 4px;grid-auto-rows:1fr}
+      .thumbs div{min-width:96px;flex:0 0 96px}
+      .thumbs img{height:96px}
+      .controls{justify-content:space-between;width:100%}
+      .btn{padding:12px 14px;font-size:18px}
+      h1{font-size:1.15rem}
+      .desc{font-size:0.9rem}
+    }
+
+    /* Better mid-size responsiveness */
+    @media (max-width:1000px){
+      .viewer{grid-template-columns:1fr 220px}
+      .slide{min-height:360px}
+      .thumbs{grid-auto-rows:68px}
+    }
+
+    /* Verse style */
+    .verse{margin-top:8px;color:var(--muted);line-height:1.45;font-size:0.98rem;font-style:italic;border-left:3px solid rgba(22,91,69,0.12);padding-left:10px;background:rgba(22,91,69,0.02);border-radius:6px;padding:8px}
+
+    @media (max-width:420px){
+      .thumbs div{min-width:84px;flex:0 0 84px}
+      .thumbs img{height:84px}
+      .btn{padding:10px 12px;font-size:16px}
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="header" style="align-items:center;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:48px;height:48px;border-radius:10px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800">SU</div>
+        <div>
+          <h1>Galería — Misión Bautista Reformada "Somos Uno"</h1>
+          <p class="verse">"Un mandamiento nuevo os doy: que os améis unos a otros."<br><small>Juan 13:34</small></p>
+        </div>
+      </div>
+      <div><a href="index.html" aria-label="Volver al catálogo" style="text-decoration:none;color:var(--accent);font-weight:700">Volver al catálogo</a></div>
+    </div>
+
+    <div class="viewer">
+      <div class="carousel">
+        <div class="slide" id="slide"><img src="" alt="Foto" id="mainImg" loading="lazy"/></div>
+        <div class="controls">
+          <div class="nav">
+            <button id="prev" class="btn" aria-label="Anterior">◀</button>
+            <button id="next" class="btn" aria-label="Siguiente">▶</button>
+          </div>
+          <div style="margin-left:8px;color:var(--muted)" id="count">0 / 0</div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="thumbs" id="thumbs"></div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    // Enhanced gallery: probe files photo1..photo12, only include existing images
+    (function(){
+      const candidateCount = 12;
+      const images = [];
+      const thumbs = document.getElementById('thumbs');
+      const mainImg = document.getElementById('mainImg');
+      const count = document.getElementById('count');
+      let current = 0;
+
+      // preload probe to check existence
+      function probe(src) {
+        return new Promise(resolve => {
+          const i = new Image();
+          i.onload = () => resolve(true);
+          i.onerror = () => resolve(false);
+          i.src = src;
+        });
+      }
+
+      async function build() {
+        for (let i = 1; i <= candidateCount; i++) {
+          const src = `gallery/photo${i}.jpg`;
+          // probe
+          // eslint-disable-next-line no-await-in-loop
+          const ok = await probe(src);
+          if (!ok) continue;
+          images.push(src);
+        }
+
+        if (images.length === 0) {
+          mainImg.src = '';
+          count.textContent = '0 / 0';
+          const box = document.createElement('div'); box.className = 'message'; box.textContent = 'No hay fotos disponibles.'; document.querySelector('.carousel').replaceChildren(box);
+          return;
+        }
+
+        images.forEach((src, i) => {
+          const d = document.createElement('div');
+          const img = document.createElement('img'); img.src = src; img.alt = '';
+          img.loading = 'lazy';
+          img.addEventListener('click', ()=>{ current = i; update(); });
+          d.appendChild(img);
+          thumbs.appendChild(d);
+        });
+
+        // set initial
+        current = 0;
+        update();
+      }
+
+      function update(){
+        mainImg.src = images[current];
+        count.textContent = `${current+1} / ${images.length}`;
+        Array.from(thumbs.querySelectorAll('img')).forEach((t,i)=> t.classList.toggle('active', i===current));
+      }
+
+      document.getElementById('prev').addEventListener('click', ()=>{ if (images.length===0) return; current = (current-1+images.length)%images.length; update(); });
+      document.getElementById('next').addEventListener('click', ()=>{ if (images.length===0) return; current = (current+1)%images.length; update(); });
+
+      // keyboard navigation
+      document.addEventListener('keydown', e=>{ if (e.key==='ArrowLeft') document.getElementById('prev').click(); if (e.key==='ArrowRight') document.getElementById('next').click(); });
+
+      // touch / swipe gestures for mobile & tablets
+      (function addTouch() {
+        const slideEl = document.getElementById('slide');
+        const prevBtn = document.getElementById('prev');
+        const nextBtn = document.getElementById('next');
+        let startX = 0, startY = 0, startTime = 0, moved = false;
+
+        slideEl.addEventListener('touchstart', function(e){
+          const t = e.touches[0];
+          startX = t.clientX; startY = t.clientY; startTime = Date.now(); moved = false;
+        }, {passive:true});
+
+        slideEl.addEventListener('touchmove', function(e){
+          const t = e.touches[0];
+          const dx = t.clientX - startX; const dy = t.clientY - startY;
+          if (Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy)) moved = true;
+        }, {passive:true});
+
+        slideEl.addEventListener('touchend', function(e){
+          if (!moved) return;
+          const t = e.changedTouches[0];
+          const dx = t.clientX - startX; const dt = Date.now() - startTime;
+          const absX = Math.abs(dx);
+          const threshold = 50; // px
+          if (absX > threshold) {
+            if (dx < 0) nextBtn.click(); else prevBtn.click();
+          }
+        });
+      })();
+
+      // start build and accept optional ?photo=
+      (async ()=>{
+        await build();
+        const params = new URLSearchParams(location.search);
+        const p = params.get('photo');
+        if (p) {
+          const idx = images.indexOf(p);
+          if (idx >= 0) { current = idx; update(); }
+        }
+      })();
+    })();
+  </script>
+</body>
+</html>
