@@ -507,5 +507,25 @@
     "category": "Teología sistemática",
     "tags": ["servicio razonable", "teología reformada", "ayuno", "meditación", "humildad", "crecimiento espiritual", "vida cristiana", "Wilhelmus à Brakel"],
     "description": "Cuarto volumen de The Christian's Reasonable Service, con temas de piedad práctica y crecimiento espiritual."
+  },
+  {
+    "id": "un-catecismo-ortodoxo-hercules-collins",
+    "title": "Un Catecismo Ortodoxo",
+    "file": "books/un-catecismo-ortodoxo-hercules-collins.pdf",
+    "cover": "covers/un-catecismo-ortodoxo-hercules-collins.png",
+    "author": "Hercules Collins",
+    "category": "Catecismos",
+    "tags": ["catecismo", "ortodoxo", "bautistas particulares", "Catecismo de Heidelberg", "Hercules Collins", "James M. Renihan"],
+    "description": "Revisión bautista particular del Catecismo de Heidelberg, compilada para instrucción doctrinal y confesional."
+  },
+  {
+    "id": "el-principio-regulativo-de-la-iglesia-waldron",
+    "title": "El principio regulativo de la Iglesia",
+    "file": "books/el-principio-regulativo-de-la-iglesia-waldron.pdf",
+    "cover": "covers/el-principio-regulativo-de-la-iglesia-waldron.png",
+    "author": "Sam Waldron",
+    "category": "Eclesiología",
+    "tags": ["principio regulativo", "iglesia", "culto", "adoración", "eclesiología", "Sam Waldron"],
+    "description": "Estudio sobre el principio regulativo aplicado a la vida, adoración y orden de la iglesia."
   }
 ]
