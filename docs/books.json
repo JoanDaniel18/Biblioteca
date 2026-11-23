@@ -1793,5 +1793,815 @@
     "category": "Evangelización",
     "tags": ["Juan 6:44", "gracia", "llamamiento eficaz", "folleto"],
     "description": "Breve escrito sobre Juan 6:44: cómo el Padre trae a los hombres a Cristo."
+  },
+  {
+    "id": "la-fidelidad-de-dios-portavoz-gracia",
+    "title": "La fidelidad de Dios (Portavoz de la Gracia n.º 2)",
+    "file": "books/la-fidelidad-de-dios-portavoz-gracia.pdf",
+    "cover": "covers/la-fidelidad-de-dios-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["la fidelidad de dios", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 2 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la fidelidad de Dios."
+  },
+  {
+    "id": "la-justificacion-portavoz-gracia",
+    "title": "La justificación (Portavoz de la Gracia n.º 4)",
+    "file": "books/la-justificacion-portavoz-gracia.pdf",
+    "cover": "covers/la-justificacion-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["la justificación", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 4 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la justificación por la fe."
+  },
+  {
+    "id": "los-deberes-de-los-hijos-y-las-hijas-portavoz-gracia",
+    "title": "Los deberes de los hijos y las hijas (Portavoz de la Gracia n.º 6)",
+    "file": "books/los-deberes-de-los-hijos-y-las-hijas-portavoz-gracia.pdf",
+    "cover": "covers/los-deberes-de-los-hijos-y-las-hijas-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["los deberes de los hijos y las hijas", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 6 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre los deberes de los hijos hacia sus padres."
+  },
+  {
+    "id": "justicia-imputada-portavoz-gracia",
+    "title": "Justicia imputada (Portavoz de la Gracia n.º 7)",
+    "file": "books/justicia-imputada-portavoz-gracia.pdf",
+    "cover": "covers/justicia-imputada-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["justicia imputada", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 7 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la justicia de Cristo imputada al creyente."
+  },
+  {
+    "id": "sustitucion-portavoz-gracia",
+    "title": "Sustitución (Portavoz de la Gracia n.º 9)",
+    "file": "books/sustitucion-portavoz-gracia.pdf",
+    "cover": "covers/sustitucion-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["sustitución", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 9 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la muerte sustitutiva de Cristo."
+  },
+  {
+    "id": "idolatria-portavoz-gracia",
+    "title": "Idolatría (Portavoz de la Gracia n.º 17)",
+    "file": "books/idolatria-portavoz-gracia.pdf",
+    "cover": "covers/idolatria-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["idolatría", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 17 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la idolatría y sus formas."
+  },
+  {
+    "id": "ropa-modesta-portavoz-gracia",
+    "title": "Ropa modesta (Portavoz de la Gracia n.º 22)",
+    "file": "books/ropa-modesta-portavoz-gracia.pdf",
+    "cover": "covers/ropa-modesta-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["ropa modesta", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 22 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la modestia cristiana en el vestir."
+  },
+  {
+    "id": "cristo-el-mediador-portavoz-gracia",
+    "title": "Cristo el Mediador (Portavoz de la Gracia n.º 23)",
+    "file": "books/cristo-el-mediador-portavoz-gracia.pdf",
+    "cover": "covers/cristo-el-mediador-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["cristo el mediador", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 23 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre Cristo como único Mediador entre Dios y los hombres."
+  },
+  {
+    "id": "feminidad-virtuosa-portavoz-gracia",
+    "title": "Feminidad virtuosa (Portavoz de la Gracia n.º 24)",
+    "file": "books/feminidad-virtuosa-portavoz-gracia.pdf",
+    "cover": "covers/feminidad-virtuosa-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["feminidad virtuosa", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 24 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la mujer virtuosa según la Escritura."
+  },
+  {
+    "id": "maternidad-portavoz-gracia",
+    "title": "Maternidad (Portavoz de la Gracia n.º 28)",
+    "file": "books/maternidad-portavoz-gracia.pdf",
+    "cover": "covers/maternidad-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["maternidad", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 28 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la maternidad cristiana."
+  },
+  {
+    "id": "mortificacion-portavoz-gracia",
+    "title": "Mortificación (Portavoz de la Gracia n.º 29)",
+    "file": "books/mortificacion-portavoz-gracia.pdf",
+    "cover": "covers/mortificacion-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["mortificación", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 29 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la mortificación del pecado."
+  },
+  {
+    "id": "avivamiento-portavoz-gracia",
+    "title": "Avivamiento (Portavoz de la Gracia n.º 31)",
+    "file": "books/avivamiento-portavoz-gracia.pdf",
+    "cover": "covers/avivamiento-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["avivamiento", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 31 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre el avivamiento verdadero."
+  },
+  {
+    "id": "depravacion-radical-portavoz-gracia",
+    "title": "Depravación radical (Portavoz de la Gracia n.º 32)",
+    "file": "books/depravacion-radical-portavoz-gracia.pdf",
+    "cover": "covers/depravacion-radical-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["depravación radical", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 32 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la depravación total del hombre."
+  },
+  {
+    "id": "asegurate",
+    "title": "Asegúrate",
+    "file": "books/asegurate.pdf",
+    "cover": "covers/asegurate.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["salvación", "seguridad", "folleto"],
+    "description": "Folleto que llama a examinarse para asegurarse de estar en Cristo."
+  },
+  {
+    "id": "los-atributos-de-dios",
+    "title": "Los atributos de Dios",
+    "file": "books/los-atributos-de-dios.pdf",
+    "cover": "covers/los-atributos-de-dios.jpg",
+    "author": "A. W. Pink",
+    "category": "Teología sistemática",
+    "tags": ["atributos de Dios", "doctrina de Dios", "A. W. Pink"],
+    "description": "Estudio clásico de A. W. Pink sobre los atributos de Dios: su soberanía, santidad, gracia, misericordia, amor e inmutabilidad, entre otros."
+  },
+  {
+    "id": "ganar-almas",
+    "title": "Ganar almas",
+    "file": "books/ganar-almas.pdf",
+    "cover": "covers/ganar-almas.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Evangelización",
+    "tags": ["evangelización", "ganar almas", "sermón", "C. H. Spurgeon"],
+    "description": "Spurgeon sobre la tarea de ganar almas para Cristo."
+  },
+  {
+    "id": "grasoso-el-ladron",
+    "title": "Grasoso, el ladrón",
+    "file": "books/grasoso-el-ladron.pdf",
+    "cover": "covers/grasoso-el-ladron.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["evangelio", "relato", "folleto"],
+    "description": "Relato evangelístico que llama al lector a examinar su corazón a la luz de las normas de Dios."
+  },
+  {
+    "id": "humildad-el-mensaje-de-miqueas-para-hoy",
+    "title": "Humildad: el mensaje de Miqueas para hoy",
+    "file": "books/humildad-el-mensaje-de-miqueas-para-hoy.pdf",
+    "cover": "covers/humildad-el-mensaje-de-miqueas-para-hoy.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Espiritualidad",
+    "tags": ["humildad", "Miqueas", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre Miqueas 6:8 y el andar humilde con Dios."
+  },
+  {
+    "id": "jesucristo-no-puede-ser-burlado",
+    "title": "Jesucristo no puede ser burlado",
+    "file": "books/jesucristo-no-puede-ser-burlado.pdf",
+    "cover": "covers/jesucristo-no-puede-ser-burlado.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Evangelización",
+    "tags": ["juicio", "evangelio", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon que advierte contra despreciar la invitación del evangelio."
+  },
+  {
+    "id": "el-juicio-final",
+    "title": "El juicio final",
+    "file": "books/el-juicio-final.pdf",
+    "cover": "covers/el-juicio-final.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Evangelización",
+    "tags": ["juicio final", "eternidad", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre el día del juicio final."
+  },
+  {
+    "id": "la-palabra-de-dios-y-el-pecado",
+    "title": "La Palabra de Dios y el pecado",
+    "file": "books/la-palabra-de-dios-y-el-pecado.pdf",
+    "cover": "covers/la-palabra-de-dios-y-el-pecado.jpg",
+    "author": "L. R. Shelton Jr.",
+    "category": "Evangelización",
+    "tags": ["pecado", "ley de Dios", "arrepentimiento", "L. R. Shelton"],
+    "description": "Lo que la Palabra de Dios enseña sobre el pecado y la misericordia de Dios para con los pecadores."
+  },
+  {
+    "id": "la-palabra-infalible-de-dios",
+    "title": "La Palabra infalible de Dios",
+    "file": "books/la-palabra-infalible-de-dios.pdf",
+    "cover": "covers/la-palabra-infalible-de-dios.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Bibliología",
+    "tags": ["Escritura", "inerrancia", "autoridad de la Biblia", "C. H. Spurgeon"],
+    "description": "Spurgeon defiende la inspiración, la autoridad y la suficiencia de la Escritura."
+  },
+  {
+    "id": "la-eleccion",
+    "title": "La elección",
+    "file": "books/la-eleccion.pdf",
+    "cover": "covers/la-eleccion.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Teología sistemática",
+    "tags": ["elección", "doctrinas de la gracia", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre la doctrina bíblica de la elección."
+  },
+  {
+    "id": "la-ensenanza-de-cristo-acerca-del-nuevo-nacimiento",
+    "title": "La enseñanza de Cristo acerca del nuevo nacimiento",
+    "file": "books/la-ensenanza-de-cristo-acerca-del-nuevo-nacimiento.pdf",
+    "cover": "covers/la-ensenanza-de-cristo-acerca-del-nuevo-nacimiento.jpg",
+    "author": "L. R. Shelton Jr.",
+    "category": "Teología sistemática",
+    "tags": ["nuevo nacimiento", "regeneración", "Juan 3", "L. R. Shelton"],
+    "description": "Exposición de la enseñanza de Jesús sobre el nuevo nacimiento y sus frutos."
+  },
+  {
+    "id": "la-esclavitud-de-la-voluntad-condensado",
+    "title": "La esclavitud de la voluntad (condensado)",
+    "file": "books/la-esclavitud-de-la-voluntad-condensado.pdf",
+    "cover": "covers/la-esclavitud-de-la-voluntad-condensado.jpg",
+    "author": "Martín Lutero",
+    "category": "Reforma",
+    "tags": ["libre albedrío", "Erasmo", "gracia", "Martín Lutero"],
+    "description": "Versión condensada de la respuesta de Lutero a Erasmo sobre la incapacidad de la voluntad humana y la soberanía de la gracia."
+  },
+  {
+    "id": "la-gracia-de-dios",
+    "title": "La gracia de Dios",
+    "file": "books/la-gracia-de-dios.pdf",
+    "cover": "covers/la-gracia-de-dios.jpg",
+    "author": "L. R. Shelton Jr.",
+    "category": "Teología sistemática",
+    "tags": ["gracia", "salvación", "L. R. Shelton"],
+    "description": "Qué es la gracia de Dios y cómo salva al pecador."
+  },
+  {
+    "id": "la-hija-del-lechero",
+    "title": "La hija del lechero",
+    "file": "books/la-hija-del-lechero.pdf",
+    "cover": "covers/la-hija-del-lechero.jpg",
+    "author": "Legh Richmond",
+    "category": "Historia de la iglesia",
+    "tags": ["biografía", "conversión", "testimonio", "Legh Richmond"],
+    "description": "Relato clásico de la conversión y la vida piadosa de una joven humilde."
+  },
+  {
+    "id": "la-nina-de-la-humilde-cabana",
+    "title": "La niña de la humilde cabaña",
+    "file": "books/la-nina-de-la-humilde-cabana.pdf",
+    "cover": "covers/la-nina-de-la-humilde-cabana.jpg",
+    "author": "Legh Richmond",
+    "category": "Historia de la iglesia",
+    "tags": ["biografía", "niños", "conversión", "Legh Richmond"],
+    "description": "Relato clásico sobre la fe de una niña de familia pobre."
+  },
+  {
+    "id": "la-ruina-del-hombre-la-redencion-de-dios",
+    "title": "La ruina del hombre, la redención de Dios",
+    "file": "books/la-ruina-del-hombre-la-redencion-de-dios.pdf",
+    "cover": "covers/la-ruina-del-hombre-la-redencion-de-dios.jpg",
+    "author": "L. R. Shelton Jr.",
+    "category": "Teología sistemática",
+    "tags": ["pecado", "redención", "evangelio", "L. R. Shelton"],
+    "description": "La caída del hombre en el pecado y la redención que Dios provee en Cristo."
+  },
+  {
+    "id": "la-verdadera-iglesia",
+    "title": "La verdadera iglesia",
+    "file": "books/la-verdadera-iglesia.pdf",
+    "cover": "covers/la-verdadera-iglesia.jpg",
+    "author": "J. C. Ryle",
+    "category": "Eclesiología",
+    "tags": ["iglesia", "cuerpo de Cristo", "J. C. Ryle"],
+    "description": "Ryle describe la única iglesia verdadera: el cuerpo de todos los creyentes en Cristo."
+  },
+  {
+    "id": "la-voz-de-la-sangre",
+    "title": "La voz de la sangre",
+    "file": "books/la-voz-de-la-sangre.pdf",
+    "cover": "covers/la-voz-de-la-sangre.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Evangelización",
+    "tags": ["sangre de Cristo", "Abel", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre la sangre de Cristo, que habla mejor que la de Abel."
+  },
+  {
+    "id": "las-doctrinas-de-la-gracia-en-el-evangelio-de-juan",
+    "title": "Las doctrinas de la gracia en el evangelio de Juan",
+    "file": "books/las-doctrinas-de-la-gracia-en-el-evangelio-de-juan.pdf",
+    "cover": "covers/las-doctrinas-de-la-gracia-en-el-evangelio-de-juan.jpg",
+    "author": "R. Bruce Steward",
+    "category": "Teología sistemática",
+    "tags": ["doctrinas de la gracia", "evangelio de Juan", "calvinismo"],
+    "description": "Las doctrinas de la gracia tal como aparecen en el evangelio según Juan."
+  },
+  {
+    "id": "el-libro-en-blanco",
+    "title": "El libro en blanco",
+    "file": "books/el-libro-en-blanco.pdf",
+    "cover": "covers/el-libro-en-blanco.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Evangelización",
+    "tags": ["pecado", "perdón", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón evangelístico de Spurgeon."
+  },
+  {
+    "id": "los-deberes-de-esposos-y-esposas",
+    "title": "Los deberes de esposos y esposas",
+    "file": "books/los-deberes-de-esposos-y-esposas.pdf",
+    "cover": "covers/los-deberes-de-esposos-y-esposas.jpg",
+    "author": "Richard Steele",
+    "category": "Familia cristiana",
+    "tags": ["matrimonio", "esposos", "puritanos", "Richard Steele"],
+    "description": "Enseñanza puritana sobre los deberes mutuos de esposos y esposas."
+  },
+  {
+    "id": "los-enganos-de-satanas",
+    "title": "Los engaños de Satanás",
+    "file": "books/los-enganos-de-satanas.pdf",
+    "cover": "covers/los-enganos-de-satanas.jpg",
+    "author": "W. A. Mason",
+    "category": "Espiritualidad",
+    "tags": ["Satanás", "tentación", "guerra espiritual"],
+    "description": "Las artimañas con que Satanás engaña a los hombres, según la Escritura."
+  },
+  {
+    "id": "los-terrores-del-infierno",
+    "title": "Los terrores del infierno",
+    "file": "books/los-terrores-del-infierno.pdf",
+    "cover": "covers/los-terrores-del-infierno.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["infierno", "juicio", "eternidad", "puritanos"],
+    "description": "La enseñanza bíblica sobre el infierno, con citas de Edwards, Shepard, Love y otros."
+  },
+  {
+    "id": "miel-que-sale-de-la-roca",
+    "title": "Miel que sale de la roca",
+    "file": "books/miel-que-sale-de-la-roca.pdf",
+    "cover": "covers/miel-que-sale-de-la-roca.jpg",
+    "author": "Thomas Wilcox",
+    "category": "Evangelización",
+    "tags": ["Cristo", "justicia de Cristo", "puritanos", "Thomas Wilcox"],
+    "description": "Clásico puritano que llama a buscar la justificación solo en Cristo, la roca."
+  },
+  {
+    "id": "modestia-cristiana",
+    "title": "Modestia cristiana",
+    "file": "books/modestia-cristiana.pdf",
+    "cover": "covers/modestia-cristiana.jpg",
+    "author": "Jeff Pollard",
+    "category": "Espiritualidad",
+    "tags": ["modestia", "vestimenta", "santidad"],
+    "description": "Los principios bíblicos de la modestia en el vestir."
+  },
+  {
+    "id": "la-necesidad-del-progreso-en-el-ministerio",
+    "title": "La necesidad del progreso en el ministerio",
+    "file": "books/la-necesidad-del-progreso-en-el-ministerio.pdf",
+    "cover": "covers/la-necesidad-del-progreso-en-el-ministerio.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Ministerio",
+    "tags": ["pastores", "ministerio", "C. H. Spurgeon"],
+    "description": "Spurgeon exhorta a los ministros a crecer continuamente en su vida y en su labor."
+  },
+  {
+    "id": "negociaciones-de-paz",
+    "title": "Negociaciones de paz",
+    "file": "books/negociaciones-de-paz.pdf",
+    "cover": "covers/negociaciones-de-paz.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Evangelización",
+    "tags": ["reconciliación", "paz con Dios", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre la reconciliación del pecador con Dios."
+  },
+  {
+    "id": "nieve-hermosa",
+    "title": "Nieve hermosa",
+    "file": "books/nieve-hermosa.pdf",
+    "cover": "covers/nieve-hermosa.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["perdón", "Isaías 1:18", "folleto"],
+    "description": "Folleto sobre Isaías 1:18: Dios puede emblanquecer como la nieve los pecados."
+  },
+  {
+    "id": "ninos-busquen-al-buen-pastor",
+    "title": "Niños, busquen al Buen Pastor",
+    "file": "books/ninos-busquen-al-buen-pastor.pdf",
+    "cover": "covers/ninos-busquen-al-buen-pastor.jpg",
+    "author": "Robert Murray M'Cheyne",
+    "category": "Familia cristiana",
+    "tags": ["niños", "Buen Pastor", "evangelio", "M'Cheyne"],
+    "description": "Llamado de M'Cheyne a los niños a buscar a Cristo, el Buen Pastor."
+  },
+  {
+    "id": "no-puedo-soltarme",
+    "title": "No puedo soltarme",
+    "file": "books/no-puedo-soltarme.pdf",
+    "cover": "covers/no-puedo-soltarme.jpg",
+    "author": "Horatius Bonar",
+    "category": "Evangelización",
+    "tags": ["fe", "Cristo", "folleto", "Horatius Bonar"],
+    "description": "Breve escrito de Bonar sobre dejar de confiar en uno mismo para descansar en Cristo."
+  },
+  {
+    "id": "nuestro-manifiesto",
+    "title": "Nuestro manifiesto",
+    "file": "books/nuestro-manifiesto.pdf",
+    "cover": "covers/nuestro-manifiesto.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Ministerio",
+    "tags": ["doctrina", "ministerio", "C. H. Spurgeon"],
+    "description": "Discurso de Spurgeon sobre las verdades que el ministro debe sostener y predicar."
+  },
+  {
+    "id": "nuestro-sustituto-sufriente",
+    "title": "Nuestro sustituto sufriente",
+    "file": "books/nuestro-sustituto-sufriente.pdf",
+    "cover": "covers/nuestro-sustituto-sufriente.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Teología sistemática",
+    "tags": ["expiación", "sustitución", "cruz", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre los sufrimientos de Cristo en lugar de los pecadores."
+  },
+  {
+    "id": "oracion-autentica-poder-autentico",
+    "title": "Oración auténtica, poder auténtico",
+    "file": "books/oracion-autentica-poder-autentico.pdf",
+    "cover": "covers/oracion-autentica-poder-autentico.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Espiritualidad",
+    "tags": ["oración", "sermón", "C. H. Spurgeon"],
+    "description": "Spurgeon sobre la oración verdadera y su poder."
+  },
+  {
+    "id": "la-oracion-de-jabes",
+    "title": "La oración de Jabes",
+    "file": "books/la-oracion-de-jabes.pdf",
+    "cover": "covers/la-oracion-de-jabes.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Espiritualidad",
+    "tags": ["oración", "Jabes", "1 Crónicas 4", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre la oración de Jabes (1 Crónicas 4:10)."
+  },
+  {
+    "id": "os-es-necesario-nacer-de-nuevo",
+    "title": "Os es necesario nacer de nuevo",
+    "file": "books/os-es-necesario-nacer-de-nuevo.pdf",
+    "cover": "covers/os-es-necesario-nacer-de-nuevo.jpg",
+    "author": "Thomas Boston",
+    "category": "Evangelización",
+    "tags": ["nuevo nacimiento", "regeneración", "Thomas Boston"],
+    "description": "Advertencia de Thomas Boston sobre la necesidad absoluta del nuevo nacimiento."
+  },
+  {
+    "id": "palabras-de-aliento-para-esposas-de-pastores",
+    "title": "Palabras de aliento para esposas de pastores",
+    "file": "books/palabras-de-aliento-para-esposas-de-pastores.pdf",
+    "cover": "covers/palabras-de-aliento-para-esposas-de-pastores.jpg",
+    "author": "Chapel Library",
+    "category": "Ministerio",
+    "tags": ["esposas de pastores", "ministerio", "aliento"],
+    "description": "Consejo y aliento para las esposas de los pastores."
+  },
+  {
+    "id": "palabras-para-el-ganador-de-almas",
+    "title": "Palabras para el ganador de almas",
+    "file": "books/palabras-para-el-ganador-de-almas.pdf",
+    "cover": "covers/palabras-para-el-ganador-de-almas.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["evangelización", "ganar almas"],
+    "description": "Consejos para quienes desean ganar almas para Cristo."
+  },
+  {
+    "id": "pecadores-en-las-manos-de-un-dios-airado",
+    "title": "Pecadores en las manos de un Dios airado",
+    "file": "books/pecadores-en-las-manos-de-un-dios-airado.pdf",
+    "cover": "covers/pecadores-en-las-manos-de-un-dios-airado.jpg",
+    "author": "Jonathan Edwards",
+    "category": "Evangelización",
+    "tags": ["ira de Dios", "Gran Despertar", "sermón", "Jonathan Edwards"],
+    "description": "El célebre sermón de Jonathan Edwards durante el Gran Despertar."
+  },
+  {
+    "id": "pensamientos-para-hombres-jovenes",
+    "title": "Pensamientos para hombres jóvenes",
+    "file": "books/pensamientos-para-hombres-jovenes.pdf",
+    "cover": "covers/pensamientos-para-hombres-jovenes.jpg",
+    "author": "J. C. Ryle",
+    "category": "Hombre cristiano",
+    "tags": ["jóvenes", "hombres", "vida cristiana", "J. C. Ryle"],
+    "description": "Consejos y advertencias de Ryle para los hombres jóvenes."
+  },
+  {
+    "id": "profesion-expuesta-posesion-explicada",
+    "title": "Profesión expuesta, posesión explicada",
+    "file": "books/profesion-expuesta-posesion-explicada.pdf",
+    "cover": "covers/profesion-expuesta-posesion-explicada.jpg",
+    "author": "L. R. Shelton Jr.",
+    "category": "Espiritualidad",
+    "tags": ["falsa profesión", "seguridad", "salvación", "L. R. Shelton"],
+    "description": "La diferencia entre profesar la fe y poseer verdaderamente a Cristo."
+  },
+  {
+    "id": "razones-por-las-cuales-algunos-no-vendran-a-cristo",
+    "title": "Razones por las cuales algunos no vendrán a Cristo",
+    "file": "books/razones-por-las-cuales-algunos-no-vendran-a-cristo.pdf",
+    "cover": "covers/razones-por-las-cuales-algunos-no-vendran-a-cristo.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["incredulidad", "evangelio", "folleto"],
+    "description": "Las razones por las que muchos rehúsan venir a Cristo."
+  },
+  {
+    "id": "razones-por-las-cuales-no-soy-catolico-romano",
+    "title": "Razones por las cuales no soy católico romano",
+    "file": "books/razones-por-las-cuales-no-soy-catolico-romano.pdf",
+    "cover": "covers/razones-por-las-cuales-no-soy-catolico-romano.jpg",
+    "author": "Chapel Library",
+    "category": "Apologética",
+    "tags": ["catolicismo romano", "Reforma", "folleto"],
+    "description": "Breve exposición de las diferencias bíblicas con la doctrina católica romana."
+  },
+  {
+    "id": "reconciliacion-la-mayor-necesidad-del-hombre",
+    "title": "Reconciliación: la mayor necesidad del hombre",
+    "file": "books/reconciliacion-la-mayor-necesidad-del-hombre.pdf",
+    "cover": "covers/reconciliacion-la-mayor-necesidad-del-hombre.jpg",
+    "author": "L. R. Shelton Jr.",
+    "category": "Evangelización",
+    "tags": ["reconciliación", "evangelio", "L. R. Shelton"],
+    "description": "La reconciliación con Dios por medio de Cristo como la mayor necesidad del hombre."
+  },
+  {
+    "id": "la-regeneracion-bautismal",
+    "title": "La regeneración bautismal",
+    "file": "books/la-regeneracion-bautismal.pdf",
+    "cover": "covers/la-regeneracion-bautismal.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Bautismo",
+    "tags": ["bautismo", "regeneración", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon contra la doctrina de que el bautismo regenera."
+  },
+  {
+    "id": "regeneracion-decisional",
+    "title": "Regeneración decisional",
+    "file": "books/regeneracion-decisional.pdf",
+    "cover": "covers/regeneracion-decisional.jpg",
+    "author": "James E. Adams",
+    "category": "Evangelización",
+    "tags": ["decisionismo", "regeneración", "evangelización"],
+    "description": "Crítica bíblica de la evangelización que confunde la regeneración con una decisión humana."
+  },
+  {
+    "id": "revestirse-de-cristo",
+    "title": "Revestirse de Cristo",
+    "file": "books/revestirse-de-cristo.pdf",
+    "cover": "covers/revestirse-de-cristo.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Espiritualidad",
+    "tags": ["santificación", "Cristo", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre vestirse del Señor Jesucristo."
+  },
+  {
+    "id": "santidad",
+    "title": "Santidad",
+    "file": "books/santidad.pdf",
+    "cover": "covers/santidad.jpg",
+    "author": "J. C. Ryle",
+    "category": "Espiritualidad",
+    "tags": ["santidad", "santificación", "vida cristiana", "J. C. Ryle"],
+    "description": "El clásico de J. C. Ryle sobre la santidad: su naturaleza, sus dificultades y sus raíces."
+  },
+  {
+    "id": "santificacion",
+    "title": "Santificación",
+    "file": "books/santificacion.pdf",
+    "cover": "covers/santificacion.jpg",
+    "author": "J. C. Ryle",
+    "category": "Espiritualidad",
+    "tags": ["santificación", "vida cristiana", "J. C. Ryle"],
+    "description": "Breve escrito de Ryle sobre la santificación del creyente."
+  },
+  {
+    "id": "senor-y-salvador",
+    "title": "Señor y Salvador",
+    "file": "books/senor-y-salvador.pdf",
+    "cover": "covers/senor-y-salvador.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["señorío de Cristo", "salvación", "folleto"],
+    "description": "Cristo debe ser recibido como Señor y como Salvador."
+  },
+  {
+    "id": "supongamos-que-un-hombre-pudiese-ir-al-cielo-sin-santidad",
+    "title": "Supongamos que un hombre pudiese ir al cielo sin santidad",
+    "file": "books/supongamos-que-un-hombre-pudiese-ir-al-cielo-sin-santidad.pdf",
+    "cover": "covers/supongamos-que-un-hombre-pudiese-ir-al-cielo-sin-santidad.jpg",
+    "author": "J. C. Ryle",
+    "category": "Espiritualidad",
+    "tags": ["santidad", "cielo", "J. C. Ryle"],
+    "description": "Ryle muestra que sin santidad nadie verá al Señor."
+  },
+  {
+    "id": "tienes-que-nacer-de-nuevo",
+    "title": "Tienes que nacer de nuevo",
+    "file": "books/tienes-que-nacer-de-nuevo.pdf",
+    "cover": "covers/tienes-que-nacer-de-nuevo.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["nuevo nacimiento", "folleto"],
+    "description": "Folleto evangelístico sobre la necesidad del nuevo nacimiento."
+  },
+  {
+    "id": "totalmente-por-gracia",
+    "title": "Totalmente por gracia",
+    "file": "books/totalmente-por-gracia.pdf",
+    "cover": "covers/totalmente-por-gracia.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Evangelización",
+    "tags": ["gracia", "salvación", "fe", "C. H. Spurgeon"],
+    "description": "El clásico de Spurgeon que explica el evangelio de la salvación solo por gracia."
+  },
+  {
+    "id": "un-dios-justo",
+    "title": "Un Dios justo",
+    "file": "books/un-dios-justo.pdf",
+    "cover": "covers/un-dios-justo.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["justicia de Dios", "evangelio", "folleto"],
+    "description": "Cómo Dios es justo y a la vez justifica al que cree en Jesús."
+  },
+  {
+    "id": "un-gran-evangelio-para-grandes-pecadores",
+    "title": "Un gran evangelio para grandes pecadores",
+    "file": "books/un-gran-evangelio-para-grandes-pecadores.pdf",
+    "cover": "covers/un-gran-evangelio-para-grandes-pecadores.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Evangelización",
+    "tags": ["evangelio", "gracia", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon: el evangelio es suficiente para el mayor de los pecadores."
+  },
+  {
+    "id": "un-llamado-a-la-oracion",
+    "title": "Un llamado a la oración",
+    "file": "books/un-llamado-a-la-oracion.pdf",
+    "cover": "covers/un-llamado-a-la-oracion.jpg",
+    "author": "J. C. Ryle",
+    "category": "Espiritualidad",
+    "tags": ["oración", "J. C. Ryle"],
+    "description": "La pregunta de Ryle: ¿ora usted? Un llamado urgente a la oración personal."
+  },
+  {
+    "id": "una-palabra-al-impenitente",
+    "title": "Una palabra al impenitente",
+    "file": "books/una-palabra-al-impenitente.pdf",
+    "cover": "covers/una-palabra-al-impenitente.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["arrepentimiento", "Lucas 13:3", "folleto"],
+    "description": "Llamado al arrepentimiento: si no os arrepentís, todos pereceréis igualmente."
+  },
+  {
+    "id": "una-defensa-del-calvinismo",
+    "title": "Una defensa del calvinismo",
+    "file": "books/una-defensa-del-calvinismo.pdf",
+    "cover": "covers/una-defensa-del-calvinismo.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Teología sistemática",
+    "tags": ["calvinismo", "doctrinas de la gracia", "C. H. Spurgeon"],
+    "description": "Spurgeon explica por qué sostiene las doctrinas de la gracia."
+  },
+  {
+    "id": "una-hora-con-george-muller",
+    "title": "Una hora con George Müller",
+    "file": "books/una-hora-con-george-muller.pdf",
+    "cover": "covers/una-hora-con-george-muller.jpg",
+    "author": "Charles R. Parsons",
+    "category": "Historia de la iglesia",
+    "tags": ["George Müller", "oración", "fe", "biografía"],
+    "description": "Entrevista con George Müller al final de su vida sobre la oración y la confianza en Dios."
+  },
+  {
+    "id": "una-mala-historia-personal-y-un-corazon-malo",
+    "title": "Una mala historia personal y un corazón malo",
+    "file": "books/una-mala-historia-personal-y-un-corazon-malo.pdf",
+    "cover": "covers/una-mala-historia-personal-y-un-corazon-malo.jpg",
+    "author": "Albert N. Martin",
+    "category": "Evangelización",
+    "tags": ["pecado", "misericordia", "evangelio", "Albert N. Martin"],
+    "description": "El evangelio para quien carga con un pasado malo y un corazón malo."
+  },
+  {
+    "id": "una-nueva-creacion",
+    "title": "Una nueva creación",
+    "file": "books/una-nueva-creacion.pdf",
+    "cover": "covers/una-nueva-creacion.jpg",
+    "author": "A. W. Pink",
+    "category": "Teología sistemática",
+    "tags": ["regeneración", "nueva criatura", "A. W. Pink"],
+    "description": "Lo que significa ser una nueva creación en Cristo."
+  },
+  {
+    "id": "una-oracion-desde-el-infierno",
+    "title": "Una oración desde el infierno",
+    "file": "books/una-oracion-desde-el-infierno.pdf",
+    "cover": "covers/una-oracion-desde-el-infierno.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["infierno", "Lucas 16", "folleto"],
+    "description": "Folleto basado en el relato del rico y Lázaro."
+  },
+  {
+    "id": "una-poderosa-salvacion",
+    "title": "Una poderosa salvación",
+    "file": "books/una-poderosa-salvacion.pdf",
+    "cover": "covers/una-poderosa-salvacion.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Evangelización",
+    "tags": ["salvación", "gracia", "C. H. Spurgeon"],
+    "description": "Lo que las Escrituras enseñan sobre la gran salvación de Dios, en palabras de Spurgeon."
+  },
+  {
+    "id": "viniendo-a-cristo",
+    "title": "Viniendo a Cristo",
+    "file": "books/viniendo-a-cristo.pdf",
+    "cover": "covers/viniendo-a-cristo.jpg",
+    "author": "Thomas Wilcox",
+    "category": "Evangelización",
+    "tags": ["Cristo", "justicia de Cristo", "Thomas Wilcox"],
+    "description": "Breve exhortación puritana a venir a Cristo y mirar solo su justicia."
+  },
+  {
+    "id": "continuara-siguen-vigentes-los-dones-milagrosos",
+    "title": "¿Continuará? ¿Siguen vigentes los dones milagrosos?",
+    "file": "books/continuara-siguen-vigentes-los-dones-milagrosos.pdf",
+    "cover": "covers/continuara-siguen-vigentes-los-dones-milagrosos.jpg",
+    "author": "Samuel E. Waldron",
+    "category": "Espíritu Santo",
+    "tags": ["cesacionismo", "dones espirituales", "profecía", "Samuel E. Waldron"],
+    "description": "Defensa bíblica del cese de los dones milagrosos y revelatorios tras la era apostólica."
+  },
+  {
+    "id": "por-que-somos-salvos-por-medio-de-la-fe",
+    "title": "¿Por qué somos salvos por medio de la fe?",
+    "file": "books/por-que-somos-salvos-por-medio-de-la-fe.pdf",
+    "cover": "covers/por-que-somos-salvos-por-medio-de-la-fe.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Teología sistemática",
+    "tags": ["fe", "justificación", "C. H. Spurgeon"],
+    "description": "Spurgeon explica por qué Dios eligió la fe como el medio de la salvación."
+  },
+  {
+    "id": "adoracion-evangelica",
+    "title": "Adoración evangélica",
+    "file": "books/adoracion-evangelica.pdf",
+    "cover": "covers/adoracion-evangelica.jpg",
+    "author": "Jeremiah Burroughs",
+    "category": "Culto público",
+    "tags": ["adoración", "principio regulativo", "puritanos", "Jeremiah Burroughs"],
+    "description": "Clásico puritano sobre cómo santificar el nombre de Dios en la adoración: la Palabra, la Cena del Señor y la oración."
+  },
+  {
+    "id": "la-membresia-de-la-iglesia-por-que-importa",
+    "title": "La membresía de la iglesia: ¿por qué importa?",
+    "file": "books/la-membresia-de-la-iglesia-por-que-importa.pdf",
+    "cover": "covers/la-membresia-de-la-iglesia-por-que-importa.jpg",
+    "author": "Jeffrey D. Johnson",
+    "category": "Eclesiología",
+    "tags": ["membresía", "iglesia local", "Legado Bautista Confesional"],
+    "description": "Por qué la membresía en la iglesia local es bíblica y necesaria, con preguntas para el estudio."
+  },
+  {
+    "id": "membresia-de-la-iglesia",
+    "title": "Membresía de la iglesia",
+    "file": "books/membresia-de-la-iglesia.pdf",
+    "cover": "covers/membresia-de-la-iglesia.jpg",
+    "author": "Greg Nichols",
+    "category": "Eclesiología",
+    "tags": ["membresía", "iglesia local", "eclesiología", "Greg Nichols"],
+    "description": "La enseñanza bíblica sobre la membresía de la iglesia, tomada de las Lecciones de teología sistemática de Greg Nichols."
   }
 ]
