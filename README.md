@@ -2,14 +2,14 @@
 
 Sitio estático para una biblioteca de lectura de la iglesia Misión Reformada "Somos Uno".
 
-La intención es ofrecer acceso comunitario a libros y documentos bautistas reformados sin presentar el sitio como una plataforma de reproducción, descarga o redistribución.
+La intención es ofrecer acceso comunitario a libros y documentos bautistas reformados para leer en línea o descargar.
 
 ## Qué incluye
 
 - Catálogo público con búsqueda, filtros por categoría y ordenamiento.
-- Visor de PDFs basado en PDF.js, sin enlace directo de descarga en la interfaz.
-- Lectura limpia, sin marca de agua sobre el texto.
-- Avisos de uso responsable y no reproducción.
+- Botón de descarga del PDF en cada libro y en el lector.
+- Lector de PDFs basado en PDF.js: ajuste al ancho, zoom, teclado (← →), deslizar en móvil y recuerda la última página leída.
+- Diseño claro minimalista con estilos compartidos en `docs/styles.css`.
 - Estructura compatible con GitHub Pages desde la carpeta `docs/`.
 
 ## Importante sobre derechos de autor
@@ -21,7 +21,7 @@ Sube únicamente materiales que cumplan al menos una de estas condiciones:
 - La iglesia tiene permiso escrito del autor, editorial o titular de derechos.
 - Son documentos propios de la iglesia.
 
-Un sitio web no puede impedir al 100% que alguien copie contenido mediante capturas, herramientas del navegador u otros métodos. Esta biblioteca reduce descargas casuales y comunica claramente el uso permitido, pero no reemplaza una autorización legal.
+Como el sitio permite descargar los PDFs, cualquier visitante puede guardar y compartir los archivos.
 
 ## Despliegue en GitHub Pages
 

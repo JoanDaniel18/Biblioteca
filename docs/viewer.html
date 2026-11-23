@@ -3,415 +3,412 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Visor - Biblioteca Somos Uno</title>
+  <title>Lector · Biblioteca Somos Uno</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,750&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    :root {
-      --ink: #17211d;
-      --muted: #667066;
-      --line: #e2d8ce;
-      --paper: #faf6ee;
-      --panel: #fffdf8;
-      --accent: #185a45;
-      --accent-strong: #0f4635;
-      --clay: #944a35;
-      --shadow: 0 22px 54px rgba(43, 36, 27, 0.18);
-      --radius: 8px;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        linear-gradient(135deg, rgba(24, 90, 69, 0.05), transparent 34%),
-        linear-gradient(45deg, transparent 0 48%, rgba(185, 139, 54, 0.07) 48% 52%, transparent 52%),
-        var(--paper);
-      background-size: auto, 42px 42px, auto;
-      color: var(--ink);
-    }
+    body { background: var(--surface); }
 
     .bar {
       position: sticky;
       top: 0;
       z-index: 20;
-      background: rgba(250, 246, 238, 0.92);
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: saturate(180%) blur(14px);
+      -webkit-backdrop-filter: saturate(180%) blur(14px);
       border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(18px);
     }
 
     .bar-inner {
-      width: min(1180px, calc(100% - 24px));
-      min-height: 70px;
-      margin: 0 auto;
+      height: 64px;
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 14px;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
       align-items: center;
+      gap: 16px;
+      padding: 0 16px;
     }
 
-    .title {
+    .doc {
+      display: flex;
+      align-items: center;
+      gap: 12px;
       min-width: 0;
     }
 
-    .title a {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 800;
-      font-size: 0.9rem;
+    .doc-text { min-width: 0; }
+
+    .doc h1 {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    h1 {
-      margin: 4px 0 0;
-      font-family: "Fraunces", Georgia, serif;
-      font-size: 1.38rem;
-      line-height: 1.2;
-      letter-spacing: 0;
-      overflow-wrap: anywhere;
+    .doc p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.8rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    .controls {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    button, .page-input {
-      min-height: 38px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--panel);
-      color: var(--ink);
-      font: inherit;
-    }
-
-    button {
-      min-width: 42px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 11px;
-      cursor: pointer;
-      box-shadow: 0 8px 18px rgba(43, 36, 27, 0.06);
-      transition: transform 160ms ease, border-color 160ms ease, color 160ms ease;
-    }
-
-    button:hover:not(:disabled) {
-      border-color: var(--accent);
-      color: var(--accent);
-      transform: translateY(-1px);
-    }
-
-    button:disabled {
-      opacity: 0.45;
-      cursor: not-allowed;
-    }
-
-    .page-control {
+    .pager {
       display: flex;
       align-items: center;
       gap: 6px;
       color: var(--muted);
-      font-weight: 650;
-      white-space: nowrap;
+      font-size: 0.88rem;
     }
 
-    .page-input {
-      width: 58px;
+    .pager input {
+      width: 56px;
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--bg);
       text-align: center;
-      padding: 0 6px;
+      font-weight: 550;
+      outline: none;
+      -moz-appearance: textfield;
     }
 
-    .status {
-      min-height: 44px;
+    .pager input::-webkit-inner-spin-button,
+    .pager input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+    .pager input:focus { border-color: var(--accent); }
+
+    .tools {
       display: flex;
+      justify-content: flex-end;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: #56352e;
-      background: #fff8f3;
-      border-bottom: 1px solid #e7d6cc;
-      padding: 8px 14px;
+      gap: 6px;
+    }
+
+    .zoom-label {
+      min-width: 46px;
       text-align: center;
-      font-size: 0.93rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .bar .btn { height: 36px; }
+    .bar .btn.icon { width: 36px; }
+
+    .progress {
+      height: 2px;
+      background: var(--accent);
+      width: 0;
+      transition: width 200ms ease;
     }
 
     .reader {
-      width: min(1060px, calc(100% - 20px));
-      margin: 18px auto 42px;
+      min-height: calc(100vh - 66px);
+      padding: 32px 16px 96px;
       display: grid;
-      place-items: center;
+      justify-items: center;
+      align-content: start;
+      overflow-x: auto;
     }
 
-    .page-wrap {
-      position: relative;
-      max-width: 100%;
-      box-shadow: var(--shadow);
+    .page {
       background: #fff;
-      border-radius: var(--radius);
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(17, 19, 18, 0.08), 0 12px 40px rgba(17, 19, 18, 0.1);
       overflow: hidden;
     }
 
-    canvas {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      user-select: none;
-    }
+    .page canvas { display: block; }
 
     .message {
-      width: min(680px, calc(100% - 24px));
-      margin: 34px auto;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--panel);
-      padding: 22px;
+      margin-top: 18vh;
+      display: flex;
+      align-items: center;
+      gap: 12px;
       color: var(--muted);
-      line-height: 1.55;
       text-align: center;
+      max-width: 460px;
     }
+
+    .message a { color: var(--accent); font-weight: 550; }
 
     .spinner {
       width: 18px;
       height: 18px;
-      border: 2px solid #d0d8de;
-      border-top-color: var(--accent);
+      border: 2px solid var(--line);
+      border-top-color: var(--ink);
       border-radius: 50%;
       animation: spin 0.8s linear infinite;
+      flex: 0 0 auto;
     }
 
-    @keyframes spin {
-      to { transform: rotate(360deg); }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .float-nav {
+      position: fixed;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      display: none;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 8px 30px rgba(17, 19, 18, 0.16);
+      backdrop-filter: blur(14px);
     }
 
     @media (max-width: 760px) {
-      .bar-inner {
-        grid-template-columns: 1fr;
-        padding: 10px 0;
-      }
-
-      .controls {
-        justify-content: flex-start;
-      }
-
-      h1 {
-        font-size: 1.05rem;
-      }
-
-      .status {
-        align-items: flex-start;
-        text-align: left;
-      }
+      .bar-inner { grid-template-columns: minmax(0, 1fr) auto; height: 60px; }
+      .bar .pager, .zoom-label, #zoom-out, #zoom-in { display: none; }
+      .download-label { display: none; }
+      .float-nav { display: flex; align-items: center; }
+      .float-nav .pager { display: flex; }
+      .reader { padding: 16px 8px 96px; }
     }
   </style>
 </head>
 <body>
   <header class="bar">
     <div class="bar-inner">
-      <div class="title">
-        <a href="index.html" aria-label="Volver al catálogo">
-          <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m10.8 19.3-6.6-6.6a1 1 0 0 1 0-1.4l6.6-6.6 1.4 1.4L7.4 11H20v2H7.4l4.8 4.9-1.4 1.4Z"/></svg>
-          Catálogo
+      <div class="doc">
+        <a class="btn icon" href="index.html" title="Volver a la biblioteca" aria-label="Volver a la biblioteca">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m10.8 19.3-6.6-6.6a1 1 0 0 1 0-1.4l6.6-6.6 1.4 1.4L7.4 11H20v2H7.4l4.8 4.9-1.4 1.4Z"/></svg>
         </a>
-        <h1 id="title">Cargando recurso...</h1>
+        <div class="doc-text">
+          <h1 id="title">Cargando…</h1>
+          <p id="subtitle"></p>
+        </div>
       </div>
-      <nav class="controls" aria-label="Controles de lectura">
-        <button id="prev" type="button" title="Página anterior" aria-label="Página anterior">
+
+      <div class="pager" data-pager>
+        <button class="btn icon" type="button" data-prev title="Página anterior (←)" aria-label="Página anterior">
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m14.7 6.7-1.4-1.4L6.6 12l6.7 6.7 1.4-1.4L9.4 12l5.3-5.3Z"/></svg>
         </button>
-        <div class="page-control">
-          <input id="page-num" class="page-input" type="number" min="1" value="1" aria-label="Página actual" />
-          <span>/ <span id="page-count">0</span></span>
-        </div>
-        <button id="next" type="button" title="Página siguiente" aria-label="Página siguiente">
+        <input type="number" min="1" value="1" data-page aria-label="Página actual" inputmode="numeric" />
+        <span>de <span data-count>–</span></span>
+        <button class="btn icon" type="button" data-next title="Página siguiente (→)" aria-label="Página siguiente">
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.3 17.3 1.4 1.4 6.7-6.7-6.7-6.7-1.4 1.4 5.3 5.3-5.3 5.3Z"/></svg>
         </button>
-        <button id="zoom-out" type="button" title="Alejar" aria-label="Alejar">
+      </div>
+
+      <div class="tools">
+        <button id="zoom-out" class="btn icon" type="button" title="Alejar" aria-label="Alejar">
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 11h14v2H5v-2Z"/></svg>
         </button>
-        <button id="zoom-in" type="button" title="Acercar" aria-label="Acercar">
+        <span id="zoom-label" class="zoom-label">100%</span>
+        <button id="zoom-in" class="btn icon" type="button" title="Acercar" aria-label="Acercar">
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6V5Z"/></svg>
         </button>
-      </nav>
+        <a id="download" class="btn primary" href="#" download title="Descargar PDF" aria-label="Descargar PDF" hidden>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 3h2v10.2l3.6-3.6 1.4 1.4-6 6-6-6 1.4-1.4 3.6 3.6V3ZM4 19h16v2H4v-2Z"/></svg>
+          <span class="download-label">Descargar</span>
+        </a>
+      </div>
     </div>
+    <div id="progress" class="progress"></div>
   </header>
 
-  <div class="status">
-    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 3 6v6c0 5 3.8 9.7 9 10 5.2-.3 9-5 9-10V6l-9-4Zm0 2.2 7 3.1V12c0 4-2.9 7.5-7 8-4.1-.5-7-4-7-8V7.3l7-3.1Zm-1 5.3h2V15h-2V9.5Zm0 7h2v2h-2v-2Z"/></svg>
-    Lectura autorizada para la Misión Bautista Reformada "Somos Uno". No descargar, copiar, imprimir ni redistribuir.
-  </div>
-
   <main id="reader" class="reader" aria-live="polite">
-    <div class="message"><span class="spinner" aria-hidden="true"></span> Cargando...</div>
+    <div class="message"><span class="spinner" aria-hidden="true"></span> Cargando libro…</div>
   </main>
+
+  <nav class="float-nav" aria-label="Navegación de páginas">
+    <div class="pager" data-pager>
+      <button class="btn icon" type="button" data-prev aria-label="Página anterior">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m14.7 6.7-1.4-1.4L6.6 12l6.7 6.7 1.4-1.4L9.4 12l5.3-5.3Z"/></svg>
+      </button>
+      <input type="number" min="1" value="1" data-page aria-label="Página actual" inputmode="numeric" />
+      <span>de <span data-count>–</span></span>
+      <button class="btn icon" type="button" data-next aria-label="Página siguiente">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.3 17.3 1.4 1.4 6.7-6.7-6.7-6.7-1.4 1.4 5.3 5.3-5.3 5.3Z"/></svg>
+      </button>
+    </div>
+  </nav>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script>
-    const params = new URLSearchParams(location.search);
-    const requestedId = params.get('id');
-    const reader = document.getElementById('reader');
-    const title = document.getElementById('title');
-    const pageInput = document.getElementById('page-num');
-    const pageCount = document.getElementById('page-count');
-    const prev = document.getElementById('prev');
-    const next = document.getElementById('next');
-    const zoomIn = document.getElementById('zoom-in');
-    const zoomOut = document.getElementById('zoom-out');
-
     pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-    let pdfDoc = null;
-    let book = null;
-    let pageNum = 1;
-    let scale = 1.25;
-    let rendering = false;
-    let pendingPage = null;
+    const requestedId = new URLSearchParams(location.search).get('id');
+    const reader = document.getElementById('reader');
+    const titleEl = document.getElementById('title');
+    const subtitleEl = document.getElementById('subtitle');
+    const downloadEl = document.getElementById('download');
+    const zoomIn = document.getElementById('zoom-in');
+    const zoomOut = document.getElementById('zoom-out');
+    const zoomLabel = document.getElementById('zoom-label');
+    const progress = document.getElementById('progress');
+    const pageInputs = document.querySelectorAll('[data-page]');
+    const pageCounts = document.querySelectorAll('[data-count]');
+    const prevButtons = document.querySelectorAll('[data-prev]');
+    const nextButtons = document.querySelectorAll('[data-next]');
 
-    function showMessage(message) {
-      reader.innerHTML = '';
-      const box = document.createElement('div');
-      box.className = 'message';
-      box.textContent = message;
-      reader.appendChild(box);
+    const MIN_ZOOM = 0.5;
+    const MAX_ZOOM = 3;
+    let pdfDoc = null;
+    let pageNum = 1;
+    let zoom = 1;          // 1 = ajustar al ancho
+    let baseWidth = 0;     // ancho de la página 1 a escala 1
+    let rendering = false;
+    let pending = false;
+    const storageKey = `lector:${requestedId}`;
+
+    function remember(key, value) {
+      try { localStorage.setItem(key, value); } catch (_) {}
     }
 
-    function validBook(item) {
-      return item && item.id && item.file && !/^https?:\/\//i.test(item.file) && !item.file.includes('..');
+    function recall(key) {
+      try { return localStorage.getItem(key); } catch (_) { return null; }
+    }
+
+    function showMessage(text, withLink) {
+      const box = document.createElement('div');
+      box.className = 'message';
+      box.textContent = text;
+      if (withLink) {
+        const link = document.createElement('a');
+        link.href = 'index.html';
+        link.textContent = 'Volver a la biblioteca';
+        box.append(' ', link);
+      }
+      reader.replaceChildren(box);
+    }
+
+    function fitScale() {
+      const available = Math.min(reader.clientWidth - 32, 900);
+      return Math.max(available, 280) / baseWidth;
     }
 
     function updateControls() {
       const total = pdfDoc ? pdfDoc.numPages : 0;
-      pageInput.value = pageNum;
-      pageInput.max = total || 1;
-      pageCount.textContent = total;
-      prev.disabled = pageNum <= 1 || !pdfDoc;
-      next.disabled = pageNum >= total || !pdfDoc;
-      zoomOut.disabled = scale <= 0.85;
-      zoomIn.disabled = scale >= 2.2;
+      pageInputs.forEach(input => { input.value = pageNum; input.max = total || 1; });
+      pageCounts.forEach(span => { span.textContent = total || '–'; });
+      prevButtons.forEach(b => { b.disabled = !pdfDoc || pageNum <= 1; });
+      nextButtons.forEach(b => { b.disabled = !pdfDoc || pageNum >= total; });
+      zoomOut.disabled = zoom <= MIN_ZOOM;
+      zoomIn.disabled = zoom >= MAX_ZOOM;
+      zoomLabel.textContent = `${Math.round(zoom * 100)}%`;
+      progress.style.width = total ? `${(pageNum / total) * 100}%` : '0';
     }
 
-    async function renderPage(number) {
-      if (!pdfDoc || rendering) {
-        pendingPage = number;
-        return;
-      }
-
+    async function render() {
+      if (!pdfDoc) return;
+      if (rendering) { pending = true; return; }
       rendering = true;
       updateControls();
 
       try {
-        const page = await pdfDoc.getPage(number);
-        const viewport = page.getViewport({ scale });
-        const canvas = document.createElement('canvas');
-        const context = canvas.getContext('2d', { alpha: false });
+        const page = await pdfDoc.getPage(pageNum);
+        const viewport = page.getViewport({ scale: fitScale() * zoom });
         const ratio = window.devicePixelRatio || 1;
-
+        const canvas = document.createElement('canvas');
         canvas.width = Math.floor(viewport.width * ratio);
         canvas.height = Math.floor(viewport.height * ratio);
         canvas.style.width = `${Math.floor(viewport.width)}px`;
         canvas.style.height = `${Math.floor(viewport.height)}px`;
+        const context = canvas.getContext('2d', { alpha: false });
         context.setTransform(ratio, 0, 0, ratio, 0, 0);
-
         await page.render({ canvasContext: context, viewport }).promise;
 
-        const wrapper = document.createElement('div');
-        wrapper.className = 'page-wrap';
-        wrapper.appendChild(canvas);
-        reader.replaceChildren(wrapper);
+        const wrap = document.createElement('div');
+        wrap.className = 'page';
+        wrap.append(canvas);
+        reader.replaceChildren(wrap);
+        remember(storageKey, String(pageNum));
       } catch (error) {
         showMessage(`No se pudo mostrar la página: ${error.message}`);
       } finally {
         rendering = false;
-        if (pendingPage !== null && pendingPage !== number) {
-          const nextPage = pendingPage;
-          pendingPage = null;
-          renderPage(nextPage);
-        } else {
-          pendingPage = null;
-        }
+        if (pending) { pending = false; render(); }
       }
     }
 
-    async function loadCatalog() {
-      if (!requestedId) {
-        throw new Error('Recurso no especificado.');
-      }
+    function goTo(number) {
+      if (!pdfDoc) return;
+      const target = Math.min(Math.max(Number(number) || 1, 1), pdfDoc.numPages);
+      if (target === pageNum) { updateControls(); return; }
+      pageNum = target;
+      render();
+      scrollTo({ top: 0 });
+    }
 
+    function setZoom(value) {
+      zoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, Number(value.toFixed(2))));
+      render();
+    }
+
+    async function loadBook() {
+      if (!requestedId) throw new Error('No se indicó qué libro abrir.');
       const response = await fetch('books.json', { cache: 'no-store' });
-      if (!response.ok) {
-        throw new Error('No se pudo cargar el catálogo.');
-      }
-
+      if (!response.ok) throw new Error('No se pudo cargar el catálogo.');
       const books = await response.json();
-      const match = books.find(item => item.id === requestedId);
-      if (!validBook(match)) {
-        throw new Error('El recurso no existe en el catálogo o tiene una ruta inválida.');
+      const book = books.find(item => item.id === requestedId);
+      if (!book || !book.file || /^https?:\/\//i.test(book.file) || book.file.includes('..')) {
+        throw new Error('Este libro no existe en el catálogo.');
       }
-
-      return match;
+      return book;
     }
 
     async function boot() {
       try {
-        book = await loadCatalog();
-        title.textContent = book.title;
-        pdfDoc = await pdfjsLib.getDocument({ url: book.file, disableAutoFetch: true, disableStream: true }).promise;
-        pageNum = 1;
-        updateControls();
-        renderPage(pageNum);
+        const book = await loadBook();
+        document.title = `${book.title} · Biblioteca Somos Uno`;
+        titleEl.textContent = book.title;
+        subtitleEl.textContent = [book.author, book.year].filter(Boolean).join(' · ');
+        downloadEl.href = book.file;
+        downloadEl.download = book.file.split('/').pop();
+        downloadEl.hidden = false;
+
+        pdfDoc = await pdfjsLib.getDocument({ url: book.file }).promise;
+        const first = await pdfDoc.getPage(1);
+        baseWidth = first.getViewport({ scale: 1 }).width;
+
+        const saved = Number(recall(storageKey));
+        pageNum = saved >= 1 && saved <= pdfDoc.numPages ? saved : 1;
+        render();
       } catch (error) {
-        title.textContent = 'Recurso no disponible';
-        showMessage(error.message);
+        titleEl.textContent = 'Libro no disponible';
+        showMessage(error.message, true);
       }
     }
 
-    prev.addEventListener('click', () => {
-      if (!pdfDoc || pageNum <= 1) return;
-      pageNum -= 1;
-      renderPage(pageNum);
-    });
-
-    next.addEventListener('click', () => {
-      if (!pdfDoc || pageNum >= pdfDoc.numPages) return;
-      pageNum += 1;
-      renderPage(pageNum);
-    });
-
-    pageInput.addEventListener('change', () => {
-      if (!pdfDoc) return;
-      const nextPage = Math.min(Math.max(Number(pageInput.value) || 1, 1), pdfDoc.numPages);
-      pageNum = nextPage;
-      renderPage(pageNum);
-    });
-
-    zoomIn.addEventListener('click', () => {
-      scale = Math.min(2.2, Number((scale + 0.15).toFixed(2)));
-      renderPage(pageNum);
-    });
-
-    zoomOut.addEventListener('click', () => {
-      scale = Math.max(0.85, Number((scale - 0.15).toFixed(2)));
-      renderPage(pageNum);
-    });
+    prevButtons.forEach(b => b.addEventListener('click', () => goTo(pageNum - 1)));
+    nextButtons.forEach(b => b.addEventListener('click', () => goTo(pageNum + 1)));
+    pageInputs.forEach(input => input.addEventListener('change', () => goTo(input.value)));
+    zoomIn.addEventListener('click', () => setZoom(zoom + 0.15));
+    zoomOut.addEventListener('click', () => setZoom(zoom - 0.15));
 
     document.addEventListener('keydown', event => {
-      if (event.key === 'ArrowLeft') prev.click();
-      if (event.key === 'ArrowRight') next.click();
-      if ((event.ctrlKey || event.metaKey) && ['s', 'p'].includes(event.key.toLowerCase())) {
-        event.preventDefault();
-      }
+      if (event.target.matches('input')) return;
+      if (event.key === 'ArrowLeft') goTo(pageNum - 1);
+      if (event.key === 'ArrowRight') goTo(pageNum + 1);
+      if (event.key === '+' || event.key === '=') setZoom(zoom + 0.15);
+      if (event.key === '-') setZoom(zoom - 0.15);
     });
 
-    reader.addEventListener('contextmenu', event => event.preventDefault());
+    let touchX = 0;
+    let touchY = 0;
+    reader.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; touchY = e.touches[0].clientY; }, { passive: true });
+    reader.addEventListener('touchend', e => {
+      if (zoom > 1) return;
+      const dx = e.changedTouches[0].clientX - touchX;
+      const dy = e.changedTouches[0].clientY - touchY;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) goTo(pageNum + (dx < 0 ? 1 : -1));
+    });
+
+    let resizeTimer;
+    addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(render, 200);
+    });
+
+    updateControls();
     boot();
   </script>
 </body>

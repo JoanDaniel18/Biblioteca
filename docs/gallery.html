@@ -3,778 +3,218 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Galería - Biblioteca Somos Uno</title>
+  <title>Galería · Biblioteca Somos Uno</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,750&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    :root {
-      color-scheme: light;
-      --ink: #17211d;
-      --muted: #667066;
-      --quiet: #8a7669;
-      --line: #e2d8ce;
-      --paper: #faf6ee;
-      --panel: #fffdf8;
-      --accent: #185a45;
-      --accent-strong: #0f4635;
-      --accent-soft: #e4f0ea;
-      --clay: #944a35;
-      --gold: #b98b36;
-      --gold-soft: #f4ead3;
-      --shadow: 0 24px 60px rgba(43, 36, 27, 0.12);
-      --shadow-soft: 0 14px 34px rgba(43, 36, 27, 0.08);
-      --radius: 8px;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        linear-gradient(135deg, rgba(24, 90, 69, 0.05), transparent 34%),
-        linear-gradient(45deg, transparent 0 48%, rgba(185, 139, 54, 0.07) 48% 52%, transparent 52%),
-        var(--paper);
-      background-size: auto, 42px 42px, auto;
-      color: var(--ink);
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background:
-        linear-gradient(90deg, rgba(23, 33, 29, 0.035) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(23, 33, 29, 0.025) 1px, transparent 1px);
-      background-size: 64px 64px;
-      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.78), transparent 72%);
-    }
-
-    a { color: inherit; }
-
-    button {
-      font: inherit;
-      cursor: pointer;
-    }
-
-    :focus-visible {
-      outline: 3px solid rgba(185, 139, 54, 0.38);
-      outline-offset: 3px;
-    }
-
-    .shell {
-      width: min(1180px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 30;
-      border-bottom: 1px solid rgba(226, 216, 206, 0.76);
-      background: rgba(250, 246, 238, 0.9);
-      backdrop-filter: blur(18px);
-    }
-
-    .topbar .shell {
-      min-height: 76px;
+    .head {
+      padding: 64px 0 32px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 22px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 0;
-      text-decoration: none;
-    }
-
-    .mark {
-      width: 44px;
-      height: 44px;
-      border-radius: var(--radius);
-      display: grid;
-      place-items: center;
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.18), transparent),
-        var(--accent);
-      color: #fff;
-      font-weight: 900;
-      box-shadow: 0 10px 22px rgba(24, 90, 69, 0.22);
-      flex: 0 0 auto;
-    }
-
-    .brand strong {
-      display: block;
-      font-size: 1.02rem;
-      line-height: 1.05;
-      letter-spacing: 0;
-    }
-
-    .brand span {
-      color: var(--muted);
-      display: block;
-      font-size: 0.9rem;
-      margin-top: 2px;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--muted);
-      font-weight: 800;
-      font-size: 0.95rem;
-    }
-
-    .nav a {
-      min-height: 40px;
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 0 12px;
-      border-radius: var(--radius);
-      text-decoration: none;
-      transition: background 180ms ease, color 180ms ease, transform 180ms ease;
-    }
-
-    .nav a:hover {
-      background: rgba(24, 90, 69, 0.09);
-      color: var(--accent);
-      transform: translateY(-1px);
-    }
-
-    main {
-      padding: 34px 0 62px;
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-family: "Fraunces", Georgia, serif;
-      letter-spacing: 0;
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      min-height: 480px;
-      display: grid;
       align-items: end;
-      border: 1px solid rgba(226, 216, 206, 0.9);
-      border-radius: var(--radius);
-      background:
-        linear-gradient(90deg, rgba(23, 33, 29, 0.9), rgba(24, 90, 69, 0.76) 52%, rgba(148, 74, 53, 0.44)),
-        url("gallery/photo1.jpg");
-      background-size: cover;
-      background-position: center;
-      box-shadow: var(--shadow);
-      isolation: isolate;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
-      background-size: 48px 48px;
-      opacity: 0.32;
-      z-index: -1;
-    }
-
-    .hero-copy {
-      width: min(760px, 100%);
-      padding: clamp(28px, 6vw, 60px);
-      color: #fffdf7;
-    }
-
-    .eyebrow {
-      width: fit-content;
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      min-height: 34px;
-      padding: 0 11px;
-      border: 1px solid rgba(255, 255, 255, 0.24);
-      border-radius: var(--radius);
-      background: rgba(255, 255, 255, 0.12);
-      color: rgba(255, 255, 255, 0.9);
-      font-size: 0.86rem;
-      font-weight: 800;
-    }
-
-    h1 {
-      margin: 22px 0 0;
-      font-size: clamp(2.8rem, 7vw, 6.15rem);
-      line-height: 0.9;
-      max-width: 710px;
-    }
-
-    .hero-copy p {
-      margin: 22px 0 0;
-      max-width: 650px;
-      color: rgba(255, 253, 247, 0.82);
-      line-height: 1.68;
-      font-size: 1.12rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
-    }
-
-    .button {
-      min-height: 48px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      border: 1px solid transparent;
-      border-radius: var(--radius);
-      padding: 0 17px;
-      text-decoration: none;
-      font-weight: 900;
-      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
-    }
-
-    .button.primary {
-      background: #fffdf8;
-      color: var(--accent-strong);
-      box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
-    }
-
-    .button.secondary {
-      border-color: rgba(255, 255, 255, 0.28);
-      background: rgba(255, 255, 255, 0.1);
-      color: #fffdf8;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    .viewer {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 320px;
-      gap: 18px;
-      align-items: start;
-      margin-top: 24px;
-    }
-
-    .stage {
-      overflow: hidden;
-      border: 1px solid rgba(226, 216, 206, 0.9);
-      border-radius: var(--radius);
-      background: rgba(255, 253, 248, 0.88);
-      box-shadow: var(--shadow);
-    }
-
-    .slide {
-      position: relative;
-      min-height: clamp(320px, 68vh, 720px);
-      display: grid;
-      place-items: center;
-      overflow: hidden;
-      background:
-        linear-gradient(135deg, rgba(24, 90, 69, 0.14), rgba(185, 139, 54, 0.16)),
-        #efe4d2;
-    }
-
-    .slide::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image: var(--active-image);
-      background-size: cover;
-      background-position: center;
-      filter: blur(28px);
-      transform: scale(1.12);
-      opacity: 0.24;
-    }
-
-    .slide img {
-      position: relative;
-      z-index: 1;
-      display: block;
-      max-width: min(100%, 1080px);
-      max-height: clamp(320px, 68vh, 720px);
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      border-radius: var(--radius);
-      box-shadow: 0 22px 48px rgba(43, 36, 27, 0.24);
-      transition: opacity 220ms ease, transform 220ms ease;
-    }
-
-    .slide.is-changing img {
-      opacity: 0;
-      transform: translateY(8px) scale(0.985);
-    }
-
-    .stage-footer {
-      display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 14px;
-      padding: 14px;
-      border-top: 1px solid var(--line);
-      background: rgba(255, 253, 248, 0.96);
+      gap: 24px;
+      flex-wrap: wrap;
     }
 
-    .controls {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .btn {
-      min-width: 44px;
-      min-height: 44px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--panel);
-      color: var(--ink);
-      box-shadow: 0 8px 18px rgba(43, 36, 27, 0.06);
-      transition: transform 160ms ease, border-color 160ms ease, color 160ms ease, background 160ms ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-1px);
-      border-color: rgba(24, 90, 69, 0.4);
-      color: var(--accent);
-      background: var(--accent-soft);
-    }
-
-    .btn.primary {
-      min-width: 112px;
-      gap: 7px;
-      padding: 0 12px;
-      background: var(--accent);
-      color: #fff;
-      border-color: var(--accent);
-      font-weight: 900;
-    }
-
-    .btn.primary:hover {
-      background: var(--accent-strong);
-      color: #fff;
-    }
-
-    .count {
-      color: var(--muted);
-      font-weight: 900;
-      white-space: nowrap;
-    }
-
-    .side {
-      display: grid;
-      gap: 14px;
-    }
-
-    .panel {
-      border: 1px solid rgba(226, 216, 206, 0.9);
-      border-radius: var(--radius);
-      background: rgba(255, 253, 248, 0.86);
-      padding: 18px;
-      box-shadow: var(--shadow-soft);
-    }
-
-    .panel h2 {
+    .head h1 {
       margin: 0;
-      font-size: 1.5rem;
-      line-height: 1.08;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 650;
+      letter-spacing: -0.035em;
+      line-height: 1.05;
     }
 
-    .panel p {
-      margin: 10px 0 0;
+    .head p {
+      margin: 12px 0 0;
+      max-width: 50ch;
       color: var(--muted);
-      line-height: 1.55;
+      font-size: 1.04rem;
     }
 
     .verse {
-      margin-top: 14px;
-      padding-left: 14px;
-      border-left: 3px solid rgba(24, 90, 69, 0.2);
-      color: var(--quiet);
+      margin: 0;
+      max-width: 34ch;
+      color: var(--muted);
+      font-size: 0.92rem;
       font-style: italic;
-      line-height: 1.5;
     }
 
-    .verse small {
-      display: inline-block;
-      margin-top: 4px;
-      color: var(--muted);
-      font-style: normal;
-      font-weight: 800;
+    .verse small { display: block; margin-top: 4px; font-style: normal; color: var(--faint); }
+
+    .stage {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      max-height: 72vh;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+
+    .stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: opacity 180ms ease;
+    }
+
+    .stage img.is-changing { opacity: 0; }
+
+    .stage-backdrop {
+      position: absolute;
+      inset: -40px;
+      background-size: cover;
+      background-position: center;
+      filter: blur(40px) saturate(1.1);
+      opacity: 0.35;
+      transition: background-image 200ms ease;
+    }
+
+    .stage img { position: relative; }
+
+    .stage-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 16px rgba(17, 19, 18, 0.16);
+      transition: transform 150ms ease, background 150ms ease;
+    }
+
+    .stage-nav:hover { background: #fff; transform: translateY(-50%) scale(1.06); }
+    .stage-nav.prev { left: 16px; }
+    .stage-nav.next { right: 16px; }
+
+    .count {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(17, 19, 18, 0.6);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 500;
+      font-variant-numeric: tabular-nums;
     }
 
     .thumbs {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
       gap: 10px;
+      margin-top: 16px;
     }
 
     .thumb {
-      position: relative;
-      overflow: hidden;
-      aspect-ratio: 1 / 0.78;
-      border: 1px solid transparent;
-      border-radius: var(--radius);
-      background: var(--panel);
       padding: 0;
-      box-shadow: 0 10px 22px rgba(43, 36, 27, 0.07);
-      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      border: 0;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      background: var(--surface);
+      opacity: 0.55;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      transition: opacity 150ms ease, outline-color 150ms ease;
     }
 
-    .thumb img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: cover;
-      filter: saturate(0.95);
-      transition: transform 220ms ease, filter 220ms ease;
-    }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .thumb:hover { opacity: 0.85; }
+    .thumb.is-active { opacity: 1; outline-color: var(--ink); }
 
-    .thumb::after {
-      content: attr(data-index);
-      position: absolute;
-      left: 8px;
-      bottom: 8px;
-      min-width: 28px;
-      height: 24px;
-      display: grid;
-      place-items: center;
-      border-radius: var(--radius);
-      background: rgba(23, 33, 29, 0.72);
-      color: #fff;
-      font-size: 0.76rem;
-      font-weight: 900;
-    }
-
-    .thumb:hover,
-    .thumb.is-active {
-      transform: translateY(-3px);
-      border-color: rgba(24, 90, 69, 0.5);
-      box-shadow: 0 18px 32px rgba(43, 36, 27, 0.14);
-    }
-
-    .thumb:hover img,
-    .thumb.is-active img {
-      filter: saturate(1.08);
-      transform: scale(1.045);
-    }
-
-    .thumb.is-active::after {
-      background: var(--accent);
-    }
-
-    .message {
-      width: min(620px, calc(100% - 28px));
-      margin: 28px auto;
-      border: 1px dashed rgba(148, 74, 53, 0.36);
-      border-radius: var(--radius);
-      padding: 30px;
-      color: var(--muted);
-      background: rgba(255, 253, 248, 0.88);
-      text-align: center;
-      line-height: 1.55;
-    }
-
-    .site-footer {
-      margin-top: 30px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      padding: 28px 0 18px;
-      text-align: center;
-      line-height: 1.6;
-      font-size: 0.98rem;
-    }
-
-    .site-footer strong {
-      color: var(--accent);
-      font-weight: 900;
-    }
-
-    .footer-heart {
-      color: var(--clay);
-      font-weight: 900;
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 600ms ease, transform 600ms ease;
-    }
-
-    .reveal.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-
-      .reveal {
-        opacity: 1;
-        transform: none;
-      }
-    }
-
-    @media (max-width: 980px) {
-      .viewer {
-        grid-template-columns: 1fr;
-      }
-
-      .side {
-        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-      }
-
-      .thumbs {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
+    .message { padding: 72px 16px; text-align: center; color: var(--muted); }
 
     @media (max-width: 760px) {
-      .shell {
-        width: min(100% - 24px, 1180px);
-      }
-
-      .topbar .shell {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 13px 0;
-        gap: 12px;
-      }
-
-      .nav {
-        width: 100%;
-        overflow-x: auto;
-        padding-bottom: 2px;
-      }
-
-      .nav a {
-        flex: 0 0 auto;
-      }
-
-      main {
-        padding-top: 18px;
-      }
-
-      .hero {
-        min-height: 420px;
-      }
-
-      .hero-copy {
-        padding: 28px 20px;
-      }
-
-      h1 {
-        max-width: 10ch;
-      }
-
-      .hero-actions,
-      .stage-footer,
-      .side {
-        align-items: stretch;
-        grid-template-columns: 1fr;
-      }
-
-      .button,
-      .btn.primary {
-        width: 100%;
-      }
-
-      .stage-footer {
-        flex-direction: column;
-      }
-
-      .controls {
-        width: 100%;
-        justify-content: space-between;
-      }
-
-      .count {
-        width: 100%;
-        text-align: center;
-      }
-
-      .thumbs {
-        display: flex;
-        overflow-x: auto;
-        padding: 3px 2px 12px;
-        scrollbar-width: thin;
-      }
-
-      .thumb {
-        flex: 0 0 116px;
-      }
-
-      .slide,
-      .slide img {
-        min-height: 320px;
-        max-height: 66vh;
-      }
-    }
-
-    @media (max-width: 420px) {
-      .brand strong {
-        font-size: 0.95rem;
-      }
-
-      .brand span {
-        font-size: 0.84rem;
-      }
-
-      .hero-copy p {
-        font-size: 1rem;
-      }
+      .head { padding: 36px 0 24px; }
+      .stage { aspect-ratio: 4 / 3; border-radius: 14px; }
+      .stage-nav { width: 38px; height: 38px; }
+      .thumbs { grid-template-columns: repeat(4, 1fr); gap: 6px; }
     }
   </style>
 </head>
 <body>
-  <header class="topbar">
+  <header class="topbar" id="topbar">
     <div class="shell">
-      <a class="brand" href="index.html" aria-label="Volver a Biblioteca Somos Uno">
-        <div class="mark">SU</div>
-        <div>
-          <strong>Misión Reformada "Somos Uno"</strong>
-          <span>Galería de comunidad</span>
-        </div>
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SU</span>
+        <span>Somos Uno<small>Biblioteca bautista reformada</small></span>
       </a>
       <nav class="nav" aria-label="Navegación principal">
-        <a href="index.html">
-          <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Zm2.5-.5a.5.5 0 0 0-.5.5v13c.2 0 .3-.5.5-.5H18V5H6.5Z"/></svg>
-          Catálogo
-        </a>
-        <a href="#galeria">
-          <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 5h14v14H5V5Zm2 2v8.2l2.6-2.6 2.5 2.5 3.4-4.1L17 12.8V7H7Zm10 10v-1.1l-1.6-2-3.2 3.1H17Z"/></svg>
-          Fotos
-        </a>
+        <a href="index.html">Biblioteca</a>
+        <a href="gallery.html" aria-current="page">Galería</a>
       </nav>
     </div>
   </header>
 
   <main class="shell">
-    <section class="hero reveal" aria-labelledby="gallery-title">
-      <div class="hero-copy">
-        <span class="eyebrow">
-          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21.4 10.6 20C5.6 15.5 2.4 12.6 2.4 8.9A5.3 5.3 0 0 1 7.7 3.6c1.8 0 3.5.8 4.3 2.1.8-1.3 2.5-2.1 4.3-2.1a5.3 5.3 0 0 1 5.3 5.3c0 3.7-3.2 6.6-8.2 11.1L12 21.4Z"/></svg>
-          Memoria visual de la iglesia
-        </span>
-        <h1 id="gallery-title">Momentos que cuentan nuestra comunión</h1>
-        <p>Una galería sencilla y cuidada para recordar la vida compartida de la Misión Reformada "Somos Uno", acompañando la biblioteca con rostro de comunidad.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#galeria">
-            Ver fotos
-            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m13.3 5.3 6 6a1 1 0 0 1 0 1.4l-6 6-1.4-1.4 4.3-4.3H5v-2h11.2l-4.3-4.3 1.4-1.4Z"/></svg>
-          </a>
-          <a class="button secondary" href="index.html">
-            Volver a biblioteca
-            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10.8 19.3 4.2 12.7a1 1 0 0 1 0-1.4l6.6-6.6 1.4 1.4L7.4 11H20v2H7.4l4.8 4.9-1.4 1.4Z"/></svg>
-          </a>
-        </div>
+    <section class="head fade-in">
+      <div>
+        <h1>Vida de iglesia</h1>
+        <p>Momentos de la comunión de la Misión Reformada “Somos Uno”.</p>
       </div>
+      <p class="verse">“Un mandamiento nuevo os doy: que os améis unos a otros.”<small>Juan 13:34</small></p>
     </section>
 
-    <section id="galeria" class="viewer reveal" aria-label="Galería de la Misión Reformada Somos Uno">
-      <div class="stage">
-        <div class="slide" id="slide">
-          <img src="" alt="Foto de la comunidad" id="mainImg" loading="lazy" />
-        </div>
-        <div class="stage-footer">
-          <div class="controls" aria-label="Controles de galería">
-            <button id="prev" class="btn" type="button" aria-label="Foto anterior">
-              <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m14.7 6.7-1.4-1.4L6.6 12l6.7 6.7 1.4-1.4L9.4 12l5.3-5.3Z"/></svg>
-            </button>
-            <button id="next" class="btn" type="button" aria-label="Foto siguiente">
-              <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.3 17.3 1.4 1.4 6.7-6.7-6.7-6.7-1.4 1.4 5.3 5.3-5.3 5.3Z"/></svg>
-            </button>
-          </div>
-          <div id="count" class="count">0 / 0</div>
-          <a class="btn primary" href="index.html">
-            Biblioteca
-            <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 4.5A2.5 2.5 0 0 1 7.5 2H20v17H7.5A2.5 2.5 0 0 0 5 21.5v-17Zm2.5-.5a.5.5 0 0 0-.5.5v13c.2 0 .3-.5.5-.5H18V4H7.5Z"/></svg>
-          </a>
-        </div>
+    <section id="galeria" class="fade-in" aria-label="Galería de fotos">
+      <div class="stage" id="stage">
+        <div class="stage-backdrop" id="backdrop"></div>
+        <img id="main-img" alt="" />
+        <button class="stage-nav prev" id="prev" type="button" aria-label="Foto anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m14.7 6.7-1.4-1.4L6.6 12l6.7 6.7 1.4-1.4L9.4 12l5.3-5.3Z"/></svg>
+        </button>
+        <button class="stage-nav next" id="next" type="button" aria-label="Foto siguiente">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.3 17.3 1.4 1.4 6.7-6.7-6.7-6.7-1.4 1.4 5.3 5.3-5.3 5.3Z"/></svg>
+        </button>
+        <span class="count" id="count">0 / 0</span>
       </div>
-
-      <aside class="side">
-        <div class="panel">
-          <h2>Vida de iglesia</h2>
-          <p>Usa las flechas, las miniaturas o el teclado para recorrer las fotos. En móvil también puedes deslizar sobre la imagen principal.</p>
-          <div class="verse">"Un mandamiento nuevo os doy: que os améis unos a otros."<br><small>Juan 13:34</small></div>
-        </div>
-        <div id="thumbs" class="thumbs" aria-label="Miniaturas de la galería"></div>
-      </aside>
+      <div class="thumbs" id="thumbs" aria-label="Miniaturas"></div>
     </section>
   </main>
 
   <footer class="shell site-footer">
-    Para la gloria de Dios y la edificación de su iglesia.
-    <br />
-    Hecho con <span class="footer-heart" aria-label="amor">♥</span> por <strong>D.R</strong>
+    <span>Para la gloria de Dios y la edificación de su iglesia.</span>
+    <span>Hecho con ♥ por <strong>D.R</strong></span>
   </footer>
 
   <script>
-    (function(){
-      const candidateCount = 12;
+    (function () {
+      // Las fotos se detectan solas: gallery/photo1.jpg, photo2.jpg, ... hasta MAX_PHOTOS.
+      const MAX_PHOTOS = 30;
       const images = [];
+      const stage = document.getElementById('stage');
+      const mainImg = document.getElementById('main-img');
+      const backdrop = document.getElementById('backdrop');
       const thumbs = document.getElementById('thumbs');
-      const mainImg = document.getElementById('mainImg');
-      const slide = document.getElementById('slide');
       const count = document.getElementById('count');
-      const prev = document.getElementById('prev');
-      const next = document.getElementById('next');
       let current = 0;
 
       function probe(src) {
         return new Promise(resolve => {
-          const image = new Image();
-          image.onload = () => resolve(true);
-          image.onerror = () => resolve(false);
-          image.src = src;
+          const img = new Image();
+          img.onload = () => resolve(true);
+          img.onerror = () => resolve(false);
+          img.src = src;
         });
       }
 
-      function pad(value) {
-        return String(value).padStart(2, '0');
-      }
-
       async function build() {
-        for (let i = 1; i <= candidateCount; i++) {
-          const src = `gallery/photo${i}.jpg`;
-          const ok = await probe(src);
-          if (ok) images.push(src);
-        }
+        const candidates = Array.from({ length: MAX_PHOTOS }, (_, i) => `gallery/photo${i + 1}.jpg`);
+        const found = await Promise.all(candidates.map(probe));
+        candidates.forEach((src, i) => { if (found[i]) images.push(src); });
 
-        if (images.length === 0) {
-          count.textContent = '0 / 0';
-          document.querySelector('.stage').replaceChildren(createMessage('No hay fotos disponibles todavía.'));
-          thumbs.replaceChildren();
+        if (!images.length) {
+          const box = document.createElement('div');
+          box.className = 'message';
+          box.textContent = 'Todavía no hay fotos en la galería.';
+          document.getElementById('galeria').replaceChildren(box);
           return;
         }
 
@@ -782,112 +222,57 @@
           const button = document.createElement('button');
           button.type = 'button';
           button.className = 'thumb';
-          button.dataset.index = pad(index + 1);
           button.setAttribute('aria-label', `Ver foto ${index + 1}`);
-
-          const image = document.createElement('img');
-          image.src = src;
-          image.alt = '';
-          image.loading = 'lazy';
-
-          button.appendChild(image);
-          button.addEventListener('click', () => {
-            current = index;
-            update();
-          });
-          thumbs.appendChild(button);
+          const img = new Image();
+          img.src = src;
+          img.alt = '';
+          img.loading = 'lazy';
+          button.append(img);
+          button.addEventListener('click', () => show(index));
+          thumbs.append(button);
         });
 
-        const params = new URLSearchParams(location.search);
-        const requestedPhoto = params.get('photo');
-        const requestedIndex = requestedPhoto ? images.indexOf(requestedPhoto) : -1;
-        current = requestedIndex >= 0 ? requestedIndex : 0;
-        update(true);
+        show(0, true);
       }
 
-      function createMessage(text) {
-        const box = document.createElement('div');
-        box.className = 'message';
-        box.textContent = text;
-        return box;
-      }
-
-      function update(skipAnimation) {
-        if (!images.length) return;
+      function show(index, instant) {
+        current = (index + images.length) % images.length;
         const src = images[current];
-        slide.style.setProperty('--active-image', `url("${src}")`);
-        if (!skipAnimation) slide.classList.add('is-changing');
-
-        window.setTimeout(() => {
+        const apply = () => {
           mainImg.src = src;
           mainImg.alt = `Foto ${current + 1} de la comunidad Somos Uno`;
-          count.textContent = `${current + 1} / ${images.length}`;
-
-          Array.from(thumbs.querySelectorAll('.thumb')).forEach((thumb, index) => {
-            const active = index === current;
-            thumb.classList.toggle('is-active', active);
-            thumb.setAttribute('aria-current', active ? 'true' : 'false');
-          });
-
-          slide.classList.remove('is-changing');
-        }, skipAnimation ? 0 : 120);
+          backdrop.style.backgroundImage = `url("${src}")`;
+          mainImg.classList.remove('is-changing');
+        };
+        count.textContent = `${current + 1} / ${images.length}`;
+        [...thumbs.children].forEach((thumb, i) => {
+          thumb.classList.toggle('is-active', i === current);
+          thumb.setAttribute('aria-current', i === current);
+        });
+        if (instant) return apply();
+        mainImg.classList.add('is-changing');
+        setTimeout(apply, 150);
       }
 
-      function go(direction) {
-        if (!images.length) return;
-        current = (current + direction + images.length) % images.length;
-        update();
-      }
-
-      prev.addEventListener('click', () => go(-1));
-      next.addEventListener('click', () => go(1));
+      document.getElementById('prev').addEventListener('click', () => show(current - 1));
+      document.getElementById('next').addEventListener('click', () => show(current + 1));
 
       document.addEventListener('keydown', event => {
-        if (event.key === 'ArrowLeft') go(-1);
-        if (event.key === 'ArrowRight') go(1);
+        if (event.key === 'ArrowLeft') show(current - 1);
+        if (event.key === 'ArrowRight') show(current + 1);
       });
 
-      (function addTouch() {
-        let startX = 0;
-        let startY = 0;
-        let moved = false;
-
-        slide.addEventListener('touchstart', event => {
-          const touch = event.touches[0];
-          startX = touch.clientX;
-          startY = touch.clientY;
-          moved = false;
-        }, { passive: true });
-
-        slide.addEventListener('touchmove', event => {
-          const touch = event.touches[0];
-          const dx = touch.clientX - startX;
-          const dy = touch.clientY - startY;
-          if (Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy)) moved = true;
-        }, { passive: true });
-
-        slide.addEventListener('touchend', event => {
-          if (!moved) return;
-          const touch = event.changedTouches[0];
-          const dx = touch.clientX - startX;
-          if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
-        });
-      })();
-
-      const revealObserver = 'IntersectionObserver' in window
-        ? new IntersectionObserver((entries, observer) => {
-          for (const entry of entries) {
-            if (!entry.isIntersecting) continue;
-            entry.target.classList.add('is-visible');
-            observer.unobserve(entry.target);
-          }
-        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
-        : null;
-
-      document.querySelectorAll('.reveal').forEach(element => {
-        if (revealObserver) revealObserver.observe(element);
-        else element.classList.add('is-visible');
+      let startX = 0;
+      let startY = 0;
+      stage.addEventListener('touchstart', e => { startX = e.touches[0].clientX; startY = e.touches[0].clientY; }, { passive: true });
+      stage.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].clientX - startX;
+        const dy = e.changedTouches[0].clientY - startY;
+        if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(current + (dx < 0 ? 1 : -1));
       });
+
+      const topbar = document.getElementById('topbar');
+      addEventListener('scroll', () => topbar.classList.toggle('is-scrolled', scrollY > 8), { passive: true });
 
       build();
     })();
