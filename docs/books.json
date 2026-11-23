@@ -592,5 +592,195 @@
     "category": "Ministerio",
     "tags": ["predicación", "predicación expositiva", "homilética", "pastores", "Walter Liefeld"],
     "description": "Guía práctica para llevar el texto bíblico al sermón: interpretación, estructura y aplicación en la predicación expositiva."
+  },
+  {
+    "id": "comentario-macarthur-mateo",
+    "title": "Comentario MacArthur del Nuevo Testamento: Mateo",
+    "file": "books/comentario-macarthur-mateo.pdf",
+    "cover": "covers/comentario-macarthur-mateo.jpg",
+    "author": "John MacArthur",
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Mateo"],
+    "description": "Comentario expositivo, versículo por versículo, de el Evangelio según Mateo, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-marcos",
+    "title": "Comentario MacArthur del Nuevo Testamento: Marcos",
+    "file": "books/comentario-macarthur-marcos.pdf",
+    "cover": "covers/comentario-macarthur-marcos.jpg",
+    "author": "John MacArthur",
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Marcos"],
+    "description": "Comentario expositivo, versículo por versículo, de el Evangelio según Marcos, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-lucas",
+    "title": "Comentario MacArthur del Nuevo Testamento: Lucas",
+    "file": "books/comentario-macarthur-lucas.pdf",
+    "cover": "covers/comentario-macarthur-lucas.jpg",
+    "author": "John MacArthur",
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Lucas"],
+    "description": "Comentario expositivo, versículo por versículo, de el Evangelio según Lucas, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-juan",
+    "title": "Comentario MacArthur del Nuevo Testamento: Juan",
+    "file": "books/comentario-macarthur-juan.pdf",
+    "cover": "covers/comentario-macarthur-juan.jpg",
+    "author": "John MacArthur",
+    "year": 2006,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Juan"],
+    "description": "Comentario expositivo, versículo por versículo, de el Evangelio según Juan, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-romanos-1-8",
+    "title": "Comentario MacArthur del Nuevo Testamento: Romanos 1–8",
+    "file": "books/comentario-macarthur-romanos-1-8.pdf",
+    "cover": "covers/comentario-macarthur-romanos-1-8.jpg",
+    "author": "John MacArthur",
+    "year": 1991,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Romanos 1–8"],
+    "description": "Comentario expositivo, versículo por versículo, de los capítulos 1 al 8 de la epístola a los Romanos, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-1-corintios",
+    "title": "Comentario MacArthur del Nuevo Testamento: 1 Corintios",
+    "file": "books/comentario-macarthur-1-corintios.pdf",
+    "cover": "covers/comentario-macarthur-1-corintios.jpg",
+    "author": "John MacArthur",
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "1 Corintios"],
+    "description": "Comentario expositivo, versículo por versículo, de la primera epístola a los Corintios, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-2-corintios",
+    "title": "Comentario MacArthur del Nuevo Testamento: 2 Corintios",
+    "file": "books/comentario-macarthur-2-corintios.pdf",
+    "cover": "covers/comentario-macarthur-2-corintios.jpg",
+    "author": "John MacArthur",
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "2 Corintios"],
+    "description": "Comentario expositivo, versículo por versículo, de la segunda epístola a los Corintios, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-galatas",
+    "title": "Comentario MacArthur del Nuevo Testamento: Gálatas",
+    "file": "books/comentario-macarthur-galatas.pdf",
+    "cover": "covers/comentario-macarthur-galatas.jpg",
+    "author": "John MacArthur",
+    "year": 1987,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Gálatas"],
+    "description": "Comentario expositivo, versículo por versículo, de la epístola a los Gálatas, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-efesios",
+    "title": "Comentario MacArthur del Nuevo Testamento: Efesios",
+    "file": "books/comentario-macarthur-efesios.pdf",
+    "cover": "covers/comentario-macarthur-efesios.jpg",
+    "author": "John MacArthur",
+    "year": 1986,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Efesios"],
+    "description": "Comentario expositivo, versículo por versículo, de la epístola a los Efesios, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-filipenses",
+    "title": "Comentario MacArthur del Nuevo Testamento: Filipenses",
+    "file": "books/comentario-macarthur-filipenses.pdf",
+    "cover": "covers/comentario-macarthur-filipenses.jpg",
+    "author": "John MacArthur",
+    "year": 2001,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Filipenses"],
+    "description": "Comentario expositivo, versículo por versículo, de la epístola a los Filipenses, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-colosenses",
+    "title": "Comentario MacArthur del Nuevo Testamento: Colosenses",
+    "file": "books/comentario-macarthur-colosenses.pdf",
+    "cover": "covers/comentario-macarthur-colosenses.jpg",
+    "author": "John MacArthur",
+    "year": 1992,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Colosenses"],
+    "description": "Comentario expositivo, versículo por versículo, de la epístola a los Colosenses, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-tesalonicenses-timoteo-tito",
+    "title": "Comentario MacArthur del Nuevo Testamento: 1 y 2 Tesalonicenses, 1 y 2 Timoteo, Tito",
+    "file": "books/comentario-macarthur-tesalonicenses-timoteo-tito.pdf",
+    "cover": "covers/comentario-macarthur-tesalonicenses-timoteo-tito.jpg",
+    "author": "John MacArthur",
+    "year": 2002,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "1 y 2 Tesalonicenses, 1 y 2 Timoteo, Tito"],
+    "description": "Comentario expositivo, versículo por versículo, de las epístolas a los Tesalonicenses, a Timoteo y a Tito, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-filemon",
+    "title": "Comentario MacArthur del Nuevo Testamento: Filemón",
+    "file": "books/comentario-macarthur-filemon.pdf",
+    "cover": "covers/comentario-macarthur-filemon.jpg",
+    "author": "John MacArthur",
+    "year": 1992,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Filemón"],
+    "description": "Comentario expositivo, versículo por versículo, de la epístola a Filemón, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-hebreos",
+    "title": "Comentario MacArthur del Nuevo Testamento: Hebreos",
+    "file": "books/comentario-macarthur-hebreos.pdf",
+    "cover": "covers/comentario-macarthur-hebreos.jpg",
+    "author": "John MacArthur",
+    "year": 1983,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Hebreos"],
+    "description": "Comentario expositivo, versículo por versículo, de la epístola a los Hebreos, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-1-2-pedro",
+    "title": "Comentario MacArthur del Nuevo Testamento: 1 y 2 Pedro",
+    "file": "books/comentario-macarthur-1-2-pedro.pdf",
+    "cover": "covers/comentario-macarthur-1-2-pedro.jpg",
+    "author": "John MacArthur",
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "1 y 2 Pedro"],
+    "description": "Comentario expositivo, versículo por versículo, de las epístolas de Pedro, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-1-2-3-juan",
+    "title": "Comentario MacArthur del Nuevo Testamento: 1, 2 y 3 Juan",
+    "file": "books/comentario-macarthur-1-2-3-juan.pdf",
+    "cover": "covers/comentario-macarthur-1-2-3-juan.jpg",
+    "author": "John MacArthur",
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "1, 2 y 3 Juan"],
+    "description": "Comentario expositivo, versículo por versículo, de las tres epístolas de Juan, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-macarthur-judas",
+    "title": "Comentario MacArthur del Nuevo Testamento: Judas",
+    "file": "books/comentario-macarthur-judas.pdf",
+    "cover": "covers/comentario-macarthur-judas.jpg",
+    "author": "John MacArthur",
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "exposición bíblica", "John MacArthur", "Judas"],
+    "description": "Comentario expositivo, versículo por versículo, de la epístola de Judas, de la serie Comentario MacArthur del Nuevo Testamento (Editorial Portavoz)."
+  },
+  {
+    "id": "comentario-romanos-moo",
+    "title": "Comentario a la Epístola de Romanos",
+    "file": "books/comentario-romanos-moo.pdf",
+    "cover": "covers/comentario-romanos-moo.jpg",
+    "author": "Douglas J. Moo",
+    "year": 1996,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Romanos", "justificación por la fe", "exégesis", "Douglas J. Moo"],
+    "description": "Comentario exegético detallado de la carta de Pablo a los Romanos, con atención especial a la justificación por la fe (Editorial CLIE)."
   }
 ]
