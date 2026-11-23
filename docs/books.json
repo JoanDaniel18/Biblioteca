@@ -826,5 +826,176 @@
     "category": "Espiritualidad",
     "tags": ["devocional", "gracia", "santificación", "disciplinas espirituales", "Nicolás Tranchini"],
     "description": "Devocional diario para todo el año centrado en la gracia y la soberanía de Dios, el cambio del corazón y el gozo en Cristo."
+  },
+  {
+    "id": "como-moldear-caracter-ninos-1-michelen",
+    "title": "Cómo moldear el carácter de nuestros niños (primera parte)",
+    "file": "books/como-moldear-caracter-ninos-1-michelen.pdf",
+    "cover": "covers/como-moldear-caracter-ninos-1-michelen.jpg",
+    "author": "Sugel Michelén",
+    "category": "Familia cristiana",
+    "tags": ["crianza", "hijos", "disciplina", "padres", "Sugel Michelén"],
+    "description": "Enseñanzas del pastor Sugel Michelén sobre la crianza y la disciplina bíblica de los hijos. Primera parte."
+  },
+  {
+    "id": "como-moldear-caracter-ninos-2-michelen",
+    "title": "Cómo moldear el carácter de nuestros niños (segunda parte)",
+    "file": "books/como-moldear-caracter-ninos-2-michelen.pdf",
+    "cover": "covers/como-moldear-caracter-ninos-2-michelen.jpg",
+    "author": "Sugel Michelén",
+    "category": "Familia cristiana",
+    "tags": ["crianza", "hijos", "disciplina", "padres", "Sugel Michelén"],
+    "description": "Continuación de las enseñanzas del pastor Sugel Michelén sobre la crianza y la disciplina bíblica de los hijos. Segunda parte."
+  },
+  {
+    "id": "doctrina-de-dios-michelen",
+    "title": "Doctrina de Dios",
+    "file": "books/doctrina-de-dios-michelen.pdf",
+    "cover": "covers/doctrina-de-dios-michelen.jpg",
+    "author": "Sugel Michelén",
+    "category": "Teología sistemática",
+    "tags": ["doctrina de Dios", "atributos de Dios", "teología propia", "Academia Ministerial Logos", "Sugel Michelén"],
+    "description": "Curso de la Academia Ministerial Logos sobre la doctrina de Dios: su existencia, su naturaleza y sus atributos."
+  },
+  {
+    "id": "palabras-al-cansado-michelen",
+    "title": "Palabras al cansado: sermones de aliento",
+    "file": "books/palabras-al-cansado-michelen.pdf",
+    "cover": "covers/palabras-al-cansado-michelen.jpg",
+    "author": "Sugel Michelén",
+    "year": 2009,
+    "category": "Espiritualidad",
+    "tags": ["sermones", "aliento", "aflicción", "fe", "Sugel Michelén"],
+    "description": "Sermones de aliento para el creyente abatido, basados en pasajes como el Salmo 42 («¿Por qué te abates, oh alma mía?») e Isaías 41."
+  },
+  {
+    "id": "estudios-biblicos-teologicos-warfield",
+    "title": "Estudios bíblicos y teológicos",
+    "file": "books/estudios-biblicos-teologicos-warfield.pdf",
+    "cover": "covers/estudios-biblicos-teologicos-warfield.jpg",
+    "author": "B. B. Warfield",
+    "category": "Teología sistemática",
+    "tags": ["ensayos", "Trinidad", "inspiración de la Escritura", "Princeton", "B. B. Warfield"],
+    "description": "Colección de ensayos de B. B. Warfield sobre temas bíblicos y doctrinales, como la inspiración de la Escritura, la Trinidad y la persona de Cristo. Edición escaneada (sin texto buscable)."
+  },
+  {
+    "id": "persona-obra-espiritu-santo-warfield",
+    "title": "La persona y obra del Espíritu Santo",
+    "file": "books/persona-obra-espiritu-santo-warfield.pdf",
+    "cover": "covers/persona-obra-espiritu-santo-warfield.jpg",
+    "author": "B. B. Warfield",
+    "category": "Espíritu Santo",
+    "tags": ["Espíritu Santo", "sermones", "santificación", "Princeton", "B. B. Warfield"],
+    "description": "Sermones y estudios de B. B. Warfield sobre la persona y la obra del Espíritu Santo en el Antiguo y el Nuevo Testamento (traducción automática al español)."
+  },
+  {
+    "id": "conociendo-al-dios-vivo-washer",
+    "title": "Conociendo al Dios vivo",
+    "file": "books/conociendo-al-dios-vivo-washer.pdf",
+    "cover": "covers/conociendo-al-dios-vivo-washer.jpg",
+    "author": "Paul Washer",
+    "year": 2016,
+    "category": "Teología sistemática",
+    "tags": ["doctrina de Dios", "atributos de Dios", "Fundamentos bíblicos", "estudio bíblico", "Paul Washer"],
+    "description": "Estudio bíblico sobre quién es Dios y sus atributos. Primer libro de la serie Fundamentos Bíblicos para la Fe Cristiana."
+  },
+  {
+    "id": "discerniendo-problema-del-hombre-washer",
+    "title": "Discerniendo el problema del hombre",
+    "file": "books/discerniendo-problema-del-hombre-washer.pdf",
+    "cover": "covers/discerniendo-problema-del-hombre-washer.jpg",
+    "author": "Paul Washer",
+    "year": 2017,
+    "category": "Teología sistemática",
+    "tags": ["pecado", "depravación", "hombre", "Fundamentos bíblicos", "Paul Washer"],
+    "description": "Estudio bíblico sobre la condición del hombre: la creación, la caída y el pecado. Segundo libro de la serie Fundamentos Bíblicos para la Fe Cristiana."
+  },
+  {
+    "id": "comentario-hendriksen-mateo",
+    "title": "Comentario al Nuevo Testamento: El Evangelio según San Mateo",
+    "file": "books/comentario-hendriksen-mateo.pdf",
+    "cover": "covers/comentario-hendriksen-mateo.jpg",
+    "author": "William Hendriksen",
+    "year": 1973,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "Evangelios", "William Hendriksen", "Mateo"],
+    "description": "Comentario exegético y expositivo del Evangelio según Mateo, de la serie Comentario al Nuevo Testamento de William Hendriksen (Libros Desafío)."
+  },
+  {
+    "id": "comentario-hendriksen-marcos",
+    "title": "Comentario al Nuevo Testamento: El Evangelio según San Marcos",
+    "file": "books/comentario-hendriksen-marcos.pdf",
+    "cover": "covers/comentario-hendriksen-marcos.jpg",
+    "author": "William Hendriksen",
+    "year": 1975,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "Evangelios", "William Hendriksen", "Marcos"],
+    "description": "Comentario exegético y expositivo del Evangelio según Marcos, de la serie Comentario al Nuevo Testamento de William Hendriksen (Libros Desafío)."
+  },
+  {
+    "id": "comentario-hendriksen-lucas",
+    "title": "Comentario al Nuevo Testamento: El Evangelio según San Lucas",
+    "file": "books/comentario-hendriksen-lucas.pdf",
+    "cover": "covers/comentario-hendriksen-lucas.jpg",
+    "author": "William Hendriksen",
+    "year": 1978,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "Evangelios", "William Hendriksen", "Lucas"],
+    "description": "Comentario exegético y expositivo del Evangelio según Lucas, de la serie Comentario al Nuevo Testamento de William Hendriksen (Libros Desafío)."
+  },
+  {
+    "id": "comentario-hendriksen-juan",
+    "title": "Comentario al Nuevo Testamento: El Evangelio según San Juan",
+    "file": "books/comentario-hendriksen-juan.pdf",
+    "cover": "covers/comentario-hendriksen-juan.jpg",
+    "author": "William Hendriksen",
+    "year": 1953,
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "Evangelios", "William Hendriksen", "Juan"],
+    "description": "Comentario exegético y expositivo del Evangelio según Juan, de la serie Comentario al Nuevo Testamento de William Hendriksen (Libros Desafío)."
+  },
+  {
+    "id": "mensaje-teologia-nuevo-testamento-kruger",
+    "title": "Mensaje y teología del Nuevo Testamento: el evangelio realizado",
+    "file": "books/mensaje-teologia-nuevo-testamento-kruger.pdf",
+    "cover": "covers/mensaje-teologia-nuevo-testamento-kruger.jpg",
+    "author": "Michael J. Kruger (ed.)",
+    "year": 2016,
+    "category": "Teología bíblica",
+    "tags": ["Nuevo Testamento", "teología bíblica", "introducción", "Reformed Theological Seminary", "Michael J. Kruger"],
+    "description": "Introducción bíblico-teológica a cada libro del Nuevo Testamento, escrita por profesores del Reformed Theological Seminary, con prefacio de J. Ligon Duncan III."
+  },
+  {
+    "id": "una-fe-logica-keller",
+    "title": "Una fe lógica",
+    "file": "books/una-fe-logica-keller.pdf",
+    "cover": "covers/una-fe-logica-keller.jpg",
+    "author": "Timothy Keller",
+    "year": 2008,
+    "category": "Apologética",
+    "tags": ["apologética", "escepticismo", "existencia de Dios", "secularismo", "Timothy Keller"],
+    "description": "Respuestas a las objeciones más comunes contra el cristianismo y razones para creer en Dios en una cultura secular."
+  },
+  {
+    "id": "doce-hombres-comunes-macarthur",
+    "title": "Doce hombres comunes y corrientes",
+    "file": "books/doce-hombres-comunes-macarthur.pdf",
+    "cover": "covers/doce-hombres-comunes-macarthur.jpg",
+    "author": "John MacArthur",
+    "year": 2002,
+    "category": "Ministerio",
+    "tags": ["apóstoles", "discipulado", "liderazgo", "Evangelios", "John MacArthur"],
+    "description": "Cómo Jesús tomó a doce hombres comunes y los formó como apóstoles: un estudio de la vida de cada uno de los discípulos."
+  },
+  {
+    "id": "de-la-biblia-a-la-vida-namnun",
+    "title": "De la Biblia a la vida",
+    "file": "books/de-la-biblia-a-la-vida-namnun.pdf",
+    "cover": "covers/de-la-biblia-a-la-vida-namnun.jpg",
+    "author": "Paty Namnún y Chérbela El Hage",
+    "year": 2023,
+    "category": "Mujer cristiana",
+    "tags": ["mujer", "matrimonio", "maternidad", "soltería", "Paty Namnún"],
+    "description": "La Palabra de Dios aplicada a la vida de la mujer: su relación con Dios, sus tentaciones, su mundo interior, sus relaciones, el matrimonio, la maternidad y la soltería."
   }
 ]
