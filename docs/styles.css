@@ -80,16 +80,9 @@ img { display: block; max-width: 100%; }
   min-width: 0;
 }
 
-.brand-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 9px;
-  display: grid;
-  place-items: center;
-  background: var(--ink);
-  color: #fff;
-  font-size: 0.78rem;
-  font-weight: 700;
+.brand-logo {
+  height: 44px;
+  width: auto;
   flex: 0 0 auto;
 }
 
@@ -157,6 +150,8 @@ img { display: block; max-width: 100%; }
 }
 
 .site-footer strong { color: var(--ink); font-weight: 600; }
+.site-footer { align-items: center; }
+.footer-logo { height: 64px; width: auto; flex: 0 0 auto; }
 
 /* ---------- Motion ---------- */
 .fade-in { animation: fade-in 420ms ease both; }
@@ -179,5 +174,5 @@ img { display: block; max-width: 100%; }
   .brand small { display: none; }
   .nav { gap: 0; }
   .nav a { padding: 8px 9px; font-size: 0.86rem; }
-  .site-footer { flex-direction: column; margin-top: 64px; }
+  .site-footer { flex-direction: column; margin-top: 64px; text-align: center; }
 }
