@@ -1061,5 +1061,175 @@
     "category": "Hombre cristiano",
     "tags": ["hombría bíblica", "Tito", "discipulado de hombres", "carácter", "Josh Smith"],
     "description": "Diez fundamentos para la hombría bíblica a partir de la carta de Pablo a Tito, con preguntas para el estudio en grupo."
+  },
+  {
+    "id": "institucion-religion-cristiana-calvino",
+    "title": "Institución de la religión cristiana",
+    "file": "books/institucion-religion-cristiana-calvino.pdf",
+    "cover": "covers/institucion-religion-cristiana-calvino.jpg",
+    "author": "Juan Calvino",
+    "year": 1559,
+    "category": "Teología sistemática",
+    "tags": ["Reforma", "teología reformada", "soberanía de Dios", "clásicos", "Juan Calvino"],
+    "description": "La obra principal de la teología reformada: conocimiento de Dios Creador y Redentor, la gracia, la fe, la justificación, la Iglesia y los sacramentos. Traducción de Cipriano de Valera (1597), edición revisada."
+  },
+  {
+    "id": "comentario-calvino-antiguo-testamento",
+    "title": "Comentario bíblico de Juan Calvino: Antiguo Testamento",
+    "file": "books/comentario-calvino-antiguo-testamento.pdf",
+    "cover": "covers/comentario-calvino-antiguo-testamento.jpg",
+    "author": "Juan Calvino",
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Antiguo Testamento", "Reforma", "exégesis", "Juan Calvino"],
+    "description": "Comentarios de Juan Calvino a los libros del Antiguo Testamento, organizados por libro y capítulo."
+  },
+  {
+    "id": "comentario-calvino-nuevo-testamento",
+    "title": "Comentario bíblico de Juan Calvino: Nuevo Testamento",
+    "file": "books/comentario-calvino-nuevo-testamento.pdf",
+    "cover": "covers/comentario-calvino-nuevo-testamento.jpg",
+    "author": "Juan Calvino",
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Nuevo Testamento", "Reforma", "exégesis", "Juan Calvino"],
+    "description": "Comentarios de Juan Calvino a los libros del Nuevo Testamento, organizados por libro y capítulo."
+  },
+  {
+    "id": "tesoro-de-david-1-spurgeon",
+    "title": "El tesoro de David (tomo 1)",
+    "file": "books/tesoro-de-david-1-spurgeon.pdf",
+    "cover": "covers/tesoro-de-david-1-spurgeon.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Comentarios bíblicos",
+    "tags": ["Salmos", "comentario", "devocional", "puritanos", "C. H. Spurgeon"],
+    "description": "La obra clásica de Spurgeon sobre los Salmos, con su exposición y citas de numerosos autores. Tomo 1: 61 salmos clave. Edición de Eliseo Vila (CLIE)."
+  },
+  {
+    "id": "tesoro-de-david-2-spurgeon",
+    "title": "El tesoro de David (tomo 2)",
+    "file": "books/tesoro-de-david-2-spurgeon.pdf",
+    "cover": "covers/tesoro-de-david-2-spurgeon.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Comentarios bíblicos",
+    "tags": ["Salmos", "Salmo 119", "comentario", "devocional", "C. H. Spurgeon"],
+    "description": "Continuación de la obra clásica de Spurgeon sobre los Salmos. Tomo 2: 42 salmos complementarios y el Salmo 119. Edición de Eliseo Vila (CLIE)."
+  },
+  {
+    "id": "comentario-biblico-spurgeon",
+    "title": "Comentario bíblico de Charles Spurgeon",
+    "file": "books/comentario-biblico-spurgeon.pdf",
+    "cover": "covers/comentario-biblico-spurgeon.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Comentarios bíblicos",
+    "tags": ["comentario", "Biblia completa", "predicación", "exposición bíblica", "C. H. Spurgeon"],
+    "description": "Comentarios de Spurgeon organizados por libros de la Biblia, desde Génesis en adelante."
+  },
+  {
+    "id": "biblia-de-estudio-spurgeon",
+    "title": "La Biblia de estudio Spurgeon (Biblia Cristiana Standard)",
+    "file": "books/biblia-de-estudio-spurgeon.pdf",
+    "cover": "covers/biblia-de-estudio-spurgeon.jpg",
+    "author": "C. H. Spurgeon (notas)",
+    "year": 2017,
+    "category": "Biblias",
+    "tags": ["Biblia", "Biblia de estudio", "Biblia Cristiana Standard", "notas", "C. H. Spurgeon"],
+    "description": "Texto bíblico de la Biblia Cristiana Standard con notas de estudio tomadas de los sermones y escritos de Charles Spurgeon."
+  },
+  {
+    "id": "gozo-inefable-lloyd-jones",
+    "title": "Gozo inefable: el bautismo y los dones del Espíritu Santo",
+    "file": "books/gozo-inefable-lloyd-jones.pdf",
+    "cover": "covers/gozo-inefable-lloyd-jones.jpg",
+    "author": "D. Martyn Lloyd-Jones",
+    "year": 1984,
+    "category": "Espíritu Santo",
+    "tags": ["Espíritu Santo", "bautismo del Espíritu", "seguridad de la salvación", "avivamiento", "Martyn Lloyd-Jones"],
+    "description": "Sermones de Martyn Lloyd-Jones sobre el bautismo con el Espíritu Santo, el gozo y la seguridad del creyente. Edición escaneada (sin texto buscable)."
+  },
+  {
+    "id": "existencia-atributos-de-dios-charnock",
+    "title": "La existencia y los atributos de Dios",
+    "file": "books/existencia-atributos-de-dios-charnock.pdf",
+    "cover": "covers/existencia-atributos-de-dios-charnock.jpg",
+    "author": "Stephen Charnock",
+    "year": 1682,
+    "category": "Teología sistemática",
+    "tags": ["atributos de Dios", "existencia de Dios", "puritanos", "teología propia", "Stephen Charnock"],
+    "description": "Clásico puritano sobre la existencia de Dios y cada uno de sus atributos: eternidad, inmutabilidad, omnipresencia, sabiduría, poder, santidad, bondad y dominio."
+  },
+  {
+    "id": "confesiones-agustin",
+    "title": "Confesiones",
+    "file": "books/confesiones-agustin.pdf",
+    "cover": "covers/confesiones-agustin.jpg",
+    "author": "Agustín de Hipona",
+    "year": 397,
+    "category": "Patrística",
+    "tags": ["Agustín", "conversión", "gracia", "Padres de la Iglesia", "autobiografía"],
+    "description": "La autobiografía espiritual de Agustín de Hipona: su vida, su conversión y su alabanza a la gracia de Dios. Traducción de Biblioteca Clásica Gredos."
+  },
+  {
+    "id": "que-es-la-trinidad-sproul",
+    "title": "¿Qué es la Trinidad?",
+    "file": "books/que-es-la-trinidad-sproul.pdf",
+    "cover": "covers/que-es-la-trinidad-sproul.jpg",
+    "author": "R. C. Sproul",
+    "year": 2011,
+    "category": "Teología sistemática",
+    "tags": ["Trinidad", "doctrina de Dios", "Preguntas cruciales", "Ligonier", "R. C. Sproul"],
+    "description": "Breve explicación bíblica de la doctrina de la Trinidad, de la serie Preguntas Cruciales."
+  },
+  {
+    "id": "descubriendo-glorioso-evangelio-washer",
+    "title": "Descubriendo el glorioso evangelio",
+    "file": "books/descubriendo-glorioso-evangelio-washer.pdf",
+    "cover": "covers/descubriendo-glorioso-evangelio-washer.jpg",
+    "author": "Paul Washer",
+    "year": 2016,
+    "category": "Teología sistemática",
+    "tags": ["evangelio", "expiación", "salvación", "Fundamentos bíblicos", "Paul Washer"],
+    "description": "Estudio bíblico sobre el evangelio de Jesucristo: su persona, su obra y la salvación. Tercer libro de la serie Fundamentos Bíblicos para la Fe Cristiana."
+  },
+  {
+    "id": "confiando-en-dios-bridges",
+    "title": "Confiando en Dios aunque la vida duela",
+    "file": "books/confiando-en-dios-bridges.pdf",
+    "cover": "covers/confiando-en-dios-bridges.jpg",
+    "author": "Jerry Bridges",
+    "year": 1988,
+    "category": "Espiritualidad",
+    "tags": ["providencia", "soberanía de Dios", "sufrimiento", "confianza", "Jerry Bridges"],
+    "description": "Cómo confiar en la soberanía, la sabiduría y el amor de Dios en medio de las pruebas y el dolor."
+  },
+  {
+    "id": "gracia-sobre-gracia",
+    "title": "Gracia sobre gracia: la Nueva Reforma en el mundo hispano",
+    "file": "books/gracia-sobre-gracia.pdf",
+    "cover": "covers/gracia-sobre-gracia.jpg",
+    "author": "Juan Sánchez y Giancarlo Montemayor (eds.)",
+    "year": 2015,
+    "category": "Historia de la iglesia",
+    "tags": ["Nueva Reforma", "doctrinas de la gracia", "iglesia hispana", "Poiema", "teología reformada"],
+    "description": "Varios autores relatan el redescubrimiento de las doctrinas de la gracia en Latinoamérica y España, y sus implicaciones para la iglesia hispana."
+  },
+  {
+    "id": "historia-general-cristianismo-hurst",
+    "title": "Historia general del cristianismo: del siglo I al siglo XXI",
+    "file": "books/historia-general-cristianismo-hurst.pdf",
+    "cover": "covers/historia-general-cristianismo-hurst.jpg",
+    "author": "John Fletcher Hurst y Alfonso Ropero",
+    "year": 2008,
+    "category": "Historia de la iglesia",
+    "tags": ["historia de la iglesia", "Reforma", "cristianismo", "CLIE", "John Fletcher Hurst"],
+    "description": "Panorama de la historia del cristianismo desde la iglesia primitiva hasta el siglo XXI."
+  },
+  {
+    "id": "introduccion-a-la-teologia-grau",
+    "title": "Introducción a la teología (Curso de formación teológica evangélica, tomo 1)",
+    "file": "books/introduccion-a-la-teologia-grau.pdf",
+    "cover": "covers/introduccion-a-la-teologia-grau.jpg",
+    "author": "José Grau",
+    "category": "Teología sistemática",
+    "tags": ["introducción a la teología", "revelación", "Palabra de Dios", "autoridad de la Escritura", "José Grau"],
+    "description": "Primer tomo del Curso de Formación Teológica Evangélica: la revelación, la Palabra de Dios y su autoridad. Edición escaneada (sin texto buscable)."
   }
 ]
