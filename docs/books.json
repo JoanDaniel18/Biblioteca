@@ -782,5 +782,49 @@
     "category": "Comentarios bíblicos",
     "tags": ["comentario", "Romanos", "justificación por la fe", "exégesis", "Douglas J. Moo"],
     "description": "Comentario exegético detallado de la carta de Pablo a los Romanos, con atención especial a la justificación por la fe (Editorial CLIE)."
+  },
+  {
+    "id": "catolicos-romanos-y-evangelicos-geisler",
+    "title": "Católicos romanos y evangélicos: acuerdos y diferencias",
+    "file": "books/catolicos-romanos-y-evangelicos-geisler.pdf",
+    "cover": "covers/catolicos-romanos-y-evangelicos-geisler.jpg",
+    "author": "Norman L. Geisler y Ralph E. MacKenzie",
+    "year": 1995,
+    "category": "Apologética",
+    "tags": ["catolicismo romano", "Reforma", "justificación por la fe", "apologética", "Norman Geisler"],
+    "description": "Comparación detallada entre la doctrina católica romana y la evangélica: dónde coinciden y dónde difieren en temas como la Escritura, la justificación, la Iglesia y los sacramentos."
+  },
+  {
+    "id": "el-lado-oscuro-del-islam-sproul",
+    "title": "El lado oscuro del Islam",
+    "file": "books/el-lado-oscuro-del-islam-sproul.pdf",
+    "cover": "covers/el-lado-oscuro-del-islam-sproul.jpg",
+    "author": "R. C. Sproul y Abdul Saleeb",
+    "year": 2003,
+    "category": "Apologética",
+    "tags": ["Islam", "apologética", "Trinidad", "deidad de Cristo", "R. C. Sproul"],
+    "description": "Comparación entre el Islam y el cristianismo sobre las Escrituras, la Trinidad, el pecado, la salvación, la muerte de Cristo y su deidad."
+  },
+  {
+    "id": "pruebas-existencia-de-dios-wurmbrand",
+    "title": "Pruebas de la existencia de Dios",
+    "file": "books/pruebas-existencia-de-dios-wurmbrand.pdf",
+    "cover": "covers/pruebas-existencia-de-dios-wurmbrand.jpg",
+    "author": "Richard Wurmbrand",
+    "year": 2007,
+    "category": "Apologética",
+    "tags": ["existencia de Dios", "apologética", "ateísmo", "fe", "Richard Wurmbrand"],
+    "description": "Argumentos a favor de la existencia de Dios escritos por el pastor que sufrió prisión y tortura por su fe bajo el comunismo (La Voz de los Mártires)."
+  },
+  {
+    "id": "un-ano-de-cambios-tranchini",
+    "title": "Un año de cambios: un devocional centrado en disfrutar a Dios",
+    "file": "books/un-ano-de-cambios-tranchini.pdf",
+    "cover": "covers/un-ano-de-cambios-tranchini.jpg",
+    "author": "Nicolás Emilio Tranchini y otros",
+    "year": 2021,
+    "category": "Espiritualidad",
+    "tags": ["devocional", "gracia", "santificación", "disciplinas espirituales", "Nicolás Tranchini"],
+    "description": "Devocional diario para todo el año centrado en la gracia y la soberanía de Dios, el cambio del corazón y el gozo en Cristo."
   }
 ]
