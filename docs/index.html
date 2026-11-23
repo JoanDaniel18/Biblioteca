@@ -393,7 +393,9 @@
       font-variant-numeric: tabular-nums;
     }
 
-    .place { margin: 0; color: var(--muted); }
+    .place { margin: -14px 0 16px; color: var(--muted); }
+    .visit-card .phone { margin-bottom: 0; }
+    .map-btn { margin-top: 16px; }
 
     .visit-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 22px; }
     .visit-actions .btn { flex: 1; }
@@ -508,11 +510,15 @@
         <article class="visit-card">
           <span class="visit-label">
             <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7Zm0 2a5 5 0 0 0-5 5c0 3.2 3.4 8 5 10 1.6-2 5-6.8 5-10a5 5 0 0 0-5-5Zm0 2.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/></svg>
-            Contacto
+            Dónde encontrarnos
           </span>
-          <h3>Ibarra, Ecuador</h3>
+          <h3>Tobías Mena y Miguel Albán Páliz</h3>
+          <p class="place">Ibarra, Imbabura, Ecuador</p>
           <a class="phone" href="tel:+593960935198">096 093 5198</a>
-          <p class="place">Llámanos o escríbenos y te indicamos cómo llegar.</p>
+          <a class="btn map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Tob%C3%ADas%20Mena%20y%20Miguel%20Alb%C3%A1n%20P%C3%A1liz%2C%20Ibarra%2C%20Ecuador" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7Zm0 2a5 5 0 0 0-5 5c0 3.2 3.4 8 5 10 1.6-2 5-6.8 5-10a5 5 0 0 0-5-5Zm0 2.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/></svg>
+            Cómo llegar
+          </a>
           <div class="visit-actions">
             <a class="btn whatsapp" href="https://wa.me/593960935198?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20la%20Misi%C3%B3n%20Bautista%20Reformada%20Ibarra%20%E2%80%9CSomos%20Uno%E2%80%9D." target="_blank" rel="noopener">
               <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 0 1 12 4Zm-3.3 4c-.2 0-.5 0-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.8-.9c-.3-.1-.5-.1-.7.1l-.8 1c-.1.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5Z"/></svg>
