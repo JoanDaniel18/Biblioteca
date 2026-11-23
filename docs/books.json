@@ -971,7 +971,7 @@
     "file": "books/una-fe-logica-keller.pdf",
     "cover": "covers/una-fe-logica-keller.jpg",
     "author": "Timothy Keller",
-    "year": 2008,
+    "year": 2016,
     "category": "Apologética",
     "tags": ["apologética", "escepticismo", "existencia de Dios", "secularismo", "Timothy Keller"],
     "description": "Respuestas a las objeciones más comunes contra el cristianismo y razones para creer en Dios en una cultura secular."
@@ -997,5 +997,69 @@
     "category": "Mujer cristiana",
     "tags": ["mujer", "matrimonio", "maternidad", "soltería", "Paty Namnún"],
     "description": "La Palabra de Dios aplicada a la vida de la mujer: su relación con Dios, sus tentaciones, su mundo interior, sus relaciones, el matrimonio, la maternidad y la soltería."
+  },
+  {
+    "id": "asombrados-por-dios-piper",
+    "title": "Asombrados por Dios: diez verdades que cambian al mundo",
+    "file": "books/asombrados-por-dios-piper.pdf",
+    "cover": "covers/asombrados-por-dios-piper.jpg",
+    "author": "John Piper",
+    "year": 2013,
+    "category": "Teología sistemática",
+    "tags": ["doctrinas de la gracia", "soberanía de Dios", "depravación", "elección", "John Piper"],
+    "description": "Diez verdades bíblicas sobre Dios, el hombre y la salvación que transforman la vida y la manera de ver el mundo. Publicado originalmente como Doctrine Matters (Desiring God)."
+  },
+  {
+    "id": "los-diez-mandamientos-watson",
+    "title": "Los diez mandamientos",
+    "file": "books/los-diez-mandamientos-watson.pdf",
+    "cover": "covers/los-diez-mandamientos-watson.jpg",
+    "author": "Thomas Watson",
+    "year": 1692,
+    "category": "Catecismos",
+    "tags": ["ley de Dios", "diez mandamientos", "puritanos", "Catecismo Menor de Westminster", "Thomas Watson"],
+    "description": "Exposición puritana de los diez mandamientos, escrita como parte del comentario de Watson al Catecismo Menor de Westminster."
+  },
+  {
+    "id": "usa-dios-la-enfermedad-ryle",
+    "title": "¿Usa Dios la enfermedad?",
+    "file": "books/usa-dios-la-enfermedad-ryle.pdf",
+    "cover": "covers/usa-dios-la-enfermedad-ryle.jpg",
+    "author": "J. C. Ryle",
+    "category": "Espiritualidad",
+    "tags": ["enfermedad", "sufrimiento", "providencia", "muerte", "J. C. Ryle"],
+    "description": "Breve escrito de J. C. Ryle sobre la enfermedad: por qué es universal, cómo Dios la usa para el bien de nuestra alma y cómo debe responder el creyente."
+  },
+  {
+    "id": "significado-del-matrimonio-devocional-keller",
+    "title": "El significado del matrimonio: un devocional para parejas",
+    "file": "books/significado-del-matrimonio-devocional-keller.pdf",
+    "cover": "covers/significado-del-matrimonio-devocional-keller.jpg",
+    "author": "Timothy Keller y Kathy Keller",
+    "year": 2019,
+    "category": "Familia cristiana",
+    "tags": ["matrimonio", "devocional", "parejas", "pacto", "Timothy Keller"],
+    "description": "365 devocionales para matrimonios basados en la Escritura y en el libro El significado del matrimonio."
+  },
+  {
+    "id": "la-razon-de-dios-keller",
+    "title": "La razón de Dios: creer en una época de escepticismo",
+    "file": "books/la-razon-de-dios-keller.pdf",
+    "cover": "covers/la-razon-de-dios-keller.jpg",
+    "author": "Timothy Keller",
+    "year": 2008,
+    "category": "Apologética",
+    "tags": ["apologética", "escepticismo", "sufrimiento", "exclusividad de Cristo", "Timothy Keller"],
+    "description": "Respuesta a las principales dudas sobre el cristianismo y presentación de las razones para creer en Jesucristo en una época de escepticismo."
+  },
+  {
+    "id": "tito-fundamentos-hombria-smith",
+    "title": "Tito: 10 fundamentos de la hombría",
+    "file": "books/tito-fundamentos-hombria-smith.pdf",
+    "cover": "covers/tito-fundamentos-hombria-smith.jpg",
+    "author": "J. Josh Smith",
+    "category": "Hombre cristiano",
+    "tags": ["hombría bíblica", "Tito", "discipulado de hombres", "carácter", "Josh Smith"],
+    "description": "Diez fundamentos para la hombría bíblica a partir de la carta de Pablo a Tito, con preguntas para el estudio en grupo."
   }
 ]
