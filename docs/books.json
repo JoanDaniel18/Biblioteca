@@ -1231,5 +1231,137 @@
     "category": "Teología sistemática",
     "tags": ["introducción a la teología", "revelación", "Palabra de Dios", "autoridad de la Escritura", "José Grau"],
     "description": "Primer tomo del Curso de Formación Teológica Evangélica: la revelación, la Palabra de Dios y su autoridad. Edición escaneada (sin texto buscable)."
+  },
+  {
+    "id": "de-parte-de-dios-michelen",
+    "title": "De parte de Dios y delante de Dios: una guía teórica y práctica para predicar expositivamente",
+    "file": "books/de-parte-de-dios-michelen.pdf",
+    "cover": "covers/de-parte-de-dios-michelen.jpg",
+    "author": "Sugel Michelén",
+    "year": 2016,
+    "category": "Ministerio",
+    "tags": ["predicación expositiva", "predicación", "pastores", "Palabra de Dios", "Sugel Michelén"],
+    "description": "Fundamento teológico y guía práctica para la predicación expositiva: Dios habla por su Palabra y nos ordena predicarla."
+  },
+  {
+    "id": "la-persona-de-cristo-portavoz-gracia",
+    "title": "La persona de Cristo (Portavoz de la Gracia n.º 14)",
+    "file": "books/la-persona-de-cristo-portavoz-gracia.pdf",
+    "cover": "covers/la-persona-de-cristo-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "year": 2015,
+    "category": "Teología sistemática",
+    "tags": ["Cristo", "encarnación", "cristología", "puritanos", "Portavoz de la Gracia"],
+    "description": "Número 14 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la persona de Cristo, verdadero Dios y verdadero hombre."
+  },
+  {
+    "id": "grandes-doctrinas-biblia-sproul",
+    "title": "Las grandes doctrinas de la Biblia",
+    "file": "books/grandes-doctrinas-biblia-sproul.pdf",
+    "cover": "covers/grandes-doctrinas-biblia-sproul.jpg",
+    "author": "R. C. Sproul",
+    "year": 1992,
+    "category": "Teología sistemática",
+    "tags": ["doctrina", "teología sistemática", "estudio programado", "FLET", "R. C. Sproul"],
+    "description": "Breves explicaciones de las doctrinas fundamentales de la fe cristiana, con un estudio programado de la Facultad Latinoamericana de Estudios Teológicos (FLET)."
+  },
+  {
+    "id": "vivir-con-integridad-y-sabiduria-nunez",
+    "title": "Vivir con integridad y sabiduría",
+    "file": "books/vivir-con-integridad-y-sabiduria-nunez.pdf",
+    "cover": "covers/vivir-con-integridad-y-sabiduria-nunez.jpg",
+    "author": "Miguel Núñez",
+    "year": 2016,
+    "category": "Espiritualidad",
+    "tags": ["integridad", "sabiduría", "carácter", "vida cristiana", "Miguel Núñez"],
+    "description": "Principios bíblicos para vivir con integridad y sabiduría en una cultura que las ha perdido."
+  },
+  {
+    "id": "ensenanzas-que-transformaron-el-mundo-nunez",
+    "title": "Enseñanzas que transformaron el mundo",
+    "file": "books/ensenanzas-que-transformaron-el-mundo-nunez.pdf",
+    "cover": "covers/ensenanzas-que-transformaron-el-mundo-nunez.jpg",
+    "author": "Miguel Núñez",
+    "year": 2015,
+    "category": "Teología sistemática",
+    "tags": ["Reforma", "doctrinas de la gracia", "Sola Escritura", "Latinoamérica", "Miguel Núñez"],
+    "description": "Un llamado a despertar para la iglesia en Latinoamérica a partir de las verdades de la Reforma: la Sola Escritura, la inhabilidad del hombre, la elección incondicional y la gracia. Prólogo de R. Albert Mohler. Edición escaneada (sin texto buscable)."
+  },
+  {
+    "id": "cuando-no-deseo-a-dios-piper",
+    "title": "Cuando no deseo a Dios: la batalla por el gozo",
+    "file": "books/cuando-no-deseo-a-dios-piper.pdf",
+    "cover": "covers/cuando-no-deseo-a-dios-piper.jpg",
+    "author": "John Piper",
+    "year": 2004,
+    "category": "Espiritualidad",
+    "tags": ["gozo", "lucha contra el pecado", "deseo de Dios", "vida cristiana", "John Piper"],
+    "description": "Cómo luchar por el gozo en Dios cuando el corazón se enfría: medios de gracia, la Palabra, la oración y la comunión."
+  },
+  {
+    "id": "los-carismaticos-macarthur",
+    "title": "Los carismáticos: una perspectiva doctrinal",
+    "file": "books/los-carismaticos-macarthur.pdf",
+    "cover": "covers/los-carismaticos-macarthur.jpg",
+    "author": "John MacArthur",
+    "year": 1992,
+    "category": "Espíritu Santo",
+    "tags": ["movimiento carismático", "dones espirituales", "cesacionismo", "Espíritu Santo", "John MacArthur"],
+    "description": "Evaluación bíblica del movimiento carismático: revelación, milagros, sanidades, lenguas y la obra del Espíritu Santo."
+  },
+  {
+    "id": "esclavo-macarthur",
+    "title": "Esclavo: la verdad escondida sobre tu identidad en Cristo",
+    "file": "books/esclavo-macarthur.pdf",
+    "cover": "covers/esclavo-macarthur.jpg",
+    "author": "John MacArthur",
+    "year": 2010,
+    "category": "Teología sistemática",
+    "tags": ["esclavo de Cristo", "señorío de Cristo", "salvación", "discipulado", "John MacArthur"],
+    "description": "Lo que significa que el Nuevo Testamento llame a los creyentes esclavos de Cristo, y cómo esa verdad transforma nuestra comprensión de la salvación."
+  },
+  {
+    "id": "la-evangelizacion-macarthur",
+    "title": "La evangelización: cómo compartir el evangelio con fidelidad",
+    "file": "books/la-evangelizacion-macarthur.pdf",
+    "cover": "covers/la-evangelizacion-macarthur.jpg",
+    "author": "John MacArthur y pastores de Grace Community Church",
+    "year": 2011,
+    "category": "Evangelización",
+    "tags": ["evangelización", "evangelio", "misiones", "iglesia local", "John MacArthur"],
+    "description": "Fundamentos bíblicos y guía práctica para compartir el evangelio con fidelidad, escrita por pastores y misioneros de Grace Community Church."
+  },
+  {
+    "id": "la-predicacion-macarthur",
+    "title": "La predicación: cómo predicar bíblicamente",
+    "file": "books/la-predicacion-macarthur.pdf",
+    "cover": "covers/la-predicacion-macarthur.jpg",
+    "author": "John MacArthur y la facultad del Master's Seminary",
+    "year": 2009,
+    "category": "Ministerio",
+    "tags": ["predicación expositiva", "homilética", "pastores", "Master's Seminary", "John MacArthur"],
+    "description": "Manual sobre la predicación expositiva: el predicador, la preparación del sermón y su exposición, por John MacArthur y profesores del Master's Seminary."
+  },
+  {
+    "id": "las-95-tesis-lutero",
+    "title": "Las 95 tesis",
+    "file": "books/las-95-tesis-lutero.pdf",
+    "cover": "covers/las-95-tesis-lutero.jpg",
+    "author": "Martín Lutero",
+    "year": 1517,
+    "category": "Reforma",
+    "tags": ["Reforma", "indulgencias", "Wittenberg", "documentos históricos", "Martín Lutero"],
+    "description": "Las 95 tesis que Lutero publicó en Wittenberg contra la venta de indulgencias, inicio de la Reforma protestante."
+  },
+  {
+    "id": "mapas-biblicos-antes-y-ahora",
+    "title": "Mapas bíblicos antes y ahora (edición de lujo)",
+    "file": "books/mapas-biblicos-antes-y-ahora.pdf",
+    "cover": "covers/mapas-biblicos-antes-y-ahora.jpg",
+    "author": "Rose Publishing",
+    "year": 2012,
+    "category": "Biblias",
+    "tags": ["mapas bíblicos", "geografía bíblica", "Antiguo Testamento", "Nuevo Testamento", "recursos"],
+    "description": "Mapas de las tierras de la Biblia comparadas con el mundo actual, desde los comienzos hasta la iglesia primitiva, con cronologías."
   }
 ]
