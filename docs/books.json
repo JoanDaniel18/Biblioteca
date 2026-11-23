@@ -527,5 +527,70 @@
     "category": "Eclesiología",
     "tags": ["principio regulativo", "iglesia", "culto", "adoración", "eclesiología", "Sam Waldron"],
     "description": "Estudio sobre el principio regulativo aplicado a la vida, adoración y orden de la iglesia."
+  },
+  {
+    "id": "exposicion-confesion-1689-waldron",
+    "title": "Exposición de la Confesión Bautista de Fe de 1689",
+    "file": "books/exposicion-confesion-1689-waldron.pdf",
+    "cover": "covers/exposicion-confesion-1689-waldron.jpg",
+    "author": "Samuel E. Waldron",
+    "year": 1989,
+    "category": "Confesiones",
+    "tags": ["Confesión Bautista de 1689", "exposición", "doctrina", "bautistas reformados", "Samuel E. Waldron"],
+    "description": "Comentario capítulo por capítulo de la Segunda Confesión Bautista de Londres de 1689, con el texto de la confesión y su explicación bíblica y doctrinal."
+  },
+  {
+    "id": "guardando-el-corazon-flavel",
+    "title": "Guardando el corazón",
+    "file": "books/guardando-el-corazon-flavel.pdf",
+    "cover": "covers/guardando-el-corazon-flavel.jpg",
+    "author": "John Flavel",
+    "year": 1668,
+    "category": "Espiritualidad",
+    "tags": ["puritanos", "corazón", "santificación", "vida cristiana", "John Flavel"],
+    "description": "Clásico puritano sobre el deber de todo creyente de guardar su corazón y mantener vivo su amor por Dios."
+  },
+  {
+    "id": "espiritu-santo-whitefield",
+    "title": "El Espíritu Santo: convenciendo al mundo de pecado, de justicia y de juicio",
+    "file": "books/espiritu-santo-whitefield.pdf",
+    "cover": "covers/espiritu-santo-whitefield.jpg",
+    "author": "George Whitefield",
+    "category": "Espíritu Santo",
+    "tags": ["sermón", "Espíritu Santo", "convicción de pecado", "avivamiento", "George Whitefield"],
+    "description": "Sermón de George Whitefield sobre Juan 16:8 y la obra del Espíritu Santo al convencer al mundo de pecado, de justicia y de juicio."
+  },
+  {
+    "id": "sed-llenos-espiritu-santo-stott",
+    "title": "Sed llenos del Espíritu Santo",
+    "file": "books/sed-llenos-espiritu-santo-stott.pdf",
+    "cover": "covers/sed-llenos-espiritu-santo-stott.jpg",
+    "author": "John R. W. Stott",
+    "year": 1975,
+    "category": "Espíritu Santo",
+    "tags": ["Espíritu Santo", "bautismo del Espíritu", "plenitud", "dones espirituales", "John Stott"],
+    "description": "Estudio bíblico sobre el bautismo, la plenitud, el fruto y los dones del Espíritu Santo en la vida del creyente."
+  },
+  {
+    "id": "reformando-el-matrimonio-wilson",
+    "title": "Reformando el matrimonio",
+    "file": "books/reformando-el-matrimonio-wilson.pdf",
+    "cover": "covers/reformando-el-matrimonio-wilson.jpg",
+    "author": "Douglas Wilson",
+    "year": 1995,
+    "category": "Familia cristiana",
+    "tags": ["matrimonio", "familia", "esposos", "pacto", "Douglas Wilson"],
+    "description": "Una visión bíblica del matrimonio como pacto, con consejos prácticos para esposos y esposas (Publicaciones Faro de Gracia)."
+  },
+  {
+    "id": "como-predicar-expositivamente-liefeld",
+    "title": "Cómo predicar expositivamente",
+    "file": "books/como-predicar-expositivamente-liefeld.pdf",
+    "cover": "covers/como-predicar-expositivamente-liefeld.jpg",
+    "author": "Walter L. Liefeld",
+    "year": 1984,
+    "category": "Ministerio",
+    "tags": ["predicación", "predicación expositiva", "homilética", "pastores", "Walter Liefeld"],
+    "description": "Guía práctica para llevar el texto bíblico al sermón: interpretación, estructura y aplicación en la predicación expositiva."
   }
 ]
