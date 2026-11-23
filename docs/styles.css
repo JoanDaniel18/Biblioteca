@@ -174,8 +174,14 @@ img { display: block; max-width: 100%; }
   }
 }
 
+.name-short { display: none; text-decoration: none; }
+
 @media (max-width: 560px) {
+  .brand > span:last-child { display: none; }
+  .name-full { display: none; }
+  .name-short { display: inline; }
   .brand small { display: none; }
-  .nav a { padding: 8px 10px; }
+  .nav { gap: 0; }
+  .nav a { padding: 8px 9px; font-size: 0.86rem; }
   .site-footer { flex-direction: column; margin-top: 64px; }
 }

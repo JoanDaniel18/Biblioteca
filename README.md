@@ -1,6 +1,8 @@
 # Biblioteca "Somos Uno"
 
-Sitio estático para una biblioteca de lectura de la iglesia Misión Reformada "Somos Uno".
+Misión Bautista Reformada Ibarra "Somos Uno".
+
+Sitio estático para una biblioteca de lectura de la iglesia Misión Bautista Reformada Ibarra "Somos Uno".
 
 La intención es ofrecer acceso comunitario a libros y documentos bautistas reformados para leer en línea o descargar.
 

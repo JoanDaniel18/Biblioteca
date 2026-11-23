@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Biblioteca Somos Uno</title>
-  <meta name="description" content="Biblioteca bautista reformada de la Misión Reformada Somos Uno: confesiones, teología, historia de la iglesia y vida cristiana." />
+  <meta name="description" content="Misión Bautista Reformada Ibarra “Somos Uno”: biblioteca bautista reformada, horarios de culto y cómo encontrarnos en Ibarra, Ecuador." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700&display=swap" rel="stylesheet" />
@@ -304,6 +304,113 @@
 
     .teaser-photos img:nth-child(2) { transform: translateY(-14px); }
 
+    /* ---------- Visítanos ---------- */
+    .visit { margin-top: 96px; scroll-margin-top: 80px; }
+
+    .visit-head { text-align: center; margin-bottom: 32px; }
+
+    .visit-head h2 {
+      margin: 14px 0 0;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 650;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .visit-head p { margin: 12px auto 0; max-width: 48ch; color: var(--muted); }
+
+    .visit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .visit-card {
+      display: flex;
+      flex-direction: column;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--bg);
+    }
+
+    .visit-card.featured { background: var(--ink); border-color: var(--ink); color: #fff; }
+
+    .visit-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .visit-card.featured .visit-label { color: #9fd3bf; }
+
+    .visit-card h3 {
+      margin: 10px 0 20px;
+      font-size: 1.3rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    .times { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+
+    .times li {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      align-items: baseline;
+      gap: 12px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .times li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .visit-card.featured .times li { border-color: rgba(255, 255, 255, 0.14); }
+
+    .times strong {
+      font-size: 1.35rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .times strong small { font-size: 0.75rem; font-weight: 550; margin-left: 2px; }
+    .times span { color: var(--muted); }
+    .visit-card.featured .times span { color: rgba(255, 255, 255, 0.72); }
+
+    .visit-note { margin: auto 0 0; padding-top: 20px; color: var(--muted); font-size: 0.9rem; }
+
+    .phone {
+      display: block;
+      margin: 0 0 4px;
+      font-size: 1.5rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .place { margin: 0; color: var(--muted); }
+
+    .visit-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 22px; }
+    .visit-actions .btn { flex: 1; }
+    .btn.whatsapp { background: #1f8f4e; border-color: #1f8f4e; color: #fff; }
+    .btn.whatsapp:hover:not(:disabled) { background: #187a41; border-color: #187a41; }
+
+    @media (max-width: 980px) {
+      .visit-grid { grid-template-columns: 1fr 1fr; }
+      .visit-card:last-child { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 760px) {
+      .visit { margin-top: 64px; }
+      .visit-grid { grid-template-columns: 1fr; }
+      .visit-card { padding: 22px; }
+    }
+
     @media (max-width: 760px) {
       .hero { padding: 40px 0 28px; }
       .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 16px; }
@@ -319,18 +426,19 @@
     <div class="shell">
       <a class="brand" href="index.html">
         <span class="brand-mark">SU</span>
-        <span>Somos Uno<small>Biblioteca bautista reformada</small></span>
+        <span>Somos Uno<small>Misión Bautista Reformada Ibarra</small></span>
       </a>
       <nav class="nav" aria-label="Navegación principal">
         <a href="index.html" aria-current="page">Biblioteca</a>
         <a href="gallery.html">Galería</a>
+        <a href="#visitanos">Visítanos</a>
       </nav>
     </div>
   </header>
 
   <main class="shell">
     <section class="hero fade-in">
-      <span class="kicker">Misión Reformada “Somos Uno”</span>
+      <span class="kicker"><span><span class="name-full">Misión Bautista Reformada Ibarra</span><abbr class="name-short" title="Misión Bautista Reformada Ibarra">M.B.R.I.</abbr> “Somos Uno”</span></span>
       <h1>Lee, estudia y crece en la fe.</h1>
       <p>Confesiones, teología, historia de la iglesia y vida cristiana, disponibles para leer en línea o descargar.</p>
 
@@ -365,6 +473,60 @@
       </div>
     </section>
 
+    <section id="visitanos" class="visit" aria-labelledby="visit-title">
+      <div class="visit-head">
+        <span class="kicker">Te esperamos</span>
+        <h2 id="visit-title">Dónde y cuándo encontrarnos</h2>
+        <p>Acompáñanos a adorar a Dios y a estudiar su Palabra junto a la <strong>Misión Bautista Reformada Ibarra “Somos Uno”</strong>.</p>
+      </div>
+
+      <div class="visit-grid">
+        <article class="visit-card featured">
+          <span class="visit-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V2Zm12 8H5v9h14v-9ZM5 6v2h14V6H5Z"/></svg>
+            Domingos
+          </span>
+          <h3>Día del Señor</h3>
+          <ul class="times">
+            <li><strong>9:00<small>AM</small></strong><span>Escuela Bíblica</span></li>
+            <li><strong>10:30<small>AM</small></strong><span>Culto de Adoración</span></li>
+          </ul>
+        </article>
+
+        <article class="visit-card">
+          <span class="visit-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v2.4l4-2.4v12l-4-2.4V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6Zm2 0v12h9V6H6Z"/></svg>
+            Miércoles · Zoom
+          </span>
+          <h3>Reunión de oración</h3>
+          <ul class="times">
+            <li><strong>7:00<small>PM</small></strong><span>Oración en línea por Zoom</span></li>
+          </ul>
+          <p class="visit-note">Escríbenos por WhatsApp y te enviamos el enlace de la reunión.</p>
+        </article>
+
+        <article class="visit-card">
+          <span class="visit-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7Zm0 2a5 5 0 0 0-5 5c0 3.2 3.4 8 5 10 1.6-2 5-6.8 5-10a5 5 0 0 0-5-5Zm0 2.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/></svg>
+            Contacto
+          </span>
+          <h3>Ibarra, Ecuador</h3>
+          <a class="phone" href="tel:+593960935198">096 093 5198</a>
+          <p class="place">Llámanos o escríbenos y te indicamos cómo llegar.</p>
+          <div class="visit-actions">
+            <a class="btn whatsapp" href="https://wa.me/593960935198?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20la%20Misi%C3%B3n%20Bautista%20Reformada%20Ibarra%20%E2%80%9CSomos%20Uno%E2%80%9D." target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 0 1 12 4Zm-3.3 4c-.2 0-.5 0-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.8-.9c-.3-.1-.5-.1-.7.1l-.8 1c-.1.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5Z"/></svg>
+              WhatsApp
+            </a>
+            <a class="btn" href="tel:+593960935198">
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 2.5 9.3 5a1.5 1.5 0 0 1 .1 2.1L8 8.6a12 12 0 0 0 7.4 7.4l1.5-1.4a1.5 1.5 0 0 1 2.1.1l2.5 2.7a1.5 1.5 0 0 1 0 2.1l-1.4 1.4c-1 1-2.5 1.4-3.9.9A20 20 0 0 1 3.2 8.8c-.5-1.4-.1-2.9.9-3.9l1.4-1.4a1.5 1.5 0 0 1 2.1 0Z"/></svg>
+              Llamar
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="teaser" aria-label="Galería">
       <div>
         <h2>Una biblioteca con rostro de comunidad</h2>
@@ -382,8 +544,8 @@
   </main>
 
   <footer class="shell site-footer">
-    <span>Para la gloria de Dios y la edificación de su iglesia.</span>
-    <span>Hecho con ♥ por <strong>D.R</strong></span>
+    <span>Misión Bautista Reformada Ibarra <strong>“Somos Uno”</strong> · Para la gloria de Dios y la edificación de su iglesia.</span>
+    <span><a href="tel:+593960935198">096 093 5198</a> · Hecho con ♥ por <strong>D.R</strong></span>
   </footer>
 
   <script>
