@@ -4,139 +4,269 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Galería · Biblioteca Somos Uno</title>
+  <meta name="description" content="Momentos de la vida de la Misión Reformada Somos Uno." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .head {
-      padding: 64px 0 32px;
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 24px;
-      flex-wrap: wrap;
+    /* ---------- Hero (mismo orden que el inicio) ---------- */
+    .hero {
+      padding: 72px 0 48px;
+      text-align: center;
     }
 
-    .head h1 {
-      margin: 0;
-      font-size: clamp(2rem, 5vw, 3.2rem);
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 550;
+    }
+
+    .hero h1 {
+      margin: 20px auto 0;
+      max-width: 14ch;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      line-height: 1.04;
       font-weight: 650;
       letter-spacing: -0.035em;
-      line-height: 1.05;
     }
 
-    .head p {
-      margin: 12px 0 0;
-      max-width: 50ch;
+    .hero p {
+      margin: 18px auto 0;
+      max-width: 52ch;
       color: var(--muted);
-      font-size: 1.04rem;
+      font-size: 1.08rem;
     }
 
-    .verse {
-      margin: 0;
-      max-width: 34ch;
+    .stats {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 28px;
+      margin-top: 28px;
       color: var(--muted);
       font-size: 0.92rem;
-      font-style: italic;
     }
 
-    .verse small { display: block; margin-top: 4px; font-style: normal; color: var(--faint); }
+    .stats strong { color: var(--ink); font-weight: 600; }
 
-    .stage {
+    .result-line {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* ---------- Mosaico ---------- */
+    .mosaic {
+      columns: 3 280px;
+      column-gap: 16px;
+    }
+
+    .tile {
       position: relative;
-      aspect-ratio: 16 / 10;
-      max-height: 72vh;
+      display: block;
       width: 100%;
-      border-radius: 20px;
+      margin: 0 0 16px;
+      padding: 0;
+      border: 0;
+      border-radius: var(--radius);
       overflow: hidden;
+      background: var(--surface);
+      break-inside: avoid;
+      box-shadow: var(--shadow-cover);
+      transition: box-shadow 220ms ease, transform 220ms ease;
+    }
+
+    .tile img {
+      width: 100%;
+      height: auto;
+      transition: transform 400ms ease;
+    }
+
+    .tile::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(17, 19, 18, 0.35), transparent 45%);
+      opacity: 0;
+      transition: opacity 220ms ease;
+    }
+
+    .tile-icon {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      z-index: 1;
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--ink);
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .tile:hover { transform: translateY(-4px); box-shadow: var(--shadow-cover-hover); }
+    .tile:hover img { transform: scale(1.03); }
+    .tile:hover::after,
+    .tile:focus-visible::after { opacity: 1; }
+    .tile:hover .tile-icon,
+    .tile:focus-visible .tile-icon { opacity: 1; transform: none; }
+
+    .empty { padding: 72px 16px; text-align: center; color: var(--muted); }
+    .empty strong { display: block; color: var(--ink); font-size: 1.1rem; font-weight: 600; margin-bottom: 6px; }
+
+    /* ---------- Versículo + enlace (como el bloque del inicio) ---------- */
+    .teaser {
+      margin-top: 96px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px 40px;
+      flex-wrap: wrap;
+      padding: 40px;
+      border-radius: 20px;
       background: var(--surface);
     }
 
-    .stage img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      transition: opacity 180ms ease;
+    .teaser blockquote {
+      margin: 0;
+      max-width: 34ch;
+      font-size: clamp(1.3rem, 2.6vw, 1.75rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
     }
 
-    .stage img.is-changing { opacity: 0; }
-
-    .stage-backdrop {
-      position: absolute;
-      inset: -40px;
-      background-size: cover;
-      background-position: center;
-      filter: blur(40px) saturate(1.1);
-      opacity: 0.35;
-      transition: background-image 200ms ease;
+    .teaser cite {
+      display: block;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-style: normal;
+      font-weight: 450;
+      letter-spacing: 0;
     }
 
-    .stage img { position: relative; }
+    /* ---------- Visor a pantalla completa ---------- */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      background: rgba(12, 13, 12, 0.94);
+      color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 200ms ease, visibility 200ms ease;
+    }
 
-    .stage-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+    .lightbox.is-open { opacity: 1; visibility: visible; }
+
+    .lb-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      font-size: 0.9rem;
+      font-variant-numeric: tabular-nums;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .lb-btn {
       width: 44px;
       height: 44px;
       border: 0;
       border-radius: 999px;
       display: grid;
       place-items: center;
-      background: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 4px 16px rgba(17, 19, 18, 0.16);
-      transition: transform 150ms ease, background 150ms ease;
-    }
-
-    .stage-nav:hover { background: #fff; transform: translateY(-50%) scale(1.06); }
-    .stage-nav.prev { left: 16px; }
-    .stage-nav.next { right: 16px; }
-
-    .count {
-      position: absolute;
-      right: 16px;
-      bottom: 16px;
-      padding: 4px 12px;
-      border-radius: 999px;
-      background: rgba(17, 19, 18, 0.6);
+      background: rgba(255, 255, 255, 0.1);
       color: #fff;
-      font-size: 0.82rem;
-      font-weight: 500;
-      font-variant-numeric: tabular-nums;
+      transition: background 150ms ease;
     }
 
-    .thumbs {
+    .lb-btn:hover { background: rgba(255, 255, 255, 0.2); }
+
+    .lb-stage {
+      position: relative;
+      min-height: 0;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-      gap: 10px;
-      margin-top: 16px;
+      place-items: center;
+      padding: 0 72px;
     }
 
-    .thumb {
+    .lb-stage img {
+      max-width: 100%;
+      max-height: calc(100vh - 160px);
+      max-height: calc(100dvh - 160px);
+      object-fit: contain;
+      border-radius: 6px;
+      transition: opacity 160ms ease;
+    }
+
+    .lb-stage img.is-changing { opacity: 0; }
+
+    .lb-prev, .lb-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .lb-prev { left: 16px; }
+    .lb-next { right: 16px; }
+
+    .lb-strip {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .lb-strip::-webkit-scrollbar { display: none; }
+
+    .lb-thumb {
+      flex: 0 0 auto;
+      width: 64px;
+      height: 48px;
       padding: 0;
       border: 0;
-      border-radius: var(--radius-sm);
+      border-radius: 6px;
       overflow: hidden;
-      aspect-ratio: 4 / 3;
-      background: var(--surface);
-      opacity: 0.55;
+      background: #222;
+      opacity: 0.45;
       outline: 2px solid transparent;
       outline-offset: 2px;
       transition: opacity 150ms ease, outline-color 150ms ease;
     }
 
-    .thumb img { width: 100%; height: 100%; object-fit: cover; }
-    .thumb:hover { opacity: 0.85; }
-    .thumb.is-active { opacity: 1; outline-color: var(--ink); }
+    .lb-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .lb-thumb:hover { opacity: 0.8; }
+    .lb-thumb.is-active { opacity: 1; outline-color: #fff; }
 
-    .message { padding: 72px 16px; text-align: center; color: var(--muted); }
+    body.no-scroll { overflow: hidden; }
 
     @media (max-width: 760px) {
-      .head { padding: 36px 0 24px; }
-      .stage { aspect-ratio: 4 / 3; border-radius: 14px; }
-      .stage-nav { width: 38px; height: 38px; }
-      .thumbs { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+      .hero { padding: 40px 0 32px; }
+      .mosaic { columns: 2; column-gap: 10px; }
+      .tile { margin-bottom: 10px; border-radius: var(--radius-sm); }
+      .teaser { padding: 24px; margin-top: 64px; }
+      .teaser .btn { width: 100%; }
+      .lb-stage { padding: 0 8px; }
+      .lb-prev, .lb-next { display: none; }
+      .lb-strip { justify-content: flex-start; }
     }
   </style>
 </head>
@@ -155,27 +285,28 @@
   </header>
 
   <main class="shell">
-    <section class="head fade-in">
-      <div>
-        <h1>Vida de iglesia</h1>
-        <p>Momentos de la comunión de la Misión Reformada “Somos Uno”.</p>
+    <section class="hero fade-in">
+      <span class="kicker">Misión Reformada “Somos Uno”</span>
+      <h1>Vida de iglesia, en comunión.</h1>
+      <p>Momentos compartidos de nuestra congregación: cultos, comidas, estudios y tiempo juntos.</p>
+      <div class="stats">
+        <span><strong id="stat-photos">–</strong> fotos</span>
+        <span>Toca una foto para verla en grande</span>
       </div>
-      <p class="verse">“Un mandamiento nuevo os doy: que os améis unos a otros.”<small>Juan 13:34</small></p>
     </section>
 
-    <section id="galeria" class="fade-in" aria-label="Galería de fotos">
-      <div class="stage" id="stage">
-        <div class="stage-backdrop" id="backdrop"></div>
-        <img id="main-img" alt="" />
-        <button class="stage-nav prev" id="prev" type="button" aria-label="Foto anterior">
-          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m14.7 6.7-1.4-1.4L6.6 12l6.7 6.7 1.4-1.4L9.4 12l5.3-5.3Z"/></svg>
-        </button>
-        <button class="stage-nav next" id="next" type="button" aria-label="Foto siguiente">
-          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.3 17.3 1.4 1.4 6.7-6.7-6.7-6.7-1.4 1.4 5.3 5.3-5.3 5.3Z"/></svg>
-        </button>
-        <span class="count" id="count">0 / 0</span>
-      </div>
-      <div class="thumbs" id="thumbs" aria-label="Miniaturas"></div>
+    <section id="galeria" aria-label="Fotos de la comunidad">
+      <div id="mosaic" class="mosaic"></div>
+    </section>
+
+    <section class="teaser" aria-label="Versículo">
+      <blockquote>
+        “Un mandamiento nuevo os doy: que os améis unos a otros.”
+        <cite>Juan 13:34</cite>
+      </blockquote>
+      <a class="btn" href="index.html">Ir a la biblioteca
+        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m13.3 5.3 6 6a1 1 0 0 1 0 1.4l-6 6-1.4-1.4 4.3-4.3H5v-2h11.2l-4.3-4.3 1.4-1.4Z"/></svg>
+      </a>
     </section>
   </main>
 
@@ -184,17 +315,40 @@
     <span>Hecho con ♥ por <strong>D.R</strong></span>
   </footer>
 
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <div class="lb-bar">
+      <span id="lb-count">1 / 1</span>
+      <button class="lb-btn" id="lb-close" type="button" aria-label="Cerrar (Esc)">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6l5.6-5.6L5 6.4 6.4 5Z"/></svg>
+      </button>
+    </div>
+    <div class="lb-stage" id="lb-stage">
+      <img id="lb-img" alt="" />
+      <button class="lb-btn lb-prev" id="lb-prev" type="button" aria-label="Foto anterior">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m14.7 6.7-1.4-1.4L6.6 12l6.7 6.7 1.4-1.4L9.4 12l5.3-5.3Z"/></svg>
+      </button>
+      <button class="lb-btn lb-next" id="lb-next" type="button" aria-label="Foto siguiente">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.3 17.3 1.4 1.4 6.7-6.7-6.7-6.7-1.4 1.4 5.3 5.3-5.3 5.3Z"/></svg>
+      </button>
+    </div>
+    <div class="lb-strip" id="lb-strip"></div>
+  </div>
+
   <script>
     (function () {
       // Las fotos se detectan solas: gallery/photo1.jpg, photo2.jpg, ... hasta MAX_PHOTOS.
       const MAX_PHOTOS = 30;
+      const $ = id => document.getElementById(id);
+      const mosaic = $('mosaic');
+      const lightbox = $('lightbox');
+      const lbImg = $('lb-img');
+      const lbStrip = $('lb-strip');
+      const lbCount = $('lb-count');
       const images = [];
-      const stage = document.getElementById('stage');
-      const mainImg = document.getElementById('main-img');
-      const backdrop = document.getElementById('backdrop');
-      const thumbs = document.getElementById('thumbs');
-      const count = document.getElementById('count');
       let current = 0;
+      let lastFocus = null;
+
+      const ICON_EXPAND = '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 4h6v2H7.4l3.3 3.3-1.4 1.4L6 7.4V10H4V4Zm10 0h6v6h-2V7.4l-3.3 3.3-1.4-1.4L16.6 6H14V4ZM9.3 13.3l1.4 1.4L7.4 18H10v2H4v-6h2v2.6l3.3-3.3Zm5.4 0 3.3 3.3V14h2v6h-6v-2h2.6l-3.3-3.3 1.4-1.4Z"/></svg>';
 
       function probe(src) {
         return new Promise(resolve => {
@@ -210,68 +364,109 @@
         const found = await Promise.all(candidates.map(probe));
         candidates.forEach((src, i) => { if (found[i]) images.push(src); });
 
+        $('stat-photos').textContent = images.length;
+
         if (!images.length) {
-          const box = document.createElement('div');
-          box.className = 'message';
-          box.textContent = 'Todavía no hay fotos en la galería.';
-          document.getElementById('galeria').replaceChildren(box);
+          mosaic.outerHTML = '<div class="empty"><strong>Todavía no hay fotos</strong>Pronto compartiremos momentos de la iglesia.</div>';
           return;
         }
 
         images.forEach((src, index) => {
-          const button = document.createElement('button');
-          button.type = 'button';
-          button.className = 'thumb';
-          button.setAttribute('aria-label', `Ver foto ${index + 1}`);
+          const tile = document.createElement('button');
+          tile.type = 'button';
+          tile.className = 'tile fade-in';
+          tile.style.animationDelay = `${Math.min(index, 11) * 40}ms`;
+          tile.setAttribute('aria-label', `Ampliar foto ${index + 1}`);
           const img = new Image();
           img.src = src;
-          img.alt = '';
-          img.loading = 'lazy';
-          button.append(img);
-          button.addEventListener('click', () => show(index));
-          thumbs.append(button);
+          img.alt = `Foto ${index + 1} de la comunidad Somos Uno`;
+          const icon = document.createElement('span');
+          icon.className = 'tile-icon';
+          icon.innerHTML = ICON_EXPAND;
+          tile.append(img, icon);
+          tile.addEventListener('click', () => open(index));
+          mosaic.append(tile);
+
+          const thumb = document.createElement('button');
+          thumb.type = 'button';
+          thumb.className = 'lb-thumb';
+          thumb.setAttribute('aria-label', `Ver foto ${index + 1}`);
+          const timg = new Image();
+          timg.src = src;
+          timg.alt = '';
+          timg.loading = 'lazy';
+          thumb.append(timg);
+          thumb.addEventListener('click', () => show(index));
+          lbStrip.append(thumb);
         });
 
-        show(0, true);
+        // Abrir directo una foto con ?foto=3
+        const requested = Number(new URLSearchParams(location.search).get('foto'));
+        if (requested >= 1 && requested <= images.length) open(requested - 1);
       }
 
       function show(index, instant) {
         current = (index + images.length) % images.length;
         const src = images[current];
-        const apply = () => {
-          mainImg.src = src;
-          mainImg.alt = `Foto ${current + 1} de la comunidad Somos Uno`;
-          backdrop.style.backgroundImage = `url("${src}")`;
-          mainImg.classList.remove('is-changing');
-        };
-        count.textContent = `${current + 1} / ${images.length}`;
-        [...thumbs.children].forEach((thumb, i) => {
-          thumb.classList.toggle('is-active', i === current);
-          thumb.setAttribute('aria-current', i === current);
+        lbCount.textContent = `${current + 1} / ${images.length}`;
+        [...lbStrip.children].forEach((thumb, i) => {
+          const active = i === current;
+          thumb.classList.toggle('is-active', active);
+          thumb.setAttribute('aria-current', active);
+          if (active) thumb.scrollIntoView({ block: 'nearest', inline: 'center' });
         });
+        const apply = () => {
+          lbImg.src = src;
+          lbImg.alt = `Foto ${current + 1} de la comunidad Somos Uno`;
+          lbImg.classList.remove('is-changing');
+        };
         if (instant) return apply();
-        mainImg.classList.add('is-changing');
-        setTimeout(apply, 150);
+        lbImg.classList.add('is-changing');
+        setTimeout(apply, 140);
       }
 
-      document.getElementById('prev').addEventListener('click', () => show(current - 1));
-      document.getElementById('next').addEventListener('click', () => show(current + 1));
+      function open(index) {
+        lastFocus = document.activeElement;
+        lightbox.hidden = false;
+        requestAnimationFrame(() => lightbox.classList.add('is-open'));
+        document.body.classList.add('no-scroll');
+        show(index, true);
+        $('lb-close').focus();
+      }
+
+      function close() {
+        lightbox.classList.remove('is-open');
+        document.body.classList.remove('no-scroll');
+        setTimeout(() => { lightbox.hidden = true; }, 200);
+        if (lastFocus) lastFocus.focus();
+      }
+
+      const isOpen = () => lightbox.classList.contains('is-open');
+
+      $('lb-close').addEventListener('click', close);
+      $('lb-prev').addEventListener('click', () => show(current - 1));
+      $('lb-next').addEventListener('click', () => show(current + 1));
+      $('lb-stage').addEventListener('click', event => { if (event.target.id === 'lb-stage') close(); });
 
       document.addEventListener('keydown', event => {
+        if (!isOpen()) return;
+        if (event.key === 'Escape') close();
         if (event.key === 'ArrowLeft') show(current - 1);
         if (event.key === 'ArrowRight') show(current + 1);
       });
 
       let startX = 0;
       let startY = 0;
+      const stage = $('lb-stage');
       stage.addEventListener('touchstart', e => { startX = e.touches[0].clientX; startY = e.touches[0].clientY; }, { passive: true });
       stage.addEventListener('touchend', e => {
         const dx = e.changedTouches[0].clientX - startX;
         const dy = e.changedTouches[0].clientY - startY;
         if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(current + (dx < 0 ? 1 : -1));
+        else if (dy > 90 && Math.abs(dy) > Math.abs(dx)) close();
       });
 
-      const topbar = document.getElementById('topbar');
+      const topbar = $('topbar');
       addEventListener('scroll', () => topbar.classList.toggle('is-scrolled', scrollY > 8), { passive: true });
 
       build();
