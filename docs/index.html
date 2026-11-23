@@ -395,6 +395,20 @@
     .times strong small { font-size: 0.75rem; font-weight: 550; margin-left: 2px; }
     .times span { color: var(--muted); }
     .visit-card.featured .times span { color: rgba(255, 255, 255, 0.72); }
+    .mode {
+      display: inline-block;
+      margin-left: 4px;
+      padding: 1px 8px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-style: normal;
+      font-weight: 600;
+      vertical-align: 2px;
+      white-space: nowrap;
+    }
+    .visit-card.featured .mode { background: rgba(159, 211, 191, 0.16); color: #9fd3bf; }
 
     .visit-note { margin: auto 0 0; padding-top: 20px; color: var(--muted); font-size: 0.9rem; }
 
@@ -504,7 +518,7 @@
           </span>
           <h3>Día del Señor</h3>
           <ul class="times">
-            <li><strong>6:00<small>AM</small></strong><span>Oración de hombres</span></li>
+            <li><strong>6:00<small>AM</small></strong><span>Oración de hombres <em class="mode">En línea</em></span></li>
             <li><strong>9:00<small>AM</small></strong><span>Escuela Bíblica</span></li>
             <li><strong>10:30<small>AM</small></strong><span>Culto de Adoración</span></li>
           </ul>
