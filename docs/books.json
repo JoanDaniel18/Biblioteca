@@ -1250,7 +1250,7 @@
     "cover": "covers/la-persona-de-cristo-portavoz-gracia.jpg",
     "author": "Varios autores (Portavoz de la Gracia)",
     "year": 2015,
-    "category": "Teología sistemática",
+    "category": "Portavoz de la Gracia",
     "tags": ["Cristo", "encarnación", "cristología", "puritanos", "Portavoz de la Gracia"],
     "description": "Número 14 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la persona de Cristo, verdadero Dios y verdadero hombre."
   },
@@ -1363,5 +1363,435 @@
     "category": "Biblias",
     "tags": ["mapas bíblicos", "geografía bíblica", "Antiguo Testamento", "Nuevo Testamento", "recursos"],
     "description": "Mapas de las tierras de la Biblia comparadas con el mundo actual, desde los comienzos hasta la iglesia primitiva, con cronologías."
+  },
+  {
+    "id": "formacion-biblica-de-los-hijos-en-el-hogar-portavoz-gracia",
+    "title": "Formación bíblica de los hijos en el hogar (Portavoz de la Gracia n.º 1)",
+    "file": "books/formacion-biblica-de-los-hijos-en-el-hogar-portavoz-gracia.pdf",
+    "cover": "covers/formacion-biblica-de-los-hijos-en-el-hogar-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["formación bíblica de los hijos en el hogar", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 1 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la crianza y la enseñanza bíblica de los hijos en el hogar."
+  },
+  {
+    "id": "matrimonio-portavoz-gracia",
+    "title": "Matrimonio (Portavoz de la Gracia n.º 12)",
+    "file": "books/matrimonio-portavoz-gracia.pdf",
+    "cover": "covers/matrimonio-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["matrimonio", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 12 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre el matrimonio cristiano según la Escritura."
+  },
+  {
+    "id": "hombres-piadosos-portavoz-gracia",
+    "title": "Hombres piadosos (Portavoz de la Gracia n.º 13)",
+    "file": "books/hombres-piadosos-portavoz-gracia.pdf",
+    "cover": "covers/hombres-piadosos-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["hombres piadosos", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 13 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre el carácter y los deberes del hombre piadoso."
+  },
+  {
+    "id": "la-obra-de-cristo-portavoz-gracia",
+    "title": "La obra de Cristo (Portavoz de la Gracia n.º 15)",
+    "file": "books/la-obra-de-cristo-portavoz-gracia.pdf",
+    "cover": "covers/la-obra-de-cristo-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["la obra de cristo", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 15 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la obra redentora de Cristo y su sacrificio."
+  },
+  {
+    "id": "el-dia-del-senor-portavoz-gracia",
+    "title": "El Día del Señor (Portavoz de la Gracia n.º 21)",
+    "file": "books/el-dia-del-senor-portavoz-gracia.pdf",
+    "cover": "covers/el-dia-del-senor-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["el día del señor", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 21 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la santificación del día del Señor."
+  },
+  {
+    "id": "paternidad-portavoz-gracia",
+    "title": "Paternidad (Portavoz de la Gracia n.º 25)",
+    "file": "books/paternidad-portavoz-gracia.pdf",
+    "cover": "covers/paternidad-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["paternidad", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 25 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre los deberes de los padres en la crianza de sus hijos."
+  },
+  {
+    "id": "adoracion-familiar-portavoz-gracia",
+    "title": "Adoración familiar (Portavoz de la Gracia n.º 26)",
+    "file": "books/adoracion-familiar-portavoz-gracia.pdf",
+    "cover": "covers/adoracion-familiar-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["adoración familiar", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 26 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre el culto familiar en el hogar cristiano."
+  },
+  {
+    "id": "el-aborto-portavoz-gracia",
+    "title": "El aborto (Portavoz de la Gracia n.º 27)",
+    "file": "books/el-aborto-portavoz-gracia.pdf",
+    "cover": "covers/el-aborto-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["el aborto", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 27 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre el aborto a la luz del sexto mandamiento y de la Escritura."
+  },
+  {
+    "id": "el-proposito-eterno-de-dios-portavoz-gracia",
+    "title": "El propósito eterno de Dios (Portavoz de la Gracia n.º 30)",
+    "file": "books/el-proposito-eterno-de-dios-portavoz-gracia.pdf",
+    "cover": "covers/el-proposito-eterno-de-dios-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["el propósito eterno de dios", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 30 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre el decreto y el propósito eterno de Dios en Cristo."
+  },
+  {
+    "id": "el-dios-trino-portavoz-gracia",
+    "title": "El Dios Trino (Portavoz de la Gracia n.º 33)",
+    "file": "books/el-dios-trino-portavoz-gracia.pdf",
+    "cover": "covers/el-dios-trino-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["el dios trino", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 33 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la doctrina de la Trinidad."
+  },
+  {
+    "id": "la-enfermedad-portavoz-gracia",
+    "title": "La enfermedad (Portavoz de la Gracia n.º 34)",
+    "file": "books/la-enfermedad-portavoz-gracia.pdf",
+    "cover": "covers/la-enfermedad-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["la enfermedad", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 34 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la enfermedad y el sufrimiento en la vida del creyente."
+  },
+  {
+    "id": "encarnacion-portavoz-gracia",
+    "title": "Encarnación (Portavoz de la Gracia n.º 38)",
+    "file": "books/encarnacion-portavoz-gracia.pdf",
+    "cover": "covers/encarnacion-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["encarnación", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 38 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la encarnación del Hijo de Dios."
+  },
+  {
+    "id": "meditacion-portavoz-gracia",
+    "title": "Meditación (Portavoz de la Gracia n.º 40)",
+    "file": "books/meditacion-portavoz-gracia.pdf",
+    "cover": "covers/meditacion-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["meditación", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 40 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la meditación bíblica como disciplina espiritual."
+  },
+  {
+    "id": "la-deidad-de-cristo-portavoz-gracia",
+    "title": "La deidad de Cristo (Portavoz de la Gracia n.º 43)",
+    "file": "books/la-deidad-de-cristo-portavoz-gracia.pdf",
+    "cover": "covers/la-deidad-de-cristo-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["la deidad de cristo", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 43 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la deidad de Jesucristo."
+  },
+  {
+    "id": "cristo-en-el-antiguo-testamento-portavoz-gracia",
+    "title": "Cristo en el Antiguo Testamento (Portavoz de la Gracia n.º 45)",
+    "file": "books/cristo-en-el-antiguo-testamento-portavoz-gracia.pdf",
+    "cover": "covers/cristo-en-el-antiguo-testamento-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["cristo en el antiguo testamento", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 45 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre Cristo revelado en el Antiguo Testamento."
+  },
+  {
+    "id": "autoridad-portavoz-gracia",
+    "title": "Autoridad (Portavoz de la Gracia n.º 46)",
+    "file": "books/autoridad-portavoz-gracia.pdf",
+    "cover": "covers/autoridad-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["autoridad", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 46 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la autoridad de Dios, de Cristo y de las Escrituras."
+  },
+  {
+    "id": "union-con-cristo-portavoz-gracia",
+    "title": "Unión con Cristo (Portavoz de la Gracia n.º 49)",
+    "file": "books/union-con-cristo-portavoz-gracia.pdf",
+    "cover": "covers/union-con-cristo-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["unión con cristo", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 49 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la unión del creyente con Cristo."
+  },
+  {
+    "id": "la-gloria-de-cristo-portavoz-gracia",
+    "title": "La gloria de Cristo (Portavoz de la Gracia n.º 52)",
+    "file": "books/la-gloria-de-cristo-portavoz-gracia.pdf",
+    "cover": "covers/la-gloria-de-cristo-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["la gloria de cristo", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 52 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre la gloria de la persona y la obra de Cristo."
+  },
+  {
+    "id": "el-cielo-portavoz-gracia",
+    "title": "El cielo (Portavoz de la Gracia n.º 54)",
+    "file": "books/el-cielo-portavoz-gracia.pdf",
+    "cover": "covers/el-cielo-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["el cielo", "Portavoz de la Gracia", "Chapel Library", "puritanos"],
+    "description": "Número 54 de la revista Portavoz de la Gracia (Chapel Library): escritos clásicos sobre el cielo y la esperanza eterna del creyente."
+  },
+  {
+    "id": "el-evangelio-de-la-gracia-de-dios-portavoz-gracia",
+    "title": "El evangelio de la gracia de Dios",
+    "file": "books/el-evangelio-de-la-gracia-de-dios-portavoz-gracia.pdf",
+    "cover": "covers/el-evangelio-de-la-gracia-de-dios-portavoz-gracia.jpg",
+    "author": "Varios autores (Portavoz de la Gracia)",
+    "category": "Portavoz de la Gracia",
+    "tags": ["salvación", "evangelio", "doctrinas de la gracia", "Portavoz de la Gracia"],
+    "description": "La doctrina de la salvación en una selección de escritos tomados de la revista Portavoz de la Gracia."
+  },
+  {
+    "id": "el-dia-del-senor-sus-presuposiciones-pruebas-precedentes-y-p",
+    "title": "El día del Señor: sus presuposiciones, pruebas, precedentes y práctica",
+    "file": "books/el-dia-del-senor-sus-presuposiciones-pruebas-precedentes-y-p.pdf",
+    "cover": "covers/el-dia-del-senor-sus-presuposiciones-pruebas-precedentes-y-p.jpg",
+    "author": "Samuel E. Waldron",
+    "category": "Culto público",
+    "tags": ["día del Señor", "sábado cristiano", "cuarto mandamiento", "Confesión de 1689", "Samuel E. Waldron"],
+    "description": "Defensa bíblica y confesional del día del Señor como sábado cristiano: sus fundamentos, pruebas, antecedentes y práctica."
+  },
+  {
+    "id": "reformando-una-iglesia-local",
+    "title": "Reformando una iglesia local",
+    "file": "books/reformando-una-iglesia-local.pdf",
+    "cover": "covers/reformando-una-iglesia-local.jpg",
+    "author": "Ernest C. Reisinger",
+    "category": "Eclesiología",
+    "tags": ["reforma", "iglesia local", "pastores", "doctrinas de la gracia", "Ernest Reisinger"],
+    "description": "Consejos pastorales para reformar una iglesia local según la Escritura, con prudencia y paciencia."
+  },
+  {
+    "id": "ateismo-practico-modernizado-y-abreviado",
+    "title": "Ateísmo práctico (modernizado y abreviado)",
+    "file": "books/ateismo-practico-modernizado-y-abreviado.pdf",
+    "cover": "covers/ateismo-practico-modernizado-y-abreviado.jpg",
+    "author": "Stephen Charnock",
+    "category": "Teología sistemática",
+    "tags": ["ateísmo práctico", "corazón humano", "pecado", "puritanos", "Stephen Charnock"],
+    "description": "Versión modernizada y abreviada del discurso de Charnock sobre el ateísmo práctico: vivir como si Dios no existiera."
+  },
+  {
+    "id": "adoniram-judson-y-el-llamado-misionero",
+    "title": "Adoniram Judson y el llamado misionero",
+    "file": "books/adoniram-judson-y-el-llamado-misionero.pdf",
+    "cover": "covers/adoniram-judson-y-el-llamado-misionero.jpg",
+    "author": "Erroll Hulse",
+    "category": "Historia de la iglesia",
+    "tags": ["misiones", "biografía", "Birmania", "bautistas", "Adoniram Judson"],
+    "description": "Biografía del misionero bautista Adoniram Judson en Birmania y lecciones sobre el llamado misionero."
+  },
+  {
+    "id": "la-incapacidad-humana",
+    "title": "La incapacidad humana",
+    "file": "books/la-incapacidad-humana.pdf",
+    "cover": "covers/la-incapacidad-humana.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Teología sistemática",
+    "tags": ["depravación total", "incapacidad", "gracia", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre Juan 6:44: la incapacidad del hombre para venir a Cristo sin la obra del Padre."
+  },
+  {
+    "id": "el-bautismo-una-sepultura",
+    "title": "El bautismo: una sepultura",
+    "file": "books/el-bautismo-una-sepultura.pdf",
+    "cover": "covers/el-bautismo-una-sepultura.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Bautismo",
+    "tags": ["bautismo", "unión con Cristo", "sermón", "credobautismo", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre el bautismo como figura de nuestra muerte y sepultura con Cristo."
+  },
+  {
+    "id": "pequenos-pecados",
+    "title": "Pequeños pecados",
+    "file": "books/pequenos-pecados.pdf",
+    "cover": "covers/pequenos-pecados.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Espiritualidad",
+    "tags": ["pecado", "tentación", "santificación", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre el peligro de los pecados que parecen pequeños y cómo resistirlos."
+  },
+  {
+    "id": "aun-hay-lugar",
+    "title": "Aún hay lugar",
+    "file": "books/aun-hay-lugar.pdf",
+    "cover": "covers/aun-hay-lugar.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Evangelización",
+    "tags": ["evangelio", "invitación", "gracia", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón evangelístico de Spurgeon sobre Lucas 14:22: aún hay lugar en la casa de Dios para los pecadores."
+  },
+  {
+    "id": "la-sangre-del-rociamiento-y-los-ninos",
+    "title": "La sangre del rociamiento y los niños",
+    "file": "books/la-sangre-del-rociamiento-y-los-ninos.pdf",
+    "cover": "covers/la-sangre-del-rociamiento-y-los-ninos.jpg",
+    "author": "C. H. Spurgeon",
+    "category": "Familia cristiana",
+    "tags": ["niños", "pascua", "sangre de Cristo", "sermón", "C. H. Spurgeon"],
+    "description": "Sermón de Spurgeon sobre la Pascua y la responsabilidad de enseñar a los niños el significado de la sangre de Cristo."
+  },
+  {
+    "id": "deberes-familiares",
+    "title": "Deberes familiares",
+    "file": "books/deberes-familiares.pdf",
+    "cover": "covers/deberes-familiares.jpg",
+    "author": "John Bunyan",
+    "category": "Familia cristiana",
+    "tags": ["familia", "esposos", "padres", "hijos", "John Bunyan"],
+    "description": "Los deberes del padre, de la esposa, de los hijos y de los siervos en el hogar cristiano."
+  },
+  {
+    "id": "los-deberes-de-los-padres",
+    "title": "Los deberes de los padres",
+    "file": "books/los-deberes-de-los-padres.pdf",
+    "cover": "covers/los-deberes-de-los-padres.jpg",
+    "author": "J. C. Ryle",
+    "category": "Familia cristiana",
+    "tags": ["padres", "crianza", "hijos", "J. C. Ryle"],
+    "description": "Consejos bíblicos de J. C. Ryle para criar a los hijos en el camino del Señor."
+  },
+  {
+    "id": "los-deberes-de-hijos-y-padres",
+    "title": "Los deberes de hijos y padres",
+    "file": "books/los-deberes-de-hijos-y-padres.pdf",
+    "cover": "covers/los-deberes-de-hijos-y-padres.jpg",
+    "author": "Richard Adams",
+    "category": "Familia cristiana",
+    "tags": ["hijos", "padres", "quinto mandamiento", "puritanos", "Richard Adams"],
+    "description": "Sermón puritano sobre los deberes mutuos de hijos y padres según el quinto mandamiento."
+  },
+  {
+    "id": "eduque-a-los-ninos-para-cristo",
+    "title": "Eduque a los niños para Cristo",
+    "file": "books/eduque-a-los-ninos-para-cristo.pdf",
+    "cover": "covers/eduque-a-los-ninos-para-cristo.jpg",
+    "author": "Edward W. Hooker",
+    "category": "Familia cristiana",
+    "tags": ["niños", "educación cristiana", "padres", "Edward Hooker"],
+    "description": "Exhortación a los padres a educar a sus hijos para Cristo."
+  },
+  {
+    "id": "una-palabra-para-los-padres",
+    "title": "Una palabra para los padres",
+    "file": "books/una-palabra-para-los-padres.pdf",
+    "cover": "covers/una-palabra-para-los-padres.jpg",
+    "author": "A. W. Pink",
+    "category": "Familia cristiana",
+    "tags": ["padres", "disciplina", "obediencia", "A. W. Pink"],
+    "description": "Breve llamado de A. W. Pink a los padres sobre la disciplina y la crianza bíblica de los hijos."
+  },
+  {
+    "id": "la-oracion-de-un-padre",
+    "title": "La oración de un padre",
+    "file": "books/la-oracion-de-un-padre.pdf",
+    "cover": "covers/la-oracion-de-un-padre.jpg",
+    "author": "George Swinnock",
+    "category": "Familia cristiana",
+    "tags": ["oración", "padres", "familia", "puritanos", "George Swinnock"],
+    "description": "Oración de un padre puritano por la vida espiritual de su familia."
+  },
+  {
+    "id": "el-camino-hacia-un-matrimonio-cristiano",
+    "title": "El camino hacia un matrimonio cristiano",
+    "file": "books/el-camino-hacia-un-matrimonio-cristiano.pdf",
+    "cover": "covers/el-camino-hacia-un-matrimonio-cristiano.jpg",
+    "author": "John Angell James",
+    "category": "Familia cristiana",
+    "tags": ["noviazgo", "matrimonio", "padres", "juventud", "John Angell James"],
+    "description": "Consejos para el noviazgo y la elección de cónyuge según la Escritura, con la participación de los padres."
+  },
+  {
+    "id": "preparandose-para-el-matrimonio-guia-biblica-de-los-puritano",
+    "title": "Preparándose para el matrimonio: guía bíblica de los puritanos",
+    "file": "books/preparandose-para-el-matrimonio-guia-biblica-de-los-puritano.pdf",
+    "cover": "covers/preparandose-para-el-matrimonio-guia-biblica-de-los-puritano.jpg",
+    "author": "James A. La Belle y Joel R. Beeke",
+    "category": "Familia cristiana",
+    "tags": ["matrimonio", "noviazgo", "puritanos", "Joel Beeke"],
+    "description": "Lo que los puritanos enseñaban sobre la preparación para el matrimonio y la búsqueda de un cónyuge."
+  },
+  {
+    "id": "puestos-sus-ojos-en-jesus",
+    "title": "Puestos sus ojos en Jesús",
+    "file": "books/puestos-sus-ojos-en-jesus.pdf",
+    "cover": "covers/puestos-sus-ojos-en-jesus.jpg",
+    "author": "William Reid",
+    "category": "Espiritualidad",
+    "tags": ["fe", "seguridad", "Cristo", "vida cristiana", "William Reid"],
+    "description": "Exhortación a vivir con la mirada puesta en Jesús, el autor y consumador de la fe (Hebreos 12:2)."
+  },
+  {
+    "id": "la-vida-secreta-de-oracion",
+    "title": "La vida secreta de oración",
+    "file": "books/la-vida-secreta-de-oracion.pdf",
+    "cover": "covers/la-vida-secreta-de-oracion.jpg",
+    "author": "Chapel Library",
+    "category": "Espiritualidad",
+    "tags": ["oración", "vida devocional", "avivamiento", "Chapel Library"],
+    "description": "La importancia de la oración privada en la vida del creyente: su práctica, sus dificultades y sus frutos."
+  },
+  {
+    "id": "mi-viaje-a-casa",
+    "title": "Mi viaje a casa",
+    "file": "books/mi-viaje-a-casa.pdf",
+    "cover": "covers/mi-viaje-a-casa.jpg",
+    "author": "L. R. Shelton Jr.",
+    "category": "Espiritualidad",
+    "tags": ["muerte", "esperanza", "cielo", "testimonio", "L. R. Shelton"],
+    "description": "Reflexiones del pastor L. R. Shelton Jr. sobre la muerte y la esperanza del creyente de ir a casa con el Señor."
+  },
+  {
+    "id": "ven-a-jesus",
+    "title": "Ven a Jesús",
+    "file": "books/ven-a-jesus.pdf",
+    "cover": "covers/ven-a-jesus.jpg",
+    "author": "Newman Hall",
+    "category": "Evangelización",
+    "tags": ["evangelio", "invitación", "folleto", "Newman Hall"],
+    "description": "Folleto evangelístico: la invitación del Padre, del Hijo y del Espíritu Santo a venir a Jesús."
+  },
+  {
+    "id": "el-invitado",
+    "title": "¡El invitado!",
+    "file": "books/el-invitado.pdf",
+    "cover": "covers/el-invitado.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["folleto", "familia", "televisión", "Chapel Library"],
+    "description": "Breve relato sobre el «invitado» que entró en el hogar y cambió a la familia: una reflexión sobre la televisión."
+  },
+  {
+    "id": "como-vienen-los-hombres-a-cristo",
+    "title": "Cómo vienen los hombres a Cristo",
+    "file": "books/como-vienen-los-hombres-a-cristo.pdf",
+    "cover": "covers/como-vienen-los-hombres-a-cristo.jpg",
+    "author": "Chapel Library",
+    "category": "Evangelización",
+    "tags": ["Juan 6:44", "gracia", "llamamiento eficaz", "folleto"],
+    "description": "Breve escrito sobre Juan 6:44: cómo el Padre trae a los hombres a Cristo."
   }
 ]
